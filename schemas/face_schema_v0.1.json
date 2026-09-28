@@ -1,0 +1,109 @@
+{
+  "schema_version": "face-v0.1",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "female",
+    "overall_impression": []
+  },
+  "face_geometry": {
+    "face_length": 50,
+    "face_width": 50,
+    "face_shape": "oval",
+    "forehead_width": 50,
+    "forehead_height": 50,
+    "cheekbone_width": 50,
+    "cheekbone_height": 50,
+    "jaw_width": 50,
+    "jaw_angle": 50,
+    "chin_width": 50,
+    "chin_length": 50,
+    "chin_projection": 50
+  },
+  "soft_tissue": {
+    "cheek_fullness": 50,
+    "midface_length": 50,
+    "under_eye_volume": 50,
+    "nasolabial_definition": 50,
+    "facial_softness": 50,
+    "temple_fullness": 50
+  },
+  "eyes": {
+    "eye_size": 50,
+    "eye_spacing": 50,
+    "eye_tilt": 50,
+    "eye_length": 50,
+    "eye_roundness": 50,
+    "eye_socket_depth": 50,
+    "upper_eyelid": "balanced_double",
+    "lower_eyelid_shape": "smooth"
+  },
+  "eyebrows": {
+    "brow_thickness": 50,
+    "brow_height": 50,
+    "brow_arch": 50,
+    "brow_length": 50,
+    "brow_density": 50
+  },
+  "nose": {
+    "bridge_height": 50,
+    "bridge_width": 50,
+    "nose_length": 50,
+    "nose_projection": 50,
+    "tip_size": 50,
+    "tip_roundness": 50,
+    "tip_rotation": 50,
+    "alar_width": 50,
+    "nostril_visibility": 50
+  },
+  "mouth": {
+    "mouth_width": 50,
+    "upper_lip_fullness": 50,
+    "lower_lip_fullness": 50,
+    "cupid_bow_definition": 50,
+    "mouth_corner_direction": 50,
+    "philtrum_length": 50
+  },
+  "skin": {
+    "tone": "fair_neutral_cool",
+    "texture": "natural_smooth",
+    "translucency": 50,
+    "blemish_visibility": 50,
+    "freckle_visibility": 0
+  },
+  "makeup": {
+    "intensity": 0,
+    "base": "natural",
+    "eyeliner": "none",
+    "eyeshadow": "none",
+    "lashes": "natural",
+    "blush": "none",
+    "lip_style": "natural",
+    "lip_color": "natural"
+  },
+  "hair": {
+    "color": "black",
+    "length": "medium",
+    "texture": "straight",
+    "volume": 50,
+    "parting": "center",
+    "face_framing": "natural"
+  },
+  "expression": {
+    "expression": "neutral",
+    "eye_openness": 50,
+    "mouth_relaxation": 50
+  },
+  "capture": {
+    "view": "front",
+    "head_yaw": 0,
+    "head_pitch": 0,
+    "head_roll": 0,
+    "camera_height": "eye_level",
+    "lens_equivalent": "85mm",
+    "camera_distance": "portrait",
+    "lighting": "soft_neutral_studio",
+    "background": "neutral_plain",
+    "image_softness": 0,
+    "beauty_filter_strength": 0
+  }
+}

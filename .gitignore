@@ -1,0 +1,33 @@
+.DS_Store
+Thumbs.db
+
+# Environment / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local/private reference material
+private/
+references/
+reference-images/
+uploads/
+secrets/
+baselines/private/
+
+# Local-only profiles and scratch exports
+*.local.json
+*_private.json
+scratch/
+tmp/
+exports/
+
+# Common tooling
+node_modules/
+dist/
+build/
+coverage/
+.cache/

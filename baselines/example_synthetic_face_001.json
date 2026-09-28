@@ -1,0 +1,102 @@
+{
+  "schema_version": "face-v0.1",
+  "baseline_id": "example-synthetic-face-001",
+  "source": "synthetic_example",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "female",
+    "overall_impression": [
+      "soft",
+      "refined",
+      "calm"
+    ]
+  },
+  "face_geometry": {
+    "face_length": 58,
+    "face_width": 44,
+    "face_shape": "oval",
+    "forehead_width": 52,
+    "forehead_height": 55,
+    "cheekbone_width": 50,
+    "cheekbone_height": 54,
+    "jaw_width": 40,
+    "jaw_angle": 34,
+    "chin_width": 42,
+    "chin_length": 55,
+    "chin_projection": 50
+  },
+  "soft_tissue": {
+    "cheek_fullness": 46,
+    "midface_length": 53,
+    "under_eye_volume": 50,
+    "nasolabial_definition": 32,
+    "facial_softness": 56,
+    "temple_fullness": 50
+  },
+  "eyes": {
+    "eye_size": 58,
+    "eye_spacing": 52,
+    "eye_tilt": 53,
+    "eye_length": 55,
+    "eye_roundness": 56,
+    "eye_socket_depth": 42,
+    "upper_eyelid": "soft_visible_double",
+    "lower_eyelid_shape": "smooth"
+  },
+  "eyebrows": {
+    "brow_thickness": 44,
+    "brow_height": 50,
+    "brow_arch": 46,
+    "brow_length": 52,
+    "brow_density": 45
+  },
+  "nose": {
+    "bridge_height": 55,
+    "bridge_width": 40,
+    "nose_length": 50,
+    "nose_projection": 48,
+    "tip_size": 43,
+    "tip_roundness": 54,
+    "tip_rotation": 50,
+    "alar_width": 40,
+    "nostril_visibility": 40
+  },
+  "mouth": {
+    "mouth_width": 48,
+    "upper_lip_fullness": 45,
+    "lower_lip_fullness": 55,
+    "cupid_bow_definition": 48,
+    "mouth_corner_direction": 51,
+    "philtrum_length": 50
+  },
+  "skin": {
+    "tone": "fair_neutral_cool",
+    "texture": "natural_smooth",
+    "translucency": 55,
+    "blemish_visibility": 30,
+    "freckle_visibility": 0
+  },
+  "makeup": {
+    "intensity": 20,
+    "base": "light_natural",
+    "eyeliner": "subtle",
+    "eyeshadow": "very_subtle",
+    "lashes": "natural",
+    "blush": "minimal",
+    "lip_style": "soft_natural",
+    "lip_color": "muted_rose"
+  },
+  "hair": {
+    "color": "natural_black",
+    "length": "medium",
+    "texture": "straight",
+    "volume": 46,
+    "parting": "center",
+    "face_framing": "natural"
+  },
+  "expression": {
+    "expression": "calm_neutral",
+    "eye_openness": 54,
+    "mouth_relaxation": 54
+  }
+}
