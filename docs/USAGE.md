@@ -207,3 +207,26 @@ npm test
 ```
 
 Tests cover compiler output, capture presets, build stdout behavior, rebuild planning, and explicit-selector safety.
+
+
+## Skill / agent integration
+
+For future ChatGPT Skills, agents, or local automation, treat the CLI as the stable integration boundary rather than duplicating compiler logic.
+
+The preferred single-build flow is:
+
+```text
+Face Schema JSON
+      ↓
+npm run build
+      ↓
+stdout prompt text
+```
+
+For a bulk rebuild, automation should first run the exact selector with `--dry-run`, present the scope, obtain confirmation, and then execute the same selector with `--yes`.
+
+Detailed integration, exit-status, reproducibility, and public-repository safety guidance is documented in:
+
+```text
+docs/SKILL_INTEGRATION.md
+```

@@ -33,7 +33,12 @@ npm run rebuild -- --all
 
 Before writing anything, `rebuild` prints its plan and asks for confirmation. Use `--dry-run` to inspect the plan only, or `--yes` for non-interactive/CI use.
 
-See [docs/USAGE.md](docs/USAGE.md) for the complete command reference.
+Documentation:
+
+- [Usage and command reference](docs/USAGE.md)
+- [Skill / agent integration](docs/SKILL_INTEGRATION.md)
+- [Face Schema v0.1 specification](docs/face_schema_spec_v0.1.md)
+- [Public repository safety](docs/public_repo_safety.md)
 
 ## Current baseline
 
@@ -73,6 +78,7 @@ visage-prompt-builder/
 │  └─ cli.test.mjs
 ├─ docs/
 │  ├─ USAGE.md
+│  ├─ SKILL_INTEGRATION.md
 │  ├─ face_schema_spec_v0.1.md
 │  └─ public_repo_safety.md
 ├─ package.json
@@ -99,6 +105,12 @@ Output Snapshot / Image Model
 The schema stores **what a face is like**. A compiler stores **how a target image model should be told about it**. This separation allows additional model adapters to be added without redesigning the face data model.
 
 The tracked `output/` snapshots make compiler changes reviewable with ordinary Git diffs.
+
+## Integration principle
+
+For external tools, Skills, and agents, prefer the documented CLI as the integration boundary. This keeps schema-to-prompt behavior centralized in the repository and prevents wrappers from drifting away from compiler semantics.
+
+See [docs/SKILL_INTEGRATION.md](docs/SKILL_INTEGRATION.md).
 
 ## Public-repository rule
 

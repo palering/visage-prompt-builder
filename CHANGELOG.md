@@ -2,6 +2,15 @@
 
 All notable project changes are recorded here.
 
+## [0.2.1] - 2026-09-28
+
+### Documentation
+
+- Added a Skill / agent integration guide defining the CLI integration boundary.
+- Documented build/rebuild invocation patterns, exit behavior, deterministic-output expectations, and version metadata.
+- Added recommended Skill actions for compile, save, rebuild planning, and confirmed rebuild execution.
+- Documented public-repository safety requirements for future Skill/agent automation.
+
 ## [0.2.0] - 2026-09-28
 
 ### Added
