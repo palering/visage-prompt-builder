@@ -2,6 +2,21 @@
 
 All notable project changes are recorded here.
 
+## [0.1.1] - 2026-09-28
+
+### Added
+
+- Executable Node.js CLI for compiling Face Schema JSON into GPT Image 2.5 prompt text.
+- Importable `compileFacePrompt()` compiler module.
+- `calibration`, `profile`, and `none` capture presets.
+- `--out` support for saving generated prompts.
+- Usage documentation.
+- Initial compiler tests using Node's built-in test runner.
+
+### Changed
+
+- README now includes a runnable quick-start flow.
+
 ## [0.1.0] - 2026-09-28
 
 ### Added
