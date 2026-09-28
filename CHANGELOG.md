@@ -2,6 +2,30 @@
 
 All notable project changes are recorded here.
 
+## [0.2.0] - 2026-09-28
+
+### Added
+
+- `npm run build -- <profile>` as the primary single-profile build command.
+- Safe output-file overwrite confirmation for `build --out`.
+- `--force` for deliberate/non-interactive build overwrites.
+- Bulk `rebuild` command with `--all`, `--block`, `--dir`, and `--target` selectors.
+- Rebuild plan preview and interactive confirmation before destructive changes.
+- `--dry-run` and `--yes` rebuild safety modes.
+- Declarative rebuild target configuration under `presets/rebuild_targets.json`.
+- Tracked generated prompt snapshots under `output/`.
+- CLI/rebuild smoke tests.
+
+### Changed
+
+- `prompt` remains available as a compatibility alias for `build`.
+- README and usage documentation now describe the complete build/rebuild workflow.
+
+### Safety
+
+- Rebuild path validation prevents configured output cleanup from escaping the repository's `output/` root.
+- Public rebuild targets use only the synthetic baseline profile.
+
 ## [0.1.1] - 2026-09-28
 
 ### Added

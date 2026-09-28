@@ -1,74 +1,177 @@
 # Usage
 
-Visage Prompt Builder currently generates **prompt text** from a Face Schema JSON profile. It does not call an image-generation API yet.
+Visage Prompt Builder compiles **Face Schema JSON** into natural-language prompt text. It currently does not call an image-generation API.
 
-## 1. Prepare a face profile
+There are two primary commands:
 
-Start from:
+- `build`: compile one profile.
+- `rebuild`: regenerate configured output snapshots in bulk.
+
+## Build one prompt
+
+### Print directly to stdout
+
+```bash
+npm run build -- baselines/example_synthetic_face_001.json
+```
+
+This is the default build behavior. Nothing is written to disk.
+
+### Write to a file
+
+```bash
+npm run build -- baselines/example_synthetic_face_001.json --out prompt.txt
+```
+
+Parent directories are created automatically.
+
+If the output file already exists, the CLI asks for confirmation before overwriting it.
+
+For non-interactive use or when an overwrite is intentional:
+
+```bash
+npm run build -- baselines/example_synthetic_face_001.json --out prompt.txt --force
+```
+
+### Choose a capture preset
+
+```bash
+npm run build -- baselines/example_synthetic_face_001.json --preset calibration
+npm run build -- baselines/example_synthetic_face_001.json --preset profile
+npm run build -- baselines/example_synthetic_face_001.json --preset none
+```
+
+- `calibration`: standardized front-facing portrait setup. This is the default.
+- `profile`: use the profile's `capture` block when available.
+- `none`: omit the CAPTURE section.
+
+The older `npm run prompt -- ...` command remains as a compatibility alias for `build`.
+
+## Rebuild generated snapshots
+
+Rebuild targets are declared in:
 
 ```text
-schemas/face_schema_v0.1.json
+presets/rebuild_targets.json
 ```
 
-or use the public synthetic example:
+Generated snapshots are written under:
 
 ```text
-baselines/example_synthetic_face_001.json
+output/
 ```
 
-Edit the JSON values to represent the desired face.
+The repository intentionally tracks these public-safe generated files so changes to the schema/compiler can be reviewed as Git diffs.
 
-## 2. Compile the profile into a GPT Image 2.5 prompt
+A rebuild always requires **one explicit selector**. Running `rebuild` with no selector does nothing.
 
-Node.js 18 or newer is required. There are currently no external npm dependencies.
+### Rebuild everything
 
 ```bash
-npm run prompt -- baselines/example_synthetic_face_001.json
+npm run rebuild -- --all
 ```
 
-The generated prompt is printed to stdout.
-
-Equivalent direct command:
+### Rebuild one logical block
 
 ```bash
-node src/cli.mjs baselines/example_synthetic_face_001.json
+npm run rebuild -- --block gpt-image-2.5
 ```
 
-## 3. Save the prompt to a file
+Blocks are named groups in `presets/rebuild_targets.json`.
+
+### Rebuild one output subdirectory
 
 ```bash
-npm run prompt -- baselines/example_synthetic_face_001.json --out prompt.txt
+npm run rebuild -- --dir gpt-image-2.5
 ```
 
-## Capture presets
+`--dir` is relative to `output/`. Path traversal outside `output/` is rejected.
 
-### calibration
-
-Default. Uses a standardized front-facing portrait setup so morphology changes are easier to compare.
+### Rebuild one target
 
 ```bash
-npm run prompt -- baselines/example_synthetic_face_001.json --preset calibration
+npm run rebuild -- --target example-synthetic-face-001.calibration
 ```
 
-### profile
+A single-target rebuild overwrites only that target file and does not remove its containing directory.
 
-Uses the `capture` block from the profile when present.
+## Rebuild safety
+
+Before changing files, `rebuild` prints:
+
+- the selector,
+- the cleanup scope,
+- every output that will be generated,
+- the total target count.
+
+Then it asks:
+
+```text
+Proceed with rebuilding N target(s)? [y/N]
+```
+
+The default answer is **No**.
+
+### Dry run
+
+Preview the exact plan without deleting or writing anything:
 
 ```bash
-npm run prompt -- schemas/face_schema_v0.1.json --preset profile
+npm run rebuild -- --all --dry-run
 ```
 
-### none
+This is recommended before larger compiler/schema changes.
 
-Omits the CAPTURE section entirely.
+### Skip confirmation
+
+For CI or a deliberate non-interactive rebuild:
 
 ```bash
-npm run prompt -- baselines/example_synthetic_face_001.json --preset none
+npm run rebuild -- --all --yes
 ```
+
+Without a TTY, a real rebuild fails unless `--yes` is supplied.
+
+## Cleanup behavior
+
+The selector also controls what is cleaned before generation:
+
+| Selector | Cleanup |
+| --- | --- |
+| `--all` | configured block output directories |
+| `--block <name>` | that block's output directory |
+| `--dir <subdir>` | that output-relative subdirectory |
+| `--target <name>` | no directory deletion; target file only |
+
+This keeps narrow rebuilds narrow while still removing stale files during broader rebuilds.
+
+## Rebuild configuration
+
+The initial configuration looks like:
+
+```json
+{
+  "output_root": "output",
+  "blocks": {
+    "gpt-image-2.5": {
+      "output_dir": "gpt-image-2.5",
+      "targets": [
+        {
+          "name": "example-synthetic-face-001.calibration",
+          "input": "baselines/example_synthetic_face_001.json",
+          "compiler": "gpt-image-2.5",
+          "preset": "calibration",
+          "output": "example_synthetic_face_001.calibration.txt"
+        }
+      ]
+    }
+  }
+}
+```
+
+Because this repository is public, only public-safe or synthetic inputs should be added to this file.
 
 ## Programmatic use
-
-The compiler can also be imported by a future web UI or another Node.js tool:
 
 ```js
 import fs from 'node:fs';
@@ -94,10 +197,8 @@ GPT Image 2.5 compiler
       ↓
 Natural-language prompt
       ↓
-Copy/send prompt to image model
+stdout / explicit output file / tracked rebuild snapshot
 ```
-
-The important boundary is that the Face Schema remains model-neutral. Future model support should normally add another compiler instead of changing the stored face profile.
 
 ## Tests
 
@@ -105,4 +206,4 @@ The important boundary is that the Face Schema remains model-neutral. Future mod
 npm test
 ```
 
-The initial tests verify that the compiler produces the expected prompt sections, supports capture presets, and rejects unsupported schema versions.
+Tests cover compiler output, capture presets, build stdout behavior, rebuild planning, and explicit-selector safety.

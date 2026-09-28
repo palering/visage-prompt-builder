@@ -2,44 +2,113 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { compileFacePrompt } from './compiler/gpt-image-2.5.mjs';
+import { confirmAction } from './lib/confirm.mjs';
 
 const args = process.argv.slice(2);
-
-if (!args.length || args.includes('--help') || args.includes('-h')) {
-  console.log(`Visage Prompt Builder
-
-Usage:
-  node src/cli.mjs <face-profile.json> [--preset calibration|profile|none] [--out <file>]
-
-Examples:
-  node src/cli.mjs baselines/example_synthetic_face_001.json
-  node src/cli.mjs baselines/example_synthetic_face_001.json --preset none
-  node src/cli.mjs baselines/example_synthetic_face_001.json --out prompt.txt`);
-  process.exit(0);
-}
-
-const inputPath = args[0];
-const getArg = (name, fallback = null) => {
-  const i = args.indexOf(name);
-  return i >= 0 && args[i + 1] ? args[i + 1] : fallback;
-};
-
-const preset = getArg('--preset', 'calibration');
-const outPath = getArg('--out');
 const allowedPresets = new Set(['calibration', 'profile', 'none']);
 
-if (!allowedPresets.has(preset)) {
-  throw new Error(`Unknown preset: ${preset}. Expected calibration, profile, or none.`);
+function printHelp() {
+  console.log(`Visage Prompt Builder - build one prompt
+
+Usage:
+  npm run build -- <face-profile.json> [options]
+
+Options:
+  --preset <name>   calibration | profile | none (default: calibration)
+  --out <file>      Write the prompt to a file instead of stdout
+  --force           Overwrite an existing --out file without confirmation
+  -h, --help        Show this help
+
+Examples:
+  npm run build -- baselines/example_synthetic_face_001.json
+  npm run build -- baselines/example_synthetic_face_001.json --preset none
+  npm run build -- baselines/example_synthetic_face_001.json --out prompt.txt
+  npm run build -- baselines/example_synthetic_face_001.json --out prompt.txt --force`);
 }
 
-const profile = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
-const prompt = compileFacePrompt(profile, { preset });
+function parseArgs(argv) {
+  const result = {
+    input: null,
+    preset: 'calibration',
+    out: null,
+    force: false,
+    help: false
+  };
 
-if (outPath) {
-  const resolved = path.resolve(outPath);
-  fs.mkdirSync(path.dirname(resolved), { recursive: true });
-  fs.writeFileSync(resolved, `${prompt}\n`, 'utf8');
-  console.log(`Prompt written to ${resolved}`);
-} else {
-  console.log(prompt);
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+
+    if (arg === '-h' || arg === '--help') {
+      result.help = true;
+      continue;
+    }
+
+    if (arg === '--force') {
+      result.force = true;
+      continue;
+    }
+
+    if (arg === '--preset' || arg === '--out') {
+      const value = argv[i + 1];
+      if (!value || value.startsWith('--')) {
+        throw new Error(`${arg} requires a value.`);
+      }
+      i += 1;
+      if (arg === '--preset') result.preset = value;
+      if (arg === '--out') result.out = value;
+      continue;
+    }
+
+    if (arg.startsWith('-')) {
+      throw new Error(`Unknown option: ${arg}`);
+    }
+
+    if (result.input) {
+      throw new Error(`Unexpected positional argument: ${arg}`);
+    }
+    result.input = arg;
+  }
+
+  return result;
 }
+
+async function main() {
+  const options = parseArgs(args);
+
+  if (options.help || !options.input) {
+    printHelp();
+    process.exitCode = options.help ? 0 : 1;
+    return;
+  }
+
+  if (!allowedPresets.has(options.preset)) {
+    throw new Error(`Unknown preset: ${options.preset}. Expected calibration, profile, or none.`);
+  }
+
+  const inputPath = path.resolve(options.input);
+  const profile = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
+  const prompt = compileFacePrompt(profile, { preset: options.preset });
+
+  if (!options.out) {
+    process.stdout.write(`${prompt}\n`);
+    return;
+  }
+
+  const outPath = path.resolve(options.out);
+  if (fs.existsSync(outPath) && !options.force) {
+    const confirmed = await confirmAction(`Output file already exists: ${outPath}\nOverwrite it?`);
+    if (!confirmed) {
+      console.log('Build cancelled.');
+      return;
+    }
+  }
+
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  fs.writeFileSync(outPath, `${prompt}\n`, 'utf8');
+  console.log(`Prompt written to ${outPath}`);
+}
+
+main().catch((error) => {
+  console.error(`Build failed: ${error.message}`);
+  process.exitCode = 1;
+});

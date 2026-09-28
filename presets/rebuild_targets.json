@@ -1,0 +1,33 @@
+{
+  "config_version": "rebuild-targets-v0.1",
+  "output_root": "output",
+  "blocks": {
+    "gpt-image-2.5": {
+      "description": "Public synthetic baseline snapshots for the GPT Image 2.5 compiler.",
+      "output_dir": "gpt-image-2.5",
+      "targets": [
+        {
+          "name": "example-synthetic-face-001.calibration",
+          "input": "baselines/example_synthetic_face_001.json",
+          "compiler": "gpt-image-2.5",
+          "preset": "calibration",
+          "output": "example_synthetic_face_001.calibration.txt"
+        },
+        {
+          "name": "example-synthetic-face-001.profile",
+          "input": "baselines/example_synthetic_face_001.json",
+          "compiler": "gpt-image-2.5",
+          "preset": "profile",
+          "output": "example_synthetic_face_001.profile.txt"
+        },
+        {
+          "name": "example-synthetic-face-001.none",
+          "input": "baselines/example_synthetic_face_001.json",
+          "compiler": "gpt-image-2.5",
+          "preset": "none",
+          "output": "example_synthetic_face_001.none.txt"
+        }
+      ]
+    }
+  }
+}

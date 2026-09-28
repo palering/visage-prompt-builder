@@ -1,0 +1,63 @@
+Create a realistic portrait of one adult fictional female. Overall facial impression: soft, refined, calm.
+
+FACIAL STRUCTURE
+The face has an overall oval shape, with moderately long facial length and slightly narrow facial width.
+The forehead is balanced in width and slightly tall in height.
+The cheekbones are balanced in width and slightly high-set.
+The jaw is moderately narrow with moderately soft and rounded jaw angles.
+The chin is moderately narrow in width and slightly long in length, with balanced forward projection.
+
+EYES AND EYEBROWS
+The eyes are moderately large in size, slightly long horizontally, and slightly round in shape.
+Eye spacing is balanced, with slightly upturned outer corners.
+The eye sockets are moderately shallow in depth.
+The upper eyelids are soft visible double.
+The lower eyelids are smooth.
+The eyebrows are slightly thin, balanced in placement, and slightly straight.
+They are balanced with slightly sparse density.
+
+NOSE
+The nose has a slightly high bridge with moderately narrow bridge width.
+The nose is balanced with balanced projection.
+The nasal tip is slightly small, slightly rounded, and neutral in rotation.
+The alar base is moderately narrow, with moderately low nostril visibility.
+
+MOUTH
+The mouth is balanced in width.
+The upper lip is slightly thin, while the lower lip is slightly full.
+The cupid's bow is moderately defined.
+The mouth corners are neutral, with a balanced philtrum.
+
+FACIAL SOFT TISSUE
+The cheeks are slightly lean in soft-tissue volume.
+The midface is slightly long in vertical proportion.
+The under-eye area is balanced in volume.
+The nasolabial region is moderately soft in definition.
+Overall facial soft tissue is slightly soft and rounded, with balanced temple volume.
+
+SKIN
+Skin tone is fair neutral cool, with natural smooth texture, slightly high translucency, moderately low visible skin variation, and extremely minimal freckling.
+
+MAKEUP
+minimal makeup: light natural, subtle eyeliner, very subtle eyeshadow, natural lashes, minimal blush, soft natural lip styling, and muted rose lip color.
+
+HAIR
+Hair is natural black and medium length, with straight texture, slightly low volume, a center parting, and natural face-framing strands.
+
+EXPRESSION
+Expression is calm neutral, with slightly open eye openness and a slightly relaxed mouth posture.
+
+CAPTURE
+Front-facing head-and-shoulders portrait.
+Neutral head position and neutral relaxed expression.
+Looking directly at the camera.
+Keep the main facial contours clearly visible.
+Eye-level camera with an 85mm portrait-lens perspective and no wide-angle distortion.
+Soft symmetrical neutral studio lighting on a neutral light-grey background.
+Realistic natural skin texture. No beauty filter. No stylized facial proportions.
+
+PRIORITY
+Facial geometry and feature proportions are the highest priority.
+Maintain realistic human anatomy.
+Keep all facial features mutually proportional and naturally integrated.
+Do not exaggerate individual features unless explicitly specified.

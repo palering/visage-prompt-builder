@@ -24,3 +24,11 @@ This repository is public. Treat every committed file as internet-visible.
 The public repository should contain the schema, compiler logic, documentation, test fixtures, and synthetic examples.
 
 Reference-derived Face DNA can be useful during development, but should remain local/private by default. A reference-derived profile may be published only when its source and intended use are explicitly cleared for public release.
+
+## Rebuild-output policy
+
+`presets/rebuild_targets.json` is public configuration. Inputs listed there must be safe for public use.
+
+Generated files under `output/` are also public and may reveal the semantic face description produced from their inputs. Do not add a private/reference-derived profile to rebuild targets merely because the original image itself is excluded.
+
+Before committing rebuilt output, review the Git diff for unexpected names, local paths, source metadata, or other private content.
