@@ -1,0 +1,14 @@
+{
+  "version": "body-v0.1",
+  "state": "selected",
+  "controls": {
+    "shoulder_span": 60,
+    "ribcage_breadth": 50,
+    "pelvic_span": 55,
+    "leg_length": 70,
+    "deltoid_volume": 45,
+    "lat_breadth": 45,
+    "waist_taper": 60,
+    "hip_fullness": 50
+  }
+}

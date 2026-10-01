@@ -1,11 +1,11 @@
 import readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 
-export async function confirmAction(message, { yes = false } = {}) {
+export async function confirmAction(message, { yes = false, flag = '--yes' } = {}) {
   if (yes) return true;
 
   if (!input.isTTY || !output.isTTY) {
-    throw new Error('Interactive confirmation is required. Re-run with --yes to confirm non-interactively.');
+    throw new Error(`Interactive confirmation is required. Re-run with ${flag} to confirm non-interactively.`);
   }
 
   const rl = readline.createInterface({ input, output });

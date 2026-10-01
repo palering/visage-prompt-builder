@@ -1,0 +1,13 @@
+{
+  "schema_version": "face-v0.2",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "person"
+  },
+  "face_geometry": {},
+  "soft_tissue": {},
+  "eyes": {},
+  "eyebrows": {},
+  "nose": {},
+  "mouth": {}
+}

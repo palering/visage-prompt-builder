@@ -1,0 +1,40 @@
+{
+  "version": "variants-v0.1",
+  "operation": "edit",
+  "seed": "synthetic-branch-04",
+  "parent_revision_id": "476395745217a71b87fd21d3cae9d3957d45038c5cd58eb8cf1762f23374dc12",
+  "parent_profile_sha256": "6b2d18e202dea7f3542ea52a776f1957998ce4f5c87fb83a4407bdaea3fa5534",
+  "source_compiler_options": {
+    "preset": "profile",
+    "enhancers": true
+  },
+  "regions": [],
+  "rerolled_paths": [],
+  "manual_edits": [
+    {
+      "path": "eyes.eye_size",
+      "value": 48
+    }
+  ],
+  "resolved_ranges": {},
+  "diff": [
+    {
+      "path": "eyes.eye_size",
+      "before_present": true,
+      "before": 52.11,
+      "after_present": true,
+      "after": 48
+    }
+  ],
+  "prompt_changed": true,
+  "compiler_options": {
+    "preset": "profile",
+    "enhancers": true
+  },
+  "compiler_sha256": "9f0a013f21b26e7c44fec13e056f21e86ec4cfd842f659fae46fa79049674c82",
+  "algorithm_sha256": "313d9b6d58aff802c8e9992b0f304121e1183f6d6f36c792f580549c175b57a4",
+  "profile_sha256": "a24c657e469838a01cc6c998b9ffb16baa6f902a1a17e23a2894570f9b6f6ed6",
+  "prompt_sha256": "57739cee64bd9e1af7c48a2f30faa48c620d7f73e9d74a64b6932042cb76215f",
+  "limitations": "Parameters and prompts only; no image generation or identity guarantee. Authored range/group bounds are not validated anatomy. Different seeds can produce identical parameters or prompt text.",
+  "revision_id": "c63959c2ace44fc4a7cbeecc1efa8fdd590b83fc3afd5b51ad0637a52cd9981d"
+}

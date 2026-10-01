@@ -1,0 +1,1959 @@
+{
+  "version": "hair-references-v0.7",
+  "scope": "Source metadata only; no reference image bytes. Names identify evidence, not generation identities.",
+  "entries": [
+    {
+      "id": "anime_madoka1",
+      "label": "短翼式高双束",
+      "character": "鹿目圆",
+      "work_or_era": "魔法少女小圆",
+      "structural_family": "twin_tails",
+      "baseline_match": "twin_tails",
+      "geometry": "耳上两侧扎点；短束呈外张三角/翼状；碎片状额前刘海，颊侧短发。",
+      "structural_difference": "同双马尾基底，但长度短、发束宽扁、末端尖角；不能仅换成粉色。",
+      "novelty_note": "同双马尾基底，但长度短、发束宽扁、末端尖角；不能仅换成粉色。",
+      "controls": {
+        "tail_count": 2,
+        "tail_height": "high_lateral",
+        "tail_length": "short",
+        "tail_shape": "splayed_wedges",
+        "fringe": "broken_pointed",
+        "accessory": "optional_small_bows"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "官方设定图有前侧背；扎根与发饰有局部遮挡。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见侧面头像",
+        "back": "已见背面全身"
+      },
+      "sources": [
+        {
+          "title": "魔法少女小圆 官方角色页",
+          "url": "https://www.madoka-magica.com/tv/archives/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.madoka-magica.com/tv/archives/character/img/chara1_img.png",
+          "caption": "鹿目圆｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "鹿目圆"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_madoka2",
+      "label": "窄分束刘海长直披发",
+      "character": "晓美焰",
+      "work_or_era": "魔法少女小圆",
+      "structural_family": "loose_long",
+      "baseline_match": "long_straight",
+      "geometry": "长直披发，狭长尖分束刘海，贴头顶部与顺垂侧发；发箍单独一层。",
+      "structural_difference": "补充已有长直发的薄刘海/发箍遮挡参考，不应新增同义基础型。",
+      "novelty_note": "补充已有长直发的薄刘海/发箍遮挡参考，不应新增同义基础型。",
+      "controls": {
+        "fringe": "narrow_pointed_strands",
+        "part": "weak_center",
+        "side_locks": "long_straight",
+        "accessory": "separate_headband"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "已见背面全身"
+      },
+      "sources": [
+        {
+          "title": "魔法少女小圆 官方角色页",
+          "url": "https://www.madoka-magica.com/tv/archives/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.madoka-magica.com/tv/archives/character/img/chara2_img.png",
+          "caption": "晓美焰｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "晓美焰"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_madoka3",
+      "label": "低位双螺旋钻卷",
+      "character": "巴麻美",
+      "work_or_era": "魔法少女小圆",
+      "structural_family": "twin_drills",
+      "baseline_match": "twin_tails / defined_long_curls",
+      "geometry": "两侧耳后低位聚束后各形成连续螺旋；圈距清楚、下端渐细；侧分卷弧刘海。",
+      "structural_difference": "卷曲要沿单一螺旋轴连续，不是双马尾加随机卷纹。",
+      "novelty_note": "卷曲要沿单一螺旋轴连续，不是双马尾加随机卷纹。",
+      "controls": {
+        "tail_count": 2,
+        "root_height": "ear_level",
+        "coil_axis": "vertical",
+        "coil_pitch": "medium",
+        "coil_taper": "strong",
+        "fringe": "side_swept"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "前侧背支持双轴钻卷；不将帽子、花饰当作发型本体。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见侧面头像",
+        "back": "已见背面全身"
+      },
+      "sources": [
+        {
+          "title": "魔法少女小圆 官方角色页",
+          "url": "https://www.madoka-magica.com/tv/archives/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.madoka-magica.com/tv/archives/character/img/chara3_img.png",
+          "caption": "巴麻美｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "巴麻美"
+      ],
+      "integration_status": "candidate_new_topology",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_madoka4",
+      "label": "单侧耳露碎尾短鲍伯",
+      "character": "美树沙耶香",
+      "work_or_era": "魔法少女小圆",
+      "structural_family": "bob",
+      "baseline_match": "blunt_bob / asymmetric_bob",
+      "geometry": "短鲍伯、碎片刘海；一侧耳旁头发被夹开，另一侧覆盖颊边；后颈末端轻碎。",
+      "structural_difference": "重点是左右耳露差异与发夹造成的分束，不是蓝色。",
+      "novelty_note": "重点是左右耳露差异与发夹造成的分束，不是蓝色。",
+      "controls": {
+        "ear_exposure": "one_side",
+        "fringe": "diagonal_broken",
+        "perimeter": "lightly_choppy",
+        "accessory": "separate_clips"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面及四分之三面",
+        "side": "未核实",
+        "back": "已见背面全身"
+      },
+      "sources": [
+        {
+          "title": "魔法少女小圆 官方角色页",
+          "url": "https://www.madoka-magica.com/tv/archives/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.madoka-magica.com/tv/archives/character/img/chara4_img.png",
+          "caption": "美树沙耶香｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "美树沙耶香"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_madoka6",
+      "label": "高马尾加双弧顶翘",
+      "character": "佐仓杏子",
+      "work_or_era": "魔法少女小圆",
+      "structural_family": "ponytail_antenna",
+      "baseline_match": "high_ponytail",
+      "geometry": "高位长马尾；头顶两条向外回弯的翘束；额前长短尖束，脸旁留长侧发。",
+      "structural_difference": "给高马尾增加独立顶翘的数量、方向、曲率控制，顶翘不应等同马尾。",
+      "novelty_note": "给高马尾增加独立顶翘的数量、方向、曲率控制，顶翘不应等同马尾。",
+      "controls": {
+        "pony_root": "high",
+        "antenna_count": 2,
+        "antenna_shape": "outward_arcs",
+        "side_locks": "long",
+        "tail_length": "long"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "四分之三侧视；非正侧",
+        "back": "局部背向姿势；非完整后视"
+      },
+      "sources": [
+        {
+          "title": "魔法少女小圆 官方角色页",
+          "url": "https://www.madoka-magica.com/tv/archives/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.madoka-magica.com/tv/archives/character/img/chara6_img.png",
+          "caption": "佐仓杏子｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "佐仓杏子"
+      ],
+      "integration_status": "candidate_modifier",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor0",
+      "label": "圆团髻连接超长双尾",
+      "character": "月野兔",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "bun_tail_hybrid",
+      "baseline_match": "double_buns / twin_tails",
+      "geometry": "头顶左右圆球髻，两条超长细尾由髻附近下垂；中分心形/双弧额发。",
+      "structural_difference": "核心是每侧髻与尾共存的连接拓扑，不能在双丸子和双马尾之间二选一。",
+      "novelty_note": "核心是每侧髻与尾共存的连接拓扑，不能在双丸子和双马尾之间二选一。",
+      "controls": {
+        "bun_count": 2,
+        "bun_shape": "round",
+        "tail_count": 2,
+        "tail_length": "extreme",
+        "fringe": "paired_curved",
+        "accessory": "separate_bun_ornaments"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail0.png",
+          "caption": "月野兔｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "月野兔"
+      ],
+      "integration_status": "candidate_new_topology",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor1",
+      "label": "尖耳髻连接短蓬双尾",
+      "character": "小小兔",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "bun_tail_hybrid",
+      "baseline_match": "double_buns / twin_tails",
+      "geometry": "左右髻向上收尖如长耳，旁接短而宽的弧形卷尾；额前成组卷弧。",
+      "structural_difference": "圆团髻长尾的同族变体：髻轮廓、尾长、尾膨胀度分离。",
+      "novelty_note": "圆团髻长尾的同族变体：髻轮廓、尾长、尾膨胀度分离。",
+      "controls": {
+        "bun_count": 2,
+        "bun_shape": "pointed_ovoid",
+        "tail_count": 2,
+        "tail_length": "short",
+        "tail_width": "wide",
+        "fringe": "curved_scallops"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail1.png",
+          "caption": "小小兔｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "小小兔"
+      ],
+      "integration_status": "candidate_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30",
+      "integration_note": "双髻接尾家族的尖耳髻/短蓬尾变体证据；不作为 double_bun_tails 圆髻长直尾配方的精确依据。"
+    },
+    {
+      "id": "anime_sailor4",
+      "label": "长直姬式额帘与细侧束",
+      "character": "火野丽",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "hime_related",
+      "baseline_match": "hime_geometry / long_straight",
+      "geometry": "超长直披发；额前浓密碎齐刘海；脸旁细长束与大后发幕分离。",
+      "structural_difference": "可作为姬式刘海与长侧束参考，但本图不支持严格颊长齐切鬓角；不要误称标准姬发。",
+      "novelty_note": "可作为姬式刘海与长侧束参考，但本图不支持严格颊长齐切鬓角；不要误称标准姬发。",
+      "controls": {
+        "fringe": "dense_broken_blunt",
+        "side_locks": "long_tapered",
+        "back_length": "very_long"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "正面图未显示明确颊线齐切侧发；后脑和真实发长末端随动态偏移。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail4.png",
+          "caption": "火野丽｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "火野丽"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor8",
+      "label": "肩长水波弧层",
+      "character": "海王满",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "wavy_lob",
+      "baseline_match": "long_bob / beach_waves",
+      "geometry": "肩长发幕，连续较大S形弧，侧分额发，外轮廓数个圆润波峰。",
+      "structural_difference": "既有波浪/长鲍伯的动画块面变体，新增轮廓波数控制而非新基础型。",
+      "novelty_note": "既有波浪/长鲍伯的动画块面变体，新增轮廓波数控制而非新基础型。",
+      "controls": {
+        "length": "shoulder",
+        "wave_scale": "large",
+        "wave_count": "few",
+        "part": "side"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail8.png",
+          "caption": "海王满｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "海王满"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor9",
+      "label": "顶端小髻加长直后幕",
+      "character": "冥王雪奈",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "half_up_bun",
+      "baseline_match": "half_up / high_bun",
+      "geometry": "顶端小圆髻，下方保留长直披发；额前短层刘海，双侧细束。",
+      "structural_difference": "半束发的髻式锚点；髻与大后发幕可同时存在。",
+      "novelty_note": "半束发的髻式锚点；髻与大后发幕可同时存在。",
+      "controls": {
+        "arrangement": "half_up_bun",
+        "bun_count": 1,
+        "back": "long_straight_loose",
+        "fringe": "short_segmented"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail9.png",
+          "caption": "冥王雪奈｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "冥王雪奈"
+      ],
+      "integration_status": "candidate_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor10",
+      "label": "平额帘内扣短鲍伯",
+      "character": "土萌萤",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "bob",
+      "baseline_match": "blunt_bob",
+      "geometry": "短至下颌附近的紧凑鲍伯，额帘较平；侧面下缘圆弧，动态末梢轻外飘。",
+      "structural_difference": "已有齐切鲍伯的端部方向与额帘变体，不单列新型。",
+      "novelty_note": "已有齐切鲍伯的端部方向与额帘变体，不单列新型。",
+      "controls": {
+        "fringe": "straight_blunt",
+        "length": "jaw",
+        "perimeter": "rounded",
+        "tip_direction": "mostly_inward"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail10.png",
+          "caption": "土萌萤｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "土萌萤"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor15",
+      "label": "极长密波与顶端双卷髻",
+      "character": "妮赫蕾妮亚",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "bun_cascade_hybrid",
+      "baseline_match": "double_buns / defined_long_curls",
+      "geometry": "顶部左右小卷髻；大体积长波发幕向两侧展开至近地面，多条规则波浪并行。",
+      "structural_difference": "把极端发长、波节奏、上部双髻与后幕分开；不是给长发加黑色。",
+      "novelty_note": "把极端发长、波节奏、上部双髻与后幕分开；不是给长发加黑色。",
+      "controls": {
+        "top": "paired_small_coils",
+        "back_length": "floor_length",
+        "wave_amplitude": "large",
+        "wave_repetition": "regular",
+        "volume": "extreme_lateral"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "冠饰与顶部发卷局部重叠；后视及支撑结构未知。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail15.png",
+          "caption": "妮赫蕾妮亚｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "妮赫蕾妮亚"
+      ],
+      "integration_status": "candidate_new_topology",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor17",
+      "label": "侧环髻加双长绳尾",
+      "character": "赛蕾赛蕾",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "loop_tail_hybrid",
+      "baseline_match": "double_buns / twin_tails",
+      "geometry": "两侧闭合大环，顶部独立小盘髻；两条细长包束尾下垂，末端留蓬松小发簇。",
+      "structural_difference": "闭环空洞是结构重点：loop孔洞、顶部髻、下垂尾分层建模；花瓣饰物不是头发。",
+      "novelty_note": "闭环空洞是结构重点：loop孔洞、顶部髻、下垂尾分层建模；花瓣饰物不是头发。",
+      "controls": {
+        "side_loop_count": 2,
+        "side_loop_hole": "open_visible",
+        "top_bun": 1,
+        "tail_count": 2,
+        "tail_shape": "wrapped_cord",
+        "tip": "loose_tuft",
+        "accessory": "flowers_and_wraps"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "侧环视觉清楚；环的编制、连接点和包束材料并无后视证明。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail17.png",
+          "caption": "赛蕾赛蕾｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "赛蕾赛蕾"
+      ],
+      "integration_status": "candidate_new_topology",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor18",
+      "label": "顶髻与放射垂珠复合式",
+      "character": "帕拉帕拉",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "accessory_driven_bun",
+      "baseline_match": "high_bun",
+      "geometry": "圆顶髻和短额前卷；两侧数条斜向垂挂的包束/珠饰杆，末端球饰。",
+      "structural_difference": "这是髻+装饰的复合造型，不把白球和包裹杆直接算作自然毛发。",
+      "novelty_note": "这是髻+装饰的复合造型，不把白球和包裹杆直接算作自然毛发。",
+      "controls": {
+        "top_bun": 1,
+        "fringe": "small_curls",
+        "accessory": "radial_wrapped_drops_with_balls"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "medium",
+      "uncertainty": "图可证明外轮廓，不能判断垂挂杆内是否头发；列为装饰驱动，不进入纯发型数量。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail18.png",
+          "caption": "帕拉帕拉｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "帕拉帕拉"
+      ],
+      "integration_status": "accessory_composite_only",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor19",
+      "label": "三向长束球端放射式",
+      "character": "君君",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "radial_wrapped_extensions",
+      "baseline_match": "high_ponytail",
+      "geometry": "头顶一束向上、左右两束斜向下的长包束；三端均为圆形发簇/球状体；头皮部分有环带。",
+      "structural_difference": "三向分支/节点拓扑超出普通马尾。包束和末端材料需独立，不假定自然头发无支撑。",
+      "novelty_note": "三向分支/节点拓扑超出普通马尾。包束和末端材料需独立，不假定自然头发无支撑。",
+      "controls": {
+        "branch_count": 3,
+        "branch_directions": [
+          "up",
+          "left_down",
+          "right_down"
+        ],
+        "shaft": "wrapped",
+        "ends": "rounded_tufts",
+        "support": "unspecified_fantasy"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "medium",
+      "uncertainty": "无法由正面图证明杆芯、假发或饰物比例；只收录幻想复合外轮廓。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail19.png",
+          "caption": "君君｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "君君"
+      ],
+      "integration_status": "fantasy_composite_candidate",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_sailor20",
+      "label": "高叠环髻与偏侧长尾",
+      "character": "贝斯贝斯",
+      "work_or_era": "美少女战士 Eternal",
+      "structural_family": "stacked_bun_side_tail",
+      "baseline_match": "high_bun / high_ponytail",
+      "geometry": "头顶高叠圆环体；单条长尾向一侧弧垂，末端圆发簇，髻上金色箍环明显。",
+      "structural_difference": "单侧不对称、分节冠状髻与尾巴的连接；装饰箍环和头发本体独立。",
+      "novelty_note": "单侧不对称、分节冠状髻与尾巴的连接；装饰箍环和头发本体独立。",
+      "controls": {
+        "bun": "stacked_segmented",
+        "tail_count": 1,
+        "tail_direction": "side_arc",
+        "accessory": "gold_bands"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "medium",
+      "uncertainty": "黑色尾杆是否包束或道具材质未证实；不要臆造背面固定结构。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "美少女战士 Eternal 官方角色页",
+          "url": "https://sailormoon-movie.jp/sp/character.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://sailormoon-movie.jp/sp/assets/img/character/detail20.png",
+          "caption": "贝斯贝斯｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "贝斯贝斯"
+      ],
+      "integration_status": "fantasy_composite_candidate",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_rezero4c",
+      "label": "遮单眼偏斜鲍伯",
+      "character": "雷姆",
+      "work_or_era": "Re:从零开始的异世界生活",
+      "structural_family": "occluding_bob",
+      "baseline_match": "asymmetric_bob",
+      "geometry": "短鲍伯大面积斜刘海覆盖一只眼；另一侧露出部分额面，侧边花饰与交叉夹独立。",
+      "structural_difference": "遮眼覆盖率、刘海走向和左右镜像独立控制；拉姆可同族镜像，发色不新增型。",
+      "novelty_note": "遮眼覆盖率、刘海走向和左右镜像独立控制；拉姆可同族镜像，发色不新增型。",
+      "controls": {
+        "fringe": "one_eye_occluding",
+        "occluded_eye": "one",
+        "part": "off_center",
+        "perimeter": "short_bob",
+        "accessory": "separate_flower_clips"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "本次图眼睛闭合，不用它判断瞳或脸；遮眼几何可见，后视未见。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "Re:从零开始的异世界生活 官方角色页",
+          "url": "https://re-zero-anime.jp/tv/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://re-zero-anime.jp/tv/assets/character/c/4c.webp",
+          "caption": "雷姆｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "雷姆"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_rezero6a",
+      "label": "高根粗锥双钻卷",
+      "character": "碧翠丝",
+      "work_or_era": "Re:从零开始的异世界生活",
+      "structural_family": "twin_drills",
+      "baseline_match": "twin_tails / defined_long_curls",
+      "geometry": "两侧高位起根，粗大锥形螺旋逐圈收尖；顶部弧卷额发，大蝴蝶结位于根部。",
+      "structural_difference": "与麻美同属双钻卷：根高更高、卷径更大、轮廓更锥，不应重复建立全新卷算法。",
+      "novelty_note": "与麻美同属双钻卷：根高更高、卷径更大、轮廓更锥，不应重复建立全新卷算法。",
+      "controls": {
+        "root_height": "high",
+        "coil_axis": "outward_then_down",
+        "coil_radius": "large",
+        "coil_taper": "strong",
+        "tail_count": 2,
+        "accessory": "root_bows"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "Re:从零开始的异世界生活 官方角色页",
+          "url": "https://re-zero-anime.jp/tv/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://re-zero-anime.jp/tv/assets/character/c/6a.webp",
+          "caption": "碧翠丝｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "碧翠丝"
+      ],
+      "integration_status": "candidate_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_rezero22b",
+      "label": "齐额帘短双麻花辫",
+      "character": "梅丽",
+      "work_or_era": "Re:从零开始的异世界生活",
+      "structural_family": "twin_braids",
+      "baseline_match": "twin_braids",
+      "geometry": "耳侧两根粗辫垂到肩胸间；额前平齐碎刘海，顶部贴合。",
+      "structural_difference": "既有双辫增加短粗编段和头帘控制；不凭蓝色另算型。",
+      "novelty_note": "既有双辫增加短粗编段和头帘控制；不凭蓝色另算型。",
+      "controls": {
+        "braid_count": 2,
+        "braid_length": "shoulder_chest",
+        "braid_thickness": "thick",
+        "fringe": "short_blunt"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "Re:从零开始的异世界生活 官方角色页",
+          "url": "https://re-zero-anime.jp/tv/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://re-zero-anime.jp/tv/assets/character/c/22b.webp",
+          "caption": "梅丽｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "梅丽"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_rezero26",
+      "label": "侧高马尾与长弧天线",
+      "character": "密涅瓦",
+      "work_or_era": "Re:从零开始的异世界生活",
+      "structural_family": "side_ponytail_antenna",
+      "baseline_match": "high_ponytail",
+      "geometry": "单侧高位大马尾向外弧垂；顶端另有多条极细长弧翘束；额前偏侧覆盖。",
+      "structural_difference": "尾根偏移与天线弧线分别控制；不可把动态长弧当额前刘海。",
+      "novelty_note": "尾根偏移与天线弧线分别控制；不可把动态长弧当额前刘海。",
+      "controls": {
+        "tail_count": 1,
+        "tail_root": "high_side",
+        "antenna_count": "multiple",
+        "antenna_length": "long",
+        "antenna_shape": "arcing",
+        "tail_volume": "large"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "Re:从零开始的异世界生活 官方角色页",
+          "url": "https://re-zero-anime.jp/tv/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://re-zero-anime.jp/tv/assets/character/c/26.png",
+          "caption": "密涅瓦｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "密涅瓦"
+      ],
+      "integration_status": "candidate_modifier",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_mono1",
+      "label": "高侧束卷尾与单根顶翘",
+      "character": "阿良良木火怜",
+      "work_or_era": "物语系列：伪物语",
+      "structural_family": "ponytail_antenna",
+      "baseline_match": "high_ponytail",
+      "geometry": "偏侧高束马尾，尾段卷弯；头顶一根短翘束，长斜额发。",
+      "structural_difference": "与密涅瓦同族，短单天线/较小尾部，是同族有用形变而非新基础型。",
+      "novelty_note": "与密涅瓦同族，短单天线/较小尾部，是同族有用形变而非新基础型。",
+      "controls": {
+        "tail_root": "high_side",
+        "tail_tip": "curl",
+        "antenna_count": 1,
+        "antenna_length": "short"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "官方卡内表情/姿态有动态差别；后视未知。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见四分之三头像",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "物语系列：伪物语 官方角色页",
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/index.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/img/chara01.gif",
+          "caption": "阿良良木火怜｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "阿良良木火怜"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_mono2",
+      "label": "短圆鲍伯与长呆毛",
+      "character": "阿良良木月火",
+      "work_or_era": "物语系列：伪物语",
+      "structural_family": "bob_antenna",
+      "baseline_match": "blunt_bob",
+      "geometry": "圆润短鲍伯，斜额帘；头顶细长单条弧翘；单侧圆形发饰。",
+      "structural_difference": "用呆毛作为可组合修饰器，不能以发饰或颜色新增鲍伯。",
+      "novelty_note": "用呆毛作为可组合修饰器，不能以发饰或颜色新增鲍伯。",
+      "controls": {
+        "base": "rounded_bob",
+        "antenna_count": 1,
+        "antenna_shape": "long_curved",
+        "accessory": "separate_round_clip"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见四分之三头像",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "物语系列：伪物语 官方角色页",
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/index.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/img/chara02.gif",
+          "caption": "阿良良木月火｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "阿良良木月火"
+      ],
+      "integration_status": "candidate_modifier",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_mono4",
+      "label": "高根细长外扬双尾",
+      "character": "八九寺真宵",
+      "work_or_era": "物语系列：伪物语",
+      "structural_family": "twin_tails",
+      "baseline_match": "twin_tails",
+      "geometry": "耳上两侧小扎点，细长发尾朝外上方弧扬；额前较短碎齐刘海，脸侧小卷束。",
+      "structural_difference": "与圆的短宽翼尾形成长度/宽度/曲率对照；外扬是动态参考，静态重力版本需另测。",
+      "novelty_note": "与圆的短宽翼尾形成长度/宽度/曲率对照；外扬是动态参考，静态重力版本需另测。",
+      "controls": {
+        "tail_count": 2,
+        "tail_root": "high_lateral",
+        "tail_length": "long",
+        "tail_width": "slender",
+        "tail_curve": "outward_arc",
+        "fringe": "short_broken"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "大幅甩动姿势不可解释为固定无支撑的水平结构。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见侧面头像",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "物语系列：伪物语 官方角色页",
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/index.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/img/chara04.gif",
+          "caption": "八九寺真宵｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "八九寺真宵"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_mono12",
+      "label": "颊长鲍伯与长直鬓尾",
+      "character": "斧乃木余接",
+      "work_or_era": "物语系列：伪物语",
+      "structural_family": "disconnected_bob_side_locks",
+      "baseline_match": "jellyfish / hime_geometry",
+      "geometry": "主发块较短到颊颈，前侧留更长直鬓束；额前斜开，边缘尖束；帽子独立。",
+      "structural_difference": "不是标准水母头的整片后长层：参考图的长部在前侧，应使用side-lock长度而非一概jellyfish。",
+      "novelty_note": "不是标准水母头的整片后长层：参考图的长部在前侧，应使用side-lock长度而非一概jellyfish。",
+      "controls": {
+        "main_length": "chin_neck",
+        "side_locks": "long_straight",
+        "fringe": "off_center_split",
+        "accessory": "separate_hat"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "帽子遮住顶部；后部长层长度未核实。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见正侧头像",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "物语系列：伪物语 官方角色页",
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/index.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.monogatari-series.com/nisemonogatari/chara/img/chara12.gif",
+          "caption": "斧乃木余接｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "斧乃木余接"
+      ],
+      "integration_status": "candidate_modifier",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_kill1",
+      "label": "不对称外翘尖片短发",
+      "character": "缠流子",
+      "work_or_era": "斩服少女",
+      "structural_family": "angular_layered_bob",
+      "baseline_match": "shag / asymmetric_bob",
+      "geometry": "偏侧长尖刘海，耳颈边粗尖片外翻，后颈短碎层；一侧突出的横向发束。",
+      "structural_difference": "尖片轮廓、层次和左右不对称成立；红挑染仅色彩，不应承担结构识别。",
+      "novelty_note": "尖片轮廓、层次和左右不对称成立；红挑染仅色彩，不应承担结构识别。",
+      "controls": {
+        "fringe": "long_asymmetric_points",
+        "tips": "outward_wedges",
+        "symmetry": "asymmetric",
+        "length": "short_neck",
+        "color": "independent"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见正侧头像",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "斩服少女 官方角色页",
+          "url": "https://www.kill-la-kill.jp/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.kill-la-kill.jp/character/img/01/face.png",
+          "caption": "缠流子｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "缠流子"
+      ],
+      "integration_status": "candidate_modifier",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_satsukiface",
+      "label": "硬直额帘与齐切长鬓片",
+      "character": "鬼龙院皋月",
+      "work_or_era": "斩服少女",
+      "structural_family": "hime",
+      "baseline_match": "hime_geometry",
+      "geometry": "浓密接近平直的额帘，中段略下尖；左右直硬长鬓片在肩颈附近截断，背后长直发幕。",
+      "structural_difference": "真正应控制三段长度：额帘、侧发齐切线、后幕；可作为已有hime_geometry的清晰动画证据。",
+      "novelty_note": "真正应控制三段长度：额帘、侧发齐切线、后幕；可作为已有hime_geometry的清晰动画证据。",
+      "controls": {
+        "fringe": "dense_blunt_center_point",
+        "side_lock_cut": "straight_blunt",
+        "side_lock_length": "neck_shoulder",
+        "back": "long_straight"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "正侧面证明前侧分段；完整后视未知。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见正侧头像",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "斩服少女 官方角色页",
+          "url": "https://www.kill-la-kill.jp/character/02.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.kill-la-kill.jp/character/img/02/face.png",
+          "caption": "鬼龙院皋月｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        },
+        {
+          "url": "https://www.kill-la-kill.jp/character/img/02/body.png",
+          "caption": "鬼龙院皋月｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "鬼龙院皋月"
+      ],
+      "integration_status": "reference_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_nuibody",
+      "label": "巨型拱根带状双钻尾",
+      "character": "针目缝",
+      "work_or_era": "斩服少女",
+      "structural_family": "twin_drills",
+      "baseline_match": "twin_tails / defined_long_curls",
+      "geometry": "高根双尾先形成向外拱起的大体积弧，再转为扁带状宽螺旋；尾端渐细，脸侧留小卷。",
+      "structural_difference": "同双钻卷但新增拱根段、宽扁截面、超大圈径；与麻美低根/碧翠丝锥卷的差异可参数化。",
+      "novelty_note": "同双钻卷但新增拱根段、宽扁截面、超大圈径；与麻美低根/碧翠丝锥卷的差异可参数化。",
+      "controls": {
+        "tail_count": 2,
+        "root_curve": "large_outward_arch",
+        "cross_section": "flattened_ribbon",
+        "coil_radius": "extreme",
+        "coil_pitch": "large",
+        "tip_taper": "strong",
+        "accessory": "separate_giant_bow"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "无背面；夸张体积不承诺自然真发物理可实现，可用假发/发片模式。",
+      "angles": {
+        "front": "已见正面全身",
+        "side": "已见四分之三头像；非正侧",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "斩服少女 官方角色页",
+          "url": "https://www.kill-la-kill.jp/character/13.html",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.kill-la-kill.jp/character/img/20/body.png",
+          "caption": "针目缝｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        },
+        {
+          "url": "https://www.kill-la-kill.jp/character/img/20/face.png",
+          "caption": "针目缝｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "针目缝"
+      ],
+      "integration_status": "candidate_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_violettv",
+      "label": "双侧编辫汇入低后盘髻",
+      "character": "薇尔莉特·伊芙加登",
+      "work_or_era": "紫罗兰永恒花园",
+      "structural_family": "braided_low_updo",
+      "baseline_match": "twin_braids / sleek_low_bun",
+      "geometry": "左右头侧贴头辫向后汇拢，在后颈附近形成盘结/髻；额前碎刘海，前耳留两片直长侧发，红带另置。",
+      "structural_difference": "辫路和终点盘结的连接关系比普通低髻多一层；可作为编辫低髻复合型。",
+      "novelty_note": "辫路和终点盘结的连接关系比普通低髻多一层；可作为编辫低髻复合型。",
+      "controls": {
+        "braid_paths": "paired_side_to_nape",
+        "terminal": "low_back_coil",
+        "front_locks": "paired_straight",
+        "fringe": "broken",
+        "accessory": "separate_ribbon"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "图证实侧辫入低后盘结；左右是否两个独立髻、每圈编织走线仍不应臆测。",
+      "angles": {
+        "front": "已见正面",
+        "side": "已见后侧四分之三头像",
+        "back": "局部后侧可见；无完整正后视"
+      },
+      "sources": [
+        {
+          "title": "紫罗兰永恒花园 官方角色页",
+          "url": "https://tv.violet-evergarden.jp/character/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://tv.violet-evergarden.jp/img/character/violetImg.png",
+          "caption": "薇尔莉特·伊芙加登｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "薇尔莉特·伊芙加登"
+      ],
+      "integration_status": "candidate_new_topology",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_violet2",
+      "label": "中分低位双辫与薄鬓丝",
+      "character": "伊莎贝拉·约克",
+      "work_or_era": "紫罗兰永恒花园 外传",
+      "structural_family": "twin_braids",
+      "baseline_match": "twin_braids",
+      "geometry": "中分露额，侧发向耳后收，低位辫子落在胸肩侧；脸旁少量细散发。",
+      "structural_difference": "与梅丽同双辫的露额/起点/松紧变体；避免用角色脸和眼镜带动识别。",
+      "novelty_note": "与梅丽同双辫的露额/起点/松紧变体；避免用角色脸和眼镜带动识别。",
+      "controls": {
+        "part": "center",
+        "fringe": "none",
+        "braid_root": "low",
+        "flyaways": "fine_sparse",
+        "accessory": "none_required"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "medium",
+      "uncertainty": "暗色画面只清楚显示一侧辫及另一侧收束，不足证明背面编路；双辫完整拓扑待补图。",
+      "angles": {
+        "front": "已见近正面画面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "紫罗兰永恒花园 外传 官方角色页",
+          "url": "https://violet-evergarden.jp/sidestory/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://violet-evergarden.jp/img/sidestory/character02SS.png",
+          "caption": "伊莎贝拉·约克｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "伊莎贝拉·约克"
+      ],
+      "integration_status": "needs_additional_angle",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "anime_toga",
+      "label": "侧部双乱髻与平额帘",
+      "character": "渡我被身子",
+      "work_or_era": "我的英雄学院",
+      "structural_family": "messy_side_buns",
+      "baseline_match": "double_buns / messy_bun",
+      "geometry": "两侧偏高发团，外缘有多束松散卷尖；额前密实平帘，鬓边留细长束。",
+      "structural_difference": "双丸子基底的低规则度变体：髻位置、发团半径、外逸末梢数量分别控制，不能直接复制角色装具。",
+      "novelty_note": "双丸子基底的低规则度变体：髻位置、发团半径、外逸末梢数量分别控制，不能直接复制角色装具。",
+      "controls": {
+        "bun_count": 2,
+        "bun_position": "upper_sides",
+        "bun_surface": "messy",
+        "flyaway_count": "multiple",
+        "fringe": "dense_blunt",
+        "side_locks": "thin"
+      },
+      "evidence_tier": "official_image_visually_inspected",
+      "confidence": "high",
+      "uncertainty": "正面图髻核心与颈后被遮挡；颈侧大环是装备软管而非头发，必须排除。",
+      "angles": {
+        "front": "已见正面",
+        "side": "未核实",
+        "back": "未核实"
+      },
+      "sources": [
+        {
+          "title": "我的英雄学院 官方角色页",
+          "url": "https://www.ytv.co.jp/heroaca/character/toga/",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.ytv.co.jp/heroaca/character/toga/images/main_vjylc8sugpt3wuu3avavb52uef6pen.png",
+          "caption": "渡我被身子｜官方图私人研究缩图",
+          "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+          "inspected": true
+        }
+      ],
+      "aliases": [
+        "渡我被身子"
+      ],
+      "integration_status": "candidate_variant",
+      "identity_boundary": "角色名仅为检索指针。不要把角色脸、服装、年龄、体型、瞳色或叙事身份写入发型预设。发色另设参数。",
+      "checked_at": "2026-09-30"
+    },
+    {
+      "id": "nmc-wuman",
+      "label": "乌蛮髻（国博定名）",
+      "aliases": [],
+      "work_or_era": "唐",
+      "object_title": "三彩釉陶女俑",
+      "accession": "",
+      "geometry": "鬓部成宽厚包面轮廓，额前有向下回卷的集中发体",
+      "structural_family": "额前垂卷＋包面鬓",
+      "novelty_note": "不是顶部圆团髻：额前落点和两侧包面体积是识别重点",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified",
+      "uncertainty": "仅能确认可见外轮廓；实际盘结方式、支撑物和未示角度未知",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "三彩釉陶女俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252272.shtml",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/P020221111421761395509.jpg",
+          "caption": "三彩釉陶女俑｜唐｜藏品号未公开",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "待比对"
+      ],
+      "structural_difference": "不是顶部圆团髻：额前落点和两侧包面体积是识别重点",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "馆方归入考古发掘品；本轮单品正文未显示具体出土地点/墓葬日期"
+    },
+    {
+      "id": "nmc-yuan-panju",
+      "label": "中分扁圆盘髻",
+      "aliases": [],
+      "work_or_era": "元（馆方目录）",
+      "object_title": "彩绘盘髻女陶俑",
+      "accession": "",
+      "geometry": "中分；顶后扁圆盘结，横簪固定",
+      "structural_family": "扁盘髻",
+      "novelty_note": "低扁圆盘体与插簪方向需保留，不归成唐代高髻",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified",
+      "uncertainty": "单品页没有年代，元代据馆方考古目录84页交叉核实；图片低分辨率",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "彩绘盘髻女陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202104/t20210415_249722.shtml",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        },
+        {
+          "title": "国博考古发掘品目录84页",
+          "url": "https://m.chnmuseum.cn/zp/zpml/kgdjp/index_84.html",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202104/P020210415592390110889.jpg",
+          "caption": "彩绘盘髻女陶俑｜元（馆方目录）｜藏品号未公开",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "待比对"
+      ],
+      "structural_difference": "低扁圆盘体与插簪方向需保留，不归成唐代高髻",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "馆方归入考古发掘品；本轮单品正文未显示具体出土地点/墓葬日期"
+    },
+    {
+      "id": "nmc-double-loop",
+      "label": "双环髻（国博定名）",
+      "aliases": [],
+      "work_or_era": "初唐（馆方说明）",
+      "object_title": "彩绘双环髻女陶俑",
+      "accession": "",
+      "geometry": "中分发际；两组高竖且顶端回卷的发体，左右并列",
+      "structural_family": "双环竖髻",
+      "novelty_note": "双环高度及回卷部位不同于两个球形丸子",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified",
+      "uncertainty": "馆方定名双环髻，但不能进一步等同“双环望仙髻”；仅见前侧",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "彩绘双环髻女陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/csp/202209/t20220901_257159.shtml",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.chnmuseum.cn/zp/zpml/csp/202209/P020220901559660720597.jpg",
+          "caption": "彩绘双环髻女陶俑｜初唐（馆方说明）｜藏品号未公开",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "double_buns"
+      ],
+      "structural_difference": "双环高度及回卷部位不同于两个球形丸子",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "馆方归入传世品，不宣称考古出土"
+    },
+    {
+      "id": "nmc-double-high",
+      "label": "双股高髻（国博定名）",
+      "aliases": [],
+      "work_or_era": "唐",
+      "object_title": "男装女陶俑",
+      "accession": "",
+      "geometry": "两股上收，在前顶部形成并列横卷；未示后脑保持未知",
+      "structural_family": "双股高髻",
+      "novelty_note": "双股共享顶部体量，不等同左右分置双丸子",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified",
+      "uncertainty": "仅能确认可见外轮廓；实际盘结方式、支撑物和未示角度未知",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "男装女陶俑",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/t20211116_252274.shtml",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202111/P020220811342064712666.jpg",
+          "caption": "男装女陶俑｜唐｜藏品号未公开",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "high_bun"
+      ],
+      "structural_difference": "双股共享顶部体量，不等同左右分置双丸子",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "馆方归入考古发掘品；本轮单品正文未显示具体出土地点/墓葬日期"
+    },
+    {
+      "id": "aam-dancer",
+      "label": "高耸双大环（描述性名）",
+      "aliases": [],
+      "work_or_era": "唐，约618—700年",
+      "object_title": "Dancer",
+      "accession": "B60P305",
+      "geometry": "头顶两侧各一细长开孔环，中央保留尖起发体",
+      "structural_family": "双环竖髻",
+      "novelty_note": "空心环外轮廓特别清楚，可与国博实心回卷双环分开建模",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_geometry_only",
+      "uncertainty": "馆方称two large loops，未给传统汉语髻名；不能强认双环望仙或飞天",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "Dancer",
+          "url": "https://education.asianart.org/resources/dancer-approx-618-700/",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://education.asianart.org/wp-content/uploads/sites/6/2019/12/B60P305_Dance-1.jpg",
+          "caption": "Dancer｜唐，约618—700年｜B60P305",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "double_buns"
+      ],
+      "structural_difference": "空心环外轮廓特别清楚，可与国博实心回卷双环分开建模",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "The Avery Brundage Collection；年代为馆方约定范围，非明确纪年墓年代"
+    },
+    {
+      "id": "kyoto-GK260",
+      "label": "宽鬓偏顶回卷高髻（描述性名）",
+      "aliases": [],
+      "work_or_era": "唐，8世纪",
+      "object_title": "Tomb Figurine of a Lady Holding a Pekinese",
+      "accession": "GK260",
+      "geometry": "宽厚发体从两侧包拢；顶上单个大回卷偏向一侧，髻上有插饰槽",
+      "structural_family": "偏顶回卷高髻",
+      "novelty_note": "宽鬓基座＋偏心顶卷，区别普通圆髻",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "not_established",
+      "uncertainty": "馆方仅称高髻；未证实为抛家、堕马或倭堕髻；插槽说明曾有饰物，不是发缝",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "Tomb Figurine of a Lady Holding a Pekinese",
+          "url": "https://www.kyohaku.go.jp/eng/collection/meihin/touji/item02/",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.kyohaku.go.jp/jp/collection/assets/meihin/touji/item_02_01.jpg",
+          "caption": "Tomb Figurine of a Lady Holding a Pekinese｜唐，8世纪｜GK260",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "high_bun"
+      ],
+      "structural_difference": "宽鬓基座＋偏心顶卷，区别普通圆髻",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "本轮馆藏页面未提供可核查出土背景；不宣称为精确纪年墓出土"
+    },
+    {
+      "id": "palace-00110572",
+      "label": "偏顶高髻（745年侍女俑）",
+      "aliases": [],
+      "work_or_era": "唐天宝四年，745年",
+      "object_title": "陶彩绘女俑",
+      "accession": "新00110572",
+      "geometry": "宽顶基座上叠一偏斜椭圆发卷",
+      "structural_family": "偏顶回卷高髻",
+      "novelty_note": "有墓志年代及雷府君宋氏墓出土背景；是证据强化，不重复新增高髻结构",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "not_established",
+      "uncertainty": "关键词释义称“大概”是偏梳髻，且同段被复用在元俑页；不作为确定古名",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "陶彩绘女俑",
+          "url": "https://www.dpm.org.cn/collection/sculpture/233405.html",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://img.dpm.org.cn/Uploads/Picture/dc/3612%5B1024%5D.jpg",
+          "caption": "陶彩绘女俑｜唐天宝四年，745年｜新00110572",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "high_bun"
+      ],
+      "structural_difference": "有墓志年代及雷府君宋氏墓出土背景；是证据强化，不重复新增高髻结构",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "陕西西安东郊韩森寨雷府君宋氏墓出土，馆方依墓志定745年"
+    },
+    {
+      "id": "henan-song-high",
+      "label": "北宋袖手俑高髻",
+      "aliases": [],
+      "work_or_era": "北宋晚期，哲宗、徽宗时期",
+      "object_title": "彩绘袖手石女俑",
+      "accession": "未公开；1971年方城金汤寨范氏墓出土",
+      "geometry": "头顶部小回折髻；额上平直上收",
+      "structural_family": "高髻",
+      "novelty_note": "作为具体文物参考变体；不自动计算为独立基础发型",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified",
+      "uncertainty": "配图左侧人物；勿用右侧人物的背面补足本件",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "彩绘袖手石女俑",
+          "url": "https://www.chnmus.net/ch/collection/appraise/details.html?id=512158796610969072",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.chnmus.net/webfile/images/attachement/jpg/site2/20151207/24be050d2bed17cf773103.jpg",
+          "caption": "彩绘袖手石女俑｜北宋晚期，哲宗、徽宗时期｜未公开；1971年方城金汤寨范氏墓出土",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "high_bun"
+      ],
+      "structural_difference": "需在现有基础结构中作为证据变体去重",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "1971年河南方城金汤寨北宋范氏墓出土，馆方说明范通直墓，北宋晚期"
+    },
+    {
+      "id": "henan-song-double",
+      "label": "北宋抱印俑双鬟髻",
+      "aliases": [],
+      "work_or_era": "北宋晚期，哲宗、徽宗时期",
+      "object_title": "彩绘抱印石女俑",
+      "accession": "未公开；1971年方城金汤寨范氏墓出土",
+      "geometry": "两侧发体搭在耳旁；背面可见中央纵向隆起及两侧分瓣轮廓",
+      "structural_family": "耳旁双鬟髻",
+      "novelty_note": "已有前后实物照，后脑隆起和侧部双体可用于约束背面",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified",
+      "uncertainty": "正面图右侧；馆方称双鬟髻并提红带，后视可核查；不要据身份泛化所有双髻",
+      "angles": {
+        "front": "已见正面或前侧",
+        "side": "未见完整侧面",
+        "back": "已见"
+      },
+      "sources": [
+        {
+          "title": "彩绘抱印石女俑",
+          "url": "https://www.chnmus.net/ch/collection/appraise/details.html?id=512158796610969072",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://www.chnmus.net/webfile/images/attachement/jpg/site2/20151207/24be050d2bed17cf773103.jpg",
+          "caption": "彩绘抱印石女俑｜北宋晚期，哲宗、徽宗时期｜未公开；1971年方城金汤寨范氏墓出土",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        },
+        {
+          "url": "https://www.chnmus.net/images/attachement/jpg/site2/20151207/24be050d2bed17cf779804.jpg",
+          "caption": "彩绘抱印石女俑｜背面",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "double_buns"
+      ],
+      "structural_difference": "已有前后实物照，后脑隆起和侧部双体可用于约束背面",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "1971年河南方城金汤寨北宋范氏墓出土，馆方说明范通直墓，北宋晚期"
+    },
+    {
+      "id": "met-1979-108",
+      "label": "偏顶回卷髻（开放图前后参照）",
+      "aliases": [],
+      "work_or_era": "唐，8世纪",
+      "object_title": "Standing court lady",
+      "accession": "1979.108",
+      "geometry": "宽厚发体垂至耳下，顶部向一侧伸出椭圆回卷；后面主体收拢",
+      "structural_family": "偏顶回卷高髻",
+      "novelty_note": "与GK260/745年俑为同族视觉参考；主要新增公有领域前后证据",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "not_established",
+      "uncertainty": "馆方未定具体汉语髻名；背侧照已见，仍不足复原内部编结",
+      "angles": {
+        "front": "已见",
+        "side": "有后侧斜角，无严格侧面",
+        "back": "已见"
+      },
+      "sources": [
+        {
+          "title": "Standing court lady",
+          "url": "https://www.metmuseum.org/art/collection/search/44808",
+          "rights": "馆藏页明确标为Public Domain；Met开放获取，可不经许可商用或非商用"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/44808/1457353/main-image",
+          "caption": "Standing court lady｜唐，8世纪｜1979.108",
+          "rights": "馆藏页明确标为Public Domain；Met开放获取，可不经许可商用或非商用",
+          "inspected": true
+        },
+        {
+          "url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/44808/1457339/main-image",
+          "caption": "Standing court lady｜背面",
+          "rights": "馆藏页明确标为Public Domain；Met开放获取，可不经许可商用或非商用",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "high_bun"
+      ],
+      "structural_difference": "与GK260/745年俑为同族视觉参考；主要新增公有领域前后证据",
+      "hair_vs_accessory": "文物表现的发体；不从外观断定是否含假发",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_object",
+      "provenance_note": "Gift of Mr. and Mrs. Stanley Herzman, 1979；馆方归8世纪，非明确纪年墓年代"
+    },
+    {
+      "id": "ming-diji-curl",
+      "label": "金丝䯼髻：侧卷型发罩",
+      "aliases": [],
+      "work_or_era": "明",
+      "object_title": "明金丝发罩（86克侧卷型）",
+      "accession": "未公开；通高8.5厘米，底径8.2厘米",
+      "geometry": "圆环底座，前弧外突，侧面螺旋冠梁，背面三分区",
+      "structural_family": "发罩／外置支撑物",
+      "novelty_note": "配件层结构：应搭配基础发髻，而非新增一款真发发型",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified_accessory",
+      "uncertainty": "“时样扭心”是馆方推测；实物是金丝罩，不能当作裸发盘结轮廓",
+      "angles": {
+        "front": "未见严格正面",
+        "side": "已见两侧斜角／侧面",
+        "back": "已见，馆方标注"
+      },
+      "sources": [
+        {
+          "title": "明金丝发罩（86克侧卷型）",
+          "url": "https://www.wxmuseum.cn/News/Details/09469b9e-5a37-4501-8bbe-0cfdada8d3a2",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://files.wxmuseum.cn/WaterMark/%E6%96%87%E7%AB%A0%E5%AF%8C%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/EditorImage/20220805/6379529050195352345901609.jpg",
+          "caption": "明金丝发罩（86克）｜侧面｜无锡博物院",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        },
+        {
+          "url": "https://files.wxmuseum.cn/WaterMark/%E6%96%87%E7%AB%A0%E5%AF%8C%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/EditorImage/20220805/6379529052967226972165337.jpg",
+          "caption": "明金丝发罩（86克侧卷型）｜背面",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "头饰配件层，勿合并qing_satin_headpiece"
+      ],
+      "structural_difference": "配件层结构：应搭配基础发髻，而非新增一款真发发型",
+      "hair_vs_accessory": "金丝发罩：粗金丝骨架＋细金丝网罩，不是真发",
+      "status": "accessory_reference",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_accessory",
+      "provenance_note": "本轮馆藏页面未提供可核查出土背景；不宣称为精确纪年墓出土"
+    },
+    {
+      "id": "ming-diji-horn",
+      "label": "金丝䯼髻：后收牛角型发罩",
+      "aliases": [],
+      "work_or_era": "明",
+      "object_title": "明金丝发罩（河埒出土，64克）",
+      "accession": "未公开；1975年无锡河埒出土",
+      "geometry": "顶部后收，略弧似牛角；两侧竖向钱纹条；底缘插饰孔",
+      "structural_family": "发罩／外置支撑物",
+      "novelty_note": "后收尖顶罩形与侧卷型不同；仍应归配件层",
+      "evidence_tier": "A｜馆方实物记录＋已检视原图",
+      "named_match": "museum_identified_accessory",
+      "uncertainty": "这是64克河埒出土器，与86克侧卷型不同；仅见侧面",
+      "angles": {
+        "front": "未知",
+        "side": "已见",
+        "back": "未知"
+      },
+      "sources": [
+        {
+          "title": "明金丝发罩（河埒出土，64克）",
+          "url": "https://www.wxmuseum.cn/News/Details/69cc465f-b0f6-4290-9c36-01b3f22ac8de",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权"
+        }
+      ],
+      "images": [
+        {
+          "url": "https://files.wxmuseum.cn/WaterMark/%E6%96%87%E7%AB%A0%E5%AF%8C%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6/EditorImage/20260612/6391687166995762306387509.png",
+          "caption": "明金丝发罩（64克）｜侧面｜无锡博物院",
+          "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+          "inspected": true
+        }
+      ],
+      "baseline_match": [
+        "头饰配件层，勿合并qing_satin_headpiece"
+      ],
+      "structural_difference": "后收尖顶罩形与侧卷型不同；仍应归配件层",
+      "hair_vs_accessory": "金丝发罩，不是真发",
+      "status": "accessory_reference",
+      "checked_at": "2026-09-30",
+      "reference_category": "museum_accessory",
+      "provenance_note": "1975年无锡市河埒公社出土；馆方2026年展品说明"
+    }
+  ]
+}

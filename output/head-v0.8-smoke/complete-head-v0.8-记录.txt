@@ -1,0 +1,46 @@
+完整头部 v0.8：单次视觉冒烟检查
+无图片备份说明：本记录保留历史文字，下面提到的原生 PNG 不随此分支发布；完整原版另行保留。
+日期：2026-09-30
+生成次数：1；未重抽、未挑图、未人工改写 prompt。
+输入：examples/head-v0.8/complete-head/prompt.txt 的原样内容（包含末尾换行）。
+参数采样 seed：v08-complete-head-20260930
+样式编辑 seed：v08-complete-head-styling
+重要：这两个 seed 属于本地参数/编辑记录，不是图像生成随机种子。工具未提供图像 seed 参数，无法保证重现图像或身份。
+实际生成工具：内置 image_gen；具体生成模型名称未由工具返回，未知。配置中的 gpt-image-2.5-v0.3 是编译器版本标签，不能作为实际生成模型证据。
+源 prompt SHA-256：27a071fd4bfc1809814d925545fcb0116a1076aacca30befa31cf18ef2a7265a
+原生 PNG：complete-head-v0.8-native.png；1024 × 1536；未经裁剪、缩放、美化或重编码。
+PNG SHA-256：474b66de79d9ee5112d7a72678eb9b6927d9156365ca4c0b7075bd9f9b1cef67
+
+本次可见结果
+- 眉鼻协调：双眉有自然毛流和柔和弧线；鼻梁、圆鼻尖、鼻翼在正面照中连贯，无明显拼接或结构异常。单张正面图不能验证鼻投影等数值。
+- 发型：黑色中分、露额、耳侧后收符合方向；低马尾在画面右侧颈后可见。但发结与完整尾端被遮挡，只能判定马尾部分可见，不能判定完整发型已展示。
+- 取景：完整头顶、双侧轮廓和上半身入镜，头顶与头发侧边留白充分；整头无裁切。完整头部入镜不等于背侧发型全部可见。
+- 妆容表情：自然底妆、带光泽的柔和唇色、闭口浅笑和镇定神态可见。妆感与美化程度是视觉判断；不能从图像证明“无滤镜”。
+- 脸型：较柔和椭圆/下颌收窄的观感强于 prompt 所要求的圆角矩形、颊到下颌近乎平行；这是本次可见偏差。
+
+解释边界
+该样本沿用 beautiful + elegant 的整体印象、minimal makeup 与表情，enhancers=true；不是隔离眉鼻的受控对照。参数区间是艺术创作规则，不是经验证的人体测量范围。实际图像没有前版同条件对照，不能由单图认定 v0.8 提升了美感、稳定性或人物一致性。成年约25岁与东亚外观是创作目标，不是从图片断定现实身份、年龄或族裔。
+
+完整实际提交 prompt（原样）：
+Create a realistic portrait of one adult, approximately 25 years old, fictional woman with East Asian appearance.
+
+Rounded rectangular face shape; slightly long facial length; slightly wide facial width; moderate cheekbone width; moderately wide jaw width; slightly angular and defined jaw angles; slightly narrow chin width; nearly parallel lateral contours from the cheeks to the jaw.
+
+Moderate upper-medial cheek volume; moderate lateral cheek volume.
+
+Slightly large eye size; slightly long horizontal eye length.
+
+Slightly thick brows; slightly low-set brow placement; gently curved brow shape; moderate brow length; slightly dense brow hair.
+
+Moderately high nasal bridge height; moderate nasal bridge width; moderate nose length; moderate nose projection; slightly large nasal tip; gently rounded nasal tip shape; neutral nasal tip rotation; moderate alar width; moderate nostril visibility.
+
+Moderately thin upper lip; medium-full lower lip.
+
+Overall impression: editorial beauty styling with natural skin texture, poised and composed fictional character. Minimal makeup: light natural finish base, soft satin lip styling. calm poised subtle closed mouth smile expression; slightly open eyes; moderately relaxed mouth posture.
+
+Hair styling: length: medium-to-long gathered hair; fringe: none; part: center part; texture: smooth; volume: low; arrangement: single low ponytail; front: forehead exposed; sides: sides behind ears; back: tail starts at nape; color: black; accessories: none.
+
+Capture: front view; eye level camera height; 85mm lens perspective; head and upper torso portrait, entire head and complete hairstyle visible with generous space above and beside hair, no cropping camera distance; soft balanced studio lighting; plain neutral background; no image softening; no beauty filter.
+
+Prioritize facial structure and feature proportions; keep the anatomy realistic and naturally integrated.
+

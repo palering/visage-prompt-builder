@@ -15,6 +15,10 @@ Usage:
 
 Options:
   --preset <name>   calibration | profile | none (default: calibration)
+  --enhancers      Include optional profile styling (requires profile or none preset)
+  --appearance <file> Optional appearance-v0.1 module JSON (requires profile or none for selections)
+  --body <file>     Optional body-v0.1 JSON (adult profiles only)
+  --capture <name>  head | full_body (otherwise preserve legacy capture)
   --out <file>      Write the prompt to a file instead of stdout
   --force           Overwrite an existing --out file without confirmation
   -h, --help        Show this help
@@ -32,6 +36,7 @@ function parseArgs(argv) {
     preset: 'calibration',
     out: null,
     force: false,
+    enhancers: false,
     help: false
   };
 
@@ -43,12 +48,17 @@ function parseArgs(argv) {
       continue;
     }
 
+    if (arg === '--enhancers') {
+      result.enhancers = true;
+      continue;
+    }
+
     if (arg === '--force') {
       result.force = true;
       continue;
     }
 
-    if (arg === '--preset' || arg === '--out') {
+    if (arg === '--preset' || arg === '--out' || arg === '--appearance' || arg === '--body' || arg === '--capture') {
       const value = argv[i + 1];
       if (!value || value.startsWith('--')) {
         throw new Error(`${arg} requires a value.`);
@@ -56,6 +66,9 @@ function parseArgs(argv) {
       i += 1;
       if (arg === '--preset') result.preset = value;
       if (arg === '--out') result.out = value;
+      if (arg === '--appearance') result.appearance = value;
+      if (arg === '--body') result.body = value;
+      if (arg === '--capture') result.capture = value;
       continue;
     }
 
@@ -87,7 +100,7 @@ async function main() {
 
   const inputPath = path.resolve(options.input);
   const profile = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
-  const prompt = compileFacePrompt(profile, { preset: options.preset });
+  const prompt = compileFacePrompt(profile, { preset: options.preset, enhancers: options.enhancers, ...(options.appearance ? {appearance:JSON.parse(fs.readFileSync(options.appearance,'utf8'))} : {}), ...(options.body ? {body:JSON.parse(fs.readFileSync(options.body,'utf8'))} : {}), ...(options.capture ? {capture:options.capture} : {}) });
 
   if (!options.out) {
     process.stdout.write(`${prompt}\n`);
@@ -96,7 +109,7 @@ async function main() {
 
   const outPath = path.resolve(options.out);
   if (fs.existsSync(outPath) && !options.force) {
-    const confirmed = await confirmAction(`Output file already exists: ${outPath}\nOverwrite it?`);
+    const confirmed = await confirmAction(`Output file already exists: ${outPath}\nOverwrite it?`, { flag: '--force' });
     if (!confirmed) {
       console.log('Build cancelled.');
       return;

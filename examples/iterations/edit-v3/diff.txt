@@ -1,0 +1,2 @@
+eyebrows: (absent) -> {"brow_arch":60}
+eyes.eye_size: 52.11 -> 62

@@ -1,0 +1,28 @@
+{
+  "version": "appearance-v0.1",
+  "hair": {
+    "state": "off"
+  },
+  "makeup": {
+    "state": "selected",
+    "preset": "makeup_satin_medium",
+    "overrides": {
+      "browRendering": "fine hairlike strokes following the natural brow boundary",
+      "eyelinerGeometry": "thin dark brown upper lash line with a short upward outer flick",
+      "lashes": "lightly defined natural lashes",
+      "shadowPlacement": "soft taupe on upper lids, softly blended outer corners",
+      "blushPlacement": "subtle muted rose along upper cheeks",
+      "contour": "none",
+      "highlight": "subtle satin reflection on upper cheek surface",
+      "lipBoundary": "follow the natural lip edge without overlining",
+      "lipFinish": "muted rose satin",
+      "palette": "warm-neutral taupe, brown and muted rose"
+    }
+  },
+  "apparentAge": {
+    "state": "off"
+  },
+  "expression": {
+    "state": "off"
+  }
+}

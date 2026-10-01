@@ -1,0 +1,962 @@
+{
+  "version": "research-candidate-2026-09-30",
+  "status": "catalog_proposal_not_model_validated",
+  "sources": {
+    "kryolan_base": {
+      "title": "Kryolan: Foundations",
+      "url": "https://qa.kryolan.com/blog/posts/foundations",
+      "type": "professional_brand_technique",
+      "supports": "Coverage, consistency and finish are separable product properties."
+    },
+    "kryolan_contour": {
+      "title": "Kryolan: Highlight and contouring techniques",
+      "url": "https://www.kryolan.com.au/blog/post/highlight-and-contouring-techniques",
+      "type": "professional_brand_technique",
+      "supports": "Shadow/highlight placement and underpainting are cosmetic techniques, not bone edits."
+    },
+    "nars_blush": {
+      "title": "NARS: Blush application and placement",
+      "url": "https://www.narscosmetics.eu/en/behave-blush/0607845040811.html",
+      "type": "professional_brand_technique",
+      "supports": "Apple, temple C-shape and cheekbone placements; matte/satin/shimmer finish."
+    },
+    "abh_brows": {
+      "title": "Anastasia Beverly Hills: Brows",
+      "url": "https://www.anastasiabeverlyhills.com/pages/brows",
+      "type": "professional_brand_technique",
+      "supports": "Fill, hairlike detail, highlight and grooming are distinct controls. Golden-ratio marketing is not adopted as a biological ideal."
+    },
+    "maybelline_wing": {
+      "title": "Maybelline: How to do winged eyeliner",
+      "url": "https://www.maybelline.com/makeup-tips/eye/eyeliner-makeup-tutorials/how-to-winged-eyeliner",
+      "type": "professional_brand_technique",
+      "date": "2024-09-18",
+      "supports": "Upper outer flick, lower-lash treatment and line geometry."
+    },
+    "mac_lips": {
+      "title": "MAC: Lip textures and treatments",
+      "url": "https://www.maccosmetics.com/lipslipslips",
+      "type": "professional_brand_technique",
+      "supports": "Gloss, matte, stain, metallic and ombre are distinct lip treatments."
+    },
+    "mac_ombre": {
+      "title": "MAC pro artist: Brown ombre lips",
+      "url": "https://www.maccosmetics.co.uk/pages/how-do-you-do-ombre-lips",
+      "type": "professional_brand_technique",
+      "supports": "Darker perimeter and lighter center can follow existing lip boundary."
+    },
+    "clean_2025": {
+      "title": "Maybelline UK: Clean girl makeup",
+      "url": "https://www.maybelline.co.uk/makeup-tips/looks-and-occasions/clean-girl-makeup-look",
+      "type": "dated_brand_trend_example",
+      "date": "2025-10-16",
+      "supports": "A brand-specific light/dewy, feathered-brow, glossy-lip recipe, not a universal current definition."
+    },
+    "sunset_2025": {
+      "title": "MAC: Sunset Spritz",
+      "url": "https://www.maccosmetics.com/mac-trend/sunset-spritz",
+      "type": "dated_brand_trend_example",
+      "date": "2025-05-27",
+      "supports": "Orange/pink/golden cheek and lip palette with blended ombre colour."
+    },
+    "quant_1966": {
+      "title": "V&A: The story of Mary Quant make-up",
+      "url": "https://www.vam.ac.uk/articles/the-story-of-mary-quant-make-up",
+      "type": "museum_history",
+      "date": "2024-04-17",
+      "supports": "1966 London context; relatively understated face/lips and eye emphasis; interchangeable coordinated colours."
+    },
+    "usa_1920s": {
+      "title": "Smithsonian National Museum of American History: Make-up",
+      "url": "https://americanhistory.si.edu/ne/collections/object-groups/health-hygiene-and-beauty/make-up?page=1",
+      "type": "museum_history",
+      "supports": "1920s US urban/cinema-associated visible mascara, liner, dark shadow and lipstick; not a whole decade universal uniform."
+    },
+    "egypt_kohl": {
+      "title": "British Museum: Looking good in ancient Egypt",
+      "url": "https://www.britishmuseum.org/sites/default/files/2020-10/Looking_good_in_anicent_Egypt_gallery_activity_Rooms_61_65_accesstagged.pdf",
+      "type": "museum_history",
+      "supports": "Men and women used black kohl around eyes and to darken eyelashes; does not establish every modern Cleopatra design."
+    },
+    "kabuki": {
+      "title": "Japan Arts Council: Kabuki stock characters and makeup",
+      "url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc25/en/kumadori-makeup/stock-characters.html",
+      "type": "performing_arts_primary",
+      "supports": "Role-specific painted colour/line conventions; not everyday Japanese cosmetics or ethnicity."
+    },
+    "age_makeup": {
+      "title": "Russell et al: Differential effects of makeup on perceived age",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30073658/",
+      "type": "primary_perception_research",
+      "date": "2018-08-03",
+      "supports": "In studied photographs, effect differs by age group; makeup is not uniformly age-reducing. No image-model evaluation."
+    },
+    "facs": {
+      "title": "Paul Ekman Group: Facial Action Coding System",
+      "url": "https://www.paulekman.com/facial-action-coding-system/",
+      "type": "original_framework_publisher",
+      "supports": "Describe visible movements as components rather than inferring character or mental state."
+    },
+    "age_skin": {
+      "title": "US National Institute on Aging: Skin care and aging",
+      "url": "https://www.nia.nih.gov/health/skin-care/skin-care-and-aging",
+      "type": "government_health_education",
+      "supports": "Age appearance involves skin texture, elasticity and fullness, with substantial individual variation."
+    }
+  },
+  "axes": {
+    "coverage": [
+      "inherit",
+      "none",
+      "sheer",
+      "medium",
+      "full"
+    ],
+    "finish": [
+      "inherit",
+      "natural",
+      "matte",
+      "satin",
+      "dewy"
+    ],
+    "browRendering": [
+      "inherit",
+      "none",
+      "hair_strokes",
+      "soft_powder",
+      "defined_edges",
+      "brushed_up",
+      "blocked_redrawn"
+    ],
+    "eyelinerGeometry": [
+      "inherit",
+      "none",
+      "lashline_thin",
+      "short_wing",
+      "elongated_wing",
+      "smudged",
+      "graphic_floating",
+      "kohl_rim"
+    ],
+    "lashes": [
+      "inherit",
+      "none",
+      "separated",
+      "outer_emphasis",
+      "center_emphasis",
+      "theatrical"
+    ],
+    "shadowPlacement": [
+      "inherit",
+      "none",
+      "lid_wash",
+      "outer_gradient",
+      "smoky",
+      "crease_graphic",
+      "halo"
+    ],
+    "blushPlacement": [
+      "inherit",
+      "none",
+      "apples",
+      "high_cheek",
+      "temple_c",
+      "nose_bridge_continuous"
+    ],
+    "contour": [
+      "inherit",
+      "none",
+      "soft_cheek",
+      "soft_perimeter",
+      "nose_painted_shadow",
+      "strong_sculpt"
+    ],
+    "highlight": [
+      "inherit",
+      "none",
+      "subtle_cheek",
+      "cheek_and_inner_eye",
+      "glossy_points"
+    ],
+    "lipBoundary": [
+      "inherit",
+      "natural",
+      "soft_blurred",
+      "center_gradient",
+      "dark_perimeter_gradient",
+      "overlined",
+      "painted_smaller"
+    ],
+    "lipFinish": [
+      "inherit",
+      "bare",
+      "stain",
+      "satin",
+      "matte",
+      "gloss",
+      "metallic"
+    ],
+    "palette": [
+      "inherit",
+      "neutral_brown",
+      "rose",
+      "peach_coral",
+      "copper",
+      "plum",
+      "red",
+      "monochrome",
+      "custom"
+    ],
+    "ornament": [
+      "inherit",
+      "none",
+      "freckles_painted",
+      "graphic_dots",
+      "forehead_motif"
+    ]
+  },
+  "makeupPresets": [
+    {
+      "id": "makeup_bare",
+      "labelZh": "不加彩妆",
+      "module": "makeup",
+      "patch": {
+        "coverage": "none",
+        "browRendering": "none",
+        "eyelinerGeometry": "none",
+        "lashes": "none",
+        "shadowPlacement": "none",
+        "blushPlacement": "none",
+        "contour": "none",
+        "highlight": "none",
+        "lipFinish": "bare",
+        "ornament": "none"
+      },
+      "promptEn": "No visible colour cosmetics; retain the selected skin texture and facial features.",
+      "sourceIds": [
+        "kryolan_base"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "不加彩妆不等于幼态、无瑕皮肤或改变年龄"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "makeup_skin_sheer",
+      "labelZh": "轻透原肤感",
+      "module": "makeup",
+      "patch": {
+        "coverage": "sheer",
+        "finish": "natural",
+        "contour": "none"
+      },
+      "promptEn": "Sheer complexion coverage matched to the existing skin colour; natural skin texture remains visible.",
+      "sourceIds": [
+        "kryolan_base"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "薄遮盖仍可能改变肤色均匀度和年龄观感"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "makeup_satin_medium",
+      "labelZh": "缎光中遮盖",
+      "module": "makeup",
+      "patch": {
+        "coverage": "medium",
+        "finish": "satin"
+      },
+      "promptEn": "Medium-coverage complexion makeup in the existing skin colour, with a satin finish.",
+      "sourceIds": [
+        "kryolan_base"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": []
+      },
+      "context": null
+    },
+    {
+      "id": "makeup_matte_full",
+      "labelZh": "哑光全遮盖",
+      "module": "makeup",
+      "patch": {
+        "coverage": "full",
+        "finish": "matte"
+      },
+      "promptEn": "Full-coverage matte complexion makeup matched to the existing skin colour.",
+      "sourceIds": [
+        "kryolan_base"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "可能遮盖雀斑、斑点等识别线索；是否保留须单独指定"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "brows_hair_strokes",
+      "labelZh": "眉毛：根根描画",
+      "module": "makeup",
+      "patch": {
+        "browRendering": "hair_strokes"
+      },
+      "promptEn": "Fine hairlike brow strokes following the existing brow shape and direction.",
+      "sourceIds": [
+        "abh_brows"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": []
+      },
+      "context": null
+    },
+    {
+      "id": "brows_soft_powder",
+      "labelZh": "眉毛：柔雾填充",
+      "module": "makeup",
+      "patch": {
+        "browRendering": "soft_powder"
+      },
+      "promptEn": "Soft powder-filled eyebrows with diffused edges, following the existing brow placement.",
+      "sourceIds": [
+        "abh_brows"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": []
+      },
+      "context": null
+    },
+    {
+      "id": "brows_brushed_up",
+      "labelZh": "眉毛：上梳毛流",
+      "module": "makeup",
+      "patch": {
+        "browRendering": "brushed_up"
+      },
+      "promptEn": "Brow hairs brushed upward and outward with visible separated texture.",
+      "sourceIds": [
+        "abh_brows",
+        "clean_2025"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "梳理后的轮廓可能改变眉眼距离观感"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "eye_short_wing",
+      "labelZh": "眼妆：短尾上扬眼线",
+      "module": "makeup",
+      "patch": {
+        "eyelinerGeometry": "short_wing",
+        "lashes": "separated"
+      },
+      "promptEn": "A thin upper-lash line ending in a short upward outer flick; separated lashes.",
+      "sourceIds": [
+        "maybelline_wing"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "指眼线绘制方向，不是改变眼裂倾斜角"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "eye_long_wing",
+      "labelZh": "眼妆：横向延展眼线",
+      "module": "makeup",
+      "patch": {
+        "eyelinerGeometry": "elongated_wing"
+      },
+      "promptEn": "An extended cosmetic outer eyeliner wing, retaining the underlying eyelid anatomy.",
+      "sourceIds": [
+        "maybelline_wing"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "可能产生更长眼形的观感；模型也可能误改眼裂"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "eye_soft_smoke",
+      "labelZh": "眼妆：柔边烟熏",
+      "module": "makeup",
+      "patch": {
+        "eyelinerGeometry": "smudged",
+        "shadowPlacement": "smoky",
+        "palette": "neutral_brown"
+      },
+      "promptEn": "Soft charcoal-brown shading around the lash lines, diffused outward without a hard edge.",
+      "sourceIds": [
+        "maybelline_wing",
+        "usa_1920s"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "眼周深色可能影响眼窝深浅和眼睛大小观感"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "blush_apples",
+      "labelZh": "腮红：面颊中央晕染",
+      "module": "makeup",
+      "patch": {
+        "blushPlacement": "apples"
+      },
+      "promptEn": "Soft blush concentrated on the apples of the cheeks, with diffused edges.",
+      "sourceIds": [
+        "nars_blush"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": []
+      },
+      "context": null
+    },
+    {
+      "id": "blush_temple",
+      "labelZh": "腮红：颧外侧至太阳穴",
+      "module": "makeup",
+      "patch": {
+        "blushPlacement": "temple_c"
+      },
+      "promptEn": "Blush placed in a soft C-shaped arc from the outer cheekbone toward the temple.",
+      "sourceIds": [
+        "nars_blush"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "位置是色彩分布，不是移动颧骨"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "contour_soft",
+      "labelZh": "修容：浅淡颧下阴影",
+      "module": "makeup",
+      "patch": {
+        "contour": "soft_cheek",
+        "highlight": "subtle_cheek"
+      },
+      "promptEn": "Subtle painted shading beneath the cheekbones with softly blended cheekbone highlights.",
+      "sourceIds": [
+        "kryolan_contour"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "可能强化骨骼观感；不得将结构字段改为窄脸或高颧骨"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "lips_stain",
+      "labelZh": "唇妆：轻透染色",
+      "module": "makeup",
+      "patch": {
+        "lipBoundary": "natural",
+        "lipFinish": "stain"
+      },
+      "promptEn": "Sheer lip stain following the existing vermilion border.",
+      "sourceIds": [
+        "mac_lips"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": []
+      },
+      "context": null
+    },
+    {
+      "id": "lips_red_matte",
+      "labelZh": "唇妆：清晰红色哑光",
+      "module": "makeup",
+      "patch": {
+        "lipBoundary": "natural",
+        "lipFinish": "matte",
+        "palette": "red"
+      },
+      "promptEn": "Matte red lip colour with a crisp edge following the existing lip outline.",
+      "sourceIds": [
+        "mac_lips"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": []
+      },
+      "context": null
+    },
+    {
+      "id": "lips_ombre",
+      "labelZh": "唇妆：深边浅心渐层",
+      "module": "makeup",
+      "patch": {
+        "lipBoundary": "dark_perimeter_gradient",
+        "lipFinish": "satin"
+      },
+      "promptEn": "A darker lip perimeter blended toward a lighter centre, following the existing lip outline.",
+      "sourceIds": [
+        "mac_ombre"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "明暗渐层可能改变唇部体积观感，无须真实加厚嘴唇"
+        ]
+      },
+      "context": null
+    },
+    {
+      "id": "trend_light_dewy_2025",
+      "labelZh": "轻透水光组合（Clean girl 别名）",
+      "module": "makeup",
+      "patch": {
+        "coverage": "sheer",
+        "finish": "dewy",
+        "browRendering": "brushed_up",
+        "blushPlacement": "apples",
+        "contour": "none",
+        "lipBoundary": "natural",
+        "lipFinish": "gloss"
+      },
+      "promptEn": "Light dewy complexion coverage, brushed-up textured brows, subtle cheek blush and natural-colour glossy lips.",
+      "sourceIds": [
+        "clean_2025"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "历史/社媒别名仅作检索，不代表卫生、阶层或人格",
+          "不自动改变发型、年龄、肤色"
+        ]
+      },
+      "context": {
+        "kind": "social_trend_recipe",
+        "documentedAt": "2025-10-16",
+        "scope": "Maybelline UK published interpretation",
+        "notUniversal": true
+      }
+    },
+    {
+      "id": "trend_sunset_2025",
+      "labelZh": "橙粉落日腮红（2025 配方）",
+      "module": "makeup",
+      "patch": {
+        "blushPlacement": "high_cheek",
+        "highlight": "subtle_cheek",
+        "lipFinish": "gloss",
+        "palette": "peach_coral"
+      },
+      "promptEn": "Watercolour-like blended pink and orange cheek colour with a soft golden highlight and a glossy coral-toned lip.",
+      "sourceIds": [
+        "sunset_2025"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": []
+      },
+      "context": {
+        "kind": "social_trend_recipe",
+        "documentedAt": "2025-05-27",
+        "scope": "MAC Sunset Spritz interpretation",
+        "notUniversal": true
+      }
+    },
+    {
+      "id": "historical_quant_1966",
+      "labelZh": "1960年代伦敦眼部重点（启发式）",
+      "module": "makeup",
+      "patch": {
+        "coverage": "sheer",
+        "finish": "natural",
+        "lashes": "theatrical",
+        "lipFinish": "satin"
+      },
+      "promptEn": "A 1960s London-inspired eye-focused makeup interpretation, restrained complexion and lip colour, visibly emphasized eyelashes.",
+      "sourceIds": [
+        "quant_1966"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "源文确证眼部重点，不将一种广告妆等同整个年代",
+          "不自动漂白肤色；完整复原需具体参考图"
+        ]
+      },
+      "context": {
+        "kind": "historical_inspired",
+        "region": "London",
+        "period": "mid-1960s",
+        "reconstruction": false
+      }
+    },
+    {
+      "id": "historical_1920s_cinema",
+      "labelZh": "1920年代美国银幕启发妆",
+      "module": "makeup",
+      "patch": {
+        "eyelinerGeometry": "smudged",
+        "shadowPlacement": "smoky",
+        "lashes": "theatrical",
+        "lipFinish": "satin"
+      },
+      "promptEn": "A 1920s American cinema-inspired interpretation with visible mascara, eyeliner, dusky eyeshadow and defined lipstick.",
+      "sourceIds": [
+        "usa_1920s"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "不把某类银幕妆当作所有女性的日常",
+          "唇形与细眉若无特定参考，不自动套用"
+        ]
+      },
+      "context": {
+        "kind": "historical_inspired",
+        "region": "United States",
+        "period": "1920s",
+        "reconstruction": false
+      }
+    },
+    {
+      "id": "historical_kohl_inspired",
+      "labelZh": "古埃及眼妆启发：黑色描边",
+      "module": "makeup",
+      "patch": {
+        "eyelinerGeometry": "kohl_rim",
+        "lashes": "separated"
+      },
+      "promptEn": "Ancient-Egyptian-inspired dark kohl-like cosmetic outlining around the eyes and darkened lashes.",
+      "sourceIds": [
+        "egypt_kohl"
+      ],
+      "sourceStatus": "technique_grounded_design_recipe",
+      "effectMetadata": {
+        "kind": [
+          "surface_colour",
+          "finish",
+          "perceptual_boundary"
+        ],
+        "storedStructuralFieldsChanged": false,
+        "modelIdentityPreservation": "unverified",
+        "interactionWarningsZh": [
+          "只引用有证据的黑色眼部描绘；不自动加金色眼影、王冠、肤色或族裔",
+          "不是任何特定法老或年代的精确复原"
+        ]
+      },
+      "context": {
+        "kind": "historical_inspired",
+        "region": "Ancient Egypt",
+        "reconstruction": false
+      }
+    }
+  ],
+  "expressionPresets": [
+    {
+      "id": "expression_neutral",
+      "labelZh": "自然静息",
+      "promptEn": "A resting expression, relaxed brows and eyelids, lips gently closed.",
+      "module": "expression",
+      "sourceIds": [
+        "facs"
+      ],
+      "status": "descriptive_design_not_validated_FACS_encoding",
+      "warningZh": "表情改变可见五官位置与软组织；不会修改存储的结构字段，但生成身份保持未经验证"
+    },
+    {
+      "id": "expression_small_smile",
+      "labelZh": "轻微闭唇笑",
+      "promptEn": "A small closed-mouth smile, gently raised lip corners and mild cheek movement.",
+      "module": "expression",
+      "sourceIds": [
+        "facs"
+      ],
+      "status": "descriptive_design_not_validated_FACS_encoding",
+      "warningZh": "表情改变可见五官位置与软组织；不会修改存储的结构字段，但生成身份保持未经验证"
+    },
+    {
+      "id": "expression_open_smile",
+      "labelZh": "露齿笑",
+      "promptEn": "An open smile with visible teeth, raised cheeks and naturally narrowed eyelids.",
+      "module": "expression",
+      "sourceIds": [
+        "facs"
+      ],
+      "status": "descriptive_design_not_validated_FACS_encoding",
+      "warningZh": "表情改变可见五官位置与软组织；不会修改存储的结构字段，但生成身份保持未经验证"
+    },
+    {
+      "id": "expression_brow_raise",
+      "labelZh": "轻抬眉",
+      "promptEn": "Slightly raised brows with otherwise relaxed facial muscles.",
+      "module": "expression",
+      "sourceIds": [
+        "facs"
+      ],
+      "status": "descriptive_design_not_validated_FACS_encoding",
+      "warningZh": "表情改变可见五官位置与软组织；不会修改存储的结构字段，但生成身份保持未经验证"
+    },
+    {
+      "id": "expression_lips_parted",
+      "labelZh": "双唇轻启",
+      "promptEn": "Relaxed lips parted slightly, without changing the underlying lip shape.",
+      "module": "expression",
+      "sourceIds": [
+        "facs"
+      ],
+      "status": "descriptive_design_not_validated_FACS_encoding",
+      "warningZh": "表情改变可见五官位置与软组织；不会修改存储的结构字段，但生成身份保持未经验证"
+    },
+    {
+      "id": "expression_downward_gaze",
+      "labelZh": "目光下移",
+      "promptEn": "Gaze directed gently downward, with eyelids following the gaze direction.",
+      "module": "expression",
+      "sourceIds": [
+        "facs"
+      ],
+      "status": "descriptive_design_not_validated_FACS_encoding",
+      "warningZh": "表情改变可见五官位置与软组织；不会修改存储的结构字段，但生成身份保持未经验证"
+    }
+  ],
+  "ageModule": {
+    "enabledByDefault": false,
+    "inheritExistingAgeWhenDisabled": true,
+    "newProfileFallback": "adult",
+    "presets": [
+      {
+        "id": "adult_unspecified",
+        "labelZh": "成年人，年龄不细分",
+        "promptEn": "An adult person."
+      },
+      {
+        "id": "adult_25_34",
+        "labelZh": "约25–34岁成年人",
+        "promptEn": "An adult person appearing approximately 25 to 34 years old."
+      },
+      {
+        "id": "adult_35_49",
+        "labelZh": "约35–49岁成年人",
+        "promptEn": "An adult person appearing approximately 35 to 49 years old."
+      },
+      {
+        "id": "adult_50_64",
+        "labelZh": "约50–64岁成年人",
+        "promptEn": "An adult person appearing approximately 50 to 64 years old."
+      },
+      {
+        "id": "adult_65_plus",
+        "labelZh": "约65岁及以上成年人",
+        "promptEn": "An adult person appearing approximately 65 or older."
+      }
+    ],
+    "sourceIds": [
+      "age_skin",
+      "age_makeup"
+    ],
+    "warningZh": "年龄段是设计控制范围，不是生物学分界或可准确反推的真实年龄；不捆绑白发、消瘦、皱纹数量或性格。现有年龄保留，仅显式启用后改写年龄字段。"
+  },
+  "compositionRules": [
+    "Preserve stored facial structure, identity descriptors, ethnicity and age unless the corresponding module is explicitly changed. This is a data guarantee only, never an image identity guarantee.",
+    "inherit emits no prompt and does not clear a base preset; none explicitly clears only its own cosmetic slot.",
+    "Resolve full-look preset first, then explicit per-slot overrides. Report overrides before compilation. Emit one resolved descriptor per singleton slot, not contradictory concatenation.",
+    "Palette is a default: a local lip colour overrides global palette for lips only.",
+    "Allow combined finishes on different zones (matte base plus glossy lips); one global finish is not enough.",
+    "Expression gaze and eyelid opening need compatibility checks; do not silently combine closed eyes with direct gaze.",
+    "Age effect is not encoded in a makeup preset; beauty, health, morality, occupation and ethnicity are not makeup properties."
+  ],
+  "backlog": [
+    {
+      "id": "huadian",
+      "labelZh": "中国历史花钿/面饰",
+      "status": "hold_for_specific_museum_image_or_publication",
+      "reason": "Do not use Palace Museum 唐妆 lemma as cosmetics evidence: it names a painting style. Need named artwork/cave/date and distinguish facial ornament from hair ornament."
+    },
+    {
+      "id": "kabuki_role_makeup",
+      "labelZh": "歌舞伎角色妆",
+      "status": "contextual_reference_only",
+      "sourceIds": [
+        "kabuki"
+      ],
+      "reason": "Role-linked theatrical makeup, often male performers; require named role/reference rather than generic Japanese/female preset."
+    },
+    {
+      "id": "douyin",
+      "labelZh": "Douyin/网感亮片眼妆",
+      "status": "needs_dated_creator_or_brand_recipe",
+      "reason": "No single stable pan-Chinese definition; break into glitter placement, lashes, eyeliner and under-eye paint without changing ethnicity."
+    },
+    {
+      "id": "bridal_local",
+      "labelZh": "地域婚礼妆",
+      "status": "needs_specific_ceremony_region_reference",
+      "reason": "No universal Indian/Chinese/Arab bridal recipe. Decorative ritual marks and jewellery belong in contextual accessory slots."
+    }
+  ]
+}

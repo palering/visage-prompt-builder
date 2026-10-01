@@ -1,0 +1,22 @@
+{
+  "version": "appearance-v0.1",
+  "hair": {
+    "state": "selected",
+    "preset": "high_twin_drills",
+    "overrides": {
+      "color": "black",
+      "accessories": []
+    }
+  },
+  "makeup": {
+    "state": "off"
+  },
+  "expression": {
+    "state": "selected",
+    "preset": "relaxed_neutral"
+  },
+  "apparentAge": {
+    "state": "selected",
+    "years": 25
+  }
+}

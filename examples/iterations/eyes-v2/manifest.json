@@ -1,0 +1,60 @@
+{
+  "version": "variants-v0.1",
+  "operation": "reroll",
+  "seed": "synthetic-eyes-02",
+  "parent_revision_id": "bfd863839157d0389306e89f4b56e317805337beee03f619bec1d0516bbe9492",
+  "parent_profile_sha256": "3910469df8c61148f0dc84c18e9aa33fcb75337f056194d9c9aa649c2b763c7e",
+  "source_compiler_options": {
+    "preset": "profile",
+    "enhancers": true
+  },
+  "regions": [
+    "eyes"
+  ],
+  "rerolled_paths": [
+    "eyes.eye_length",
+    "eyes.eye_size"
+  ],
+  "manual_edits": [],
+  "resolved_ranges": {
+    "eyes.eye_length": {
+      "min": 38,
+      "mode": 54,
+      "max": 70,
+      "group": "eye"
+    },
+    "eyes.eye_size": {
+      "min": 35,
+      "mode": 50,
+      "max": 67,
+      "group": "eye"
+    }
+  },
+  "diff": [
+    {
+      "path": "eyes.eye_length",
+      "before_present": true,
+      "before": 54.83,
+      "after_present": true,
+      "after": 55.56
+    },
+    {
+      "path": "eyes.eye_size",
+      "before_present": true,
+      "before": 50.85,
+      "after_present": true,
+      "after": 52.11
+    }
+  ],
+  "prompt_changed": true,
+  "compiler_options": {
+    "preset": "profile",
+    "enhancers": true
+  },
+  "compiler_sha256": "9f0a013f21b26e7c44fec13e056f21e86ec4cfd842f659fae46fa79049674c82",
+  "algorithm_sha256": "313d9b6d58aff802c8e9992b0f304121e1183f6d6f36c792f580549c175b57a4",
+  "profile_sha256": "6b2d18e202dea7f3542ea52a776f1957998ce4f5c87fb83a4407bdaea3fa5534",
+  "prompt_sha256": "7e89f47f781f57a9d56f1b827a5bb6f3e0370c9fdb991c99922c294a8e5bf1ea",
+  "limitations": "Parameters and prompts only; no image generation or identity guarantee. Authored range/group bounds are not validated anatomy. Different seeds can produce identical parameters or prompt text.",
+  "revision_id": "476395745217a71b87fd21d3cae9d3957d45038c5cd58eb8cf1762f23374dc12"
+}

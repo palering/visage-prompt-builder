@@ -1,0 +1,2268 @@
+{
+  "schemaVersion": "hair-research-1.0",
+  "researchedAt": "2026-09-30",
+  "scope": "Female-emphasis, gender-unrestricted geometry catalog; not exhaustive",
+  "sources": [
+    {
+      "id": "sassoon_education",
+      "title": "Sassoon 2026 courses: line/layer/graduation; bob/pixie",
+      "url": "https://online.flippingbook.com/view/347423062",
+      "date": "2026",
+      "region": "UK / international education",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "wolf_samvilla",
+      "title": "Sam Villa: The Wolf Cut",
+      "url": "https://www.samvilla.com/blogs/hair-tutorials/wolf-cut",
+      "date": "2022 trend language; accessed 2026-09-30",
+      "region": "US education",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "butterfly_loreal",
+      "title": "Hair.com: Butterfly haircut, Sunnie Brook / Philip Wolff",
+      "url": "https://www.hair.com/butterfly-haircut.html",
+      "date": "2026-08-31 update",
+      "region": "US brand editorial",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "jellyfish_loreal",
+      "title": "L’Oréal Paris: Jellyfish haircut",
+      "url": "https://www.lorealparisusa.com/beauty-magazine/hair-style/hairstyle-trends/jellyfish-haircut",
+      "date": "2025-08-14",
+      "region": "US brand editorial",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "aveda_2026",
+      "title": "Aveda Institute Winnipeg: Summer Hair Trends 2026",
+      "url": "https://avedainstitutewinnipeg.ca/school-blog/summer-hair-trends-2026-the-biggest-hair-colours-cuts-and-styles-this-season",
+      "date": "2026-05-22",
+      "region": "Winnipeg, Canada",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "sassoon_interference",
+      "title": "Sassoon Interference SS26",
+      "url": "https://sassoon-global.com/collections/interference-collection-2026.html",
+      "date": "SS 2026",
+      "region": "International professional collection",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "sally_shag",
+      "title": "Sally Hershberger shag demonstration, ARC Scissors",
+      "url": "https://arcscissors.com/blogs/haircut-tutorials/the-shag-sally-hershbergers-4-tips",
+      "date": "2019-03-18",
+      "region": "US stylist demonstration",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "arimino_2026",
+      "title": "ARIMINO A essence AW26 style book",
+      "url": "https://www.arimino.co.jp/a_essence/",
+      "date": "AW 2026",
+      "region": "Japan; collection exists, geometry not extracted from text",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "sam_mcknight_journal",
+      "title": "Hair by Sam McKnight journal",
+      "url": "https://sammcknight.com/blogs/news",
+      "date": "2025–2026",
+      "region": "UK brand; volume/blowout educational coverage",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "dpm_luoji",
+      "title": "故宫：雍亲王题书堂深居图屏·立持如意轴",
+      "url": "https://minghuaji.dpm.org.cn/paint/detail?id=fc57b611e45042e784f8c2cb0c4a1ad2",
+      "date": "清代图像；馆方讨论唐代先例",
+      "region": "China",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "dpm_bianfang",
+      "title": "故宫：翠扁方",
+      "url": "https://www.dpm.org.cn/collection/jewelry/231381.html",
+      "date": "清代藏品",
+      "region": "Manchu women, Qing China",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "bm_shimada",
+      "title": "British Museum 1913,0501,0.366",
+      "url": "https://www.britishmuseum.org/collection/object/A_1913-0501-0-366",
+      "date": "painting dated 1661–1688, attribution uncertain",
+      "region": "Japan",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "nfm_joseon",
+      "title": "国立民俗博物馆：朝鲜时代发型趋势",
+      "url": "https://webzine.nfm.go.kr/2018/10/25/조선시대에도-헤어스타일-트렌드가-있었을까/",
+      "date": "2018-10-25",
+      "region": "Korea, Joseon period",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "met_tang_comb",
+      "title": "The Met: comb top, 1990.128",
+      "url": "https://www.metmuseum.org/art/collection/search/44616",
+      "date": "8th–9th century object",
+      "region": "China",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "smithsonian_black_hair",
+      "title": "NMAAHC: Strands of Inspiration",
+      "url": "https://nmaahc.si.edu/explore/stories/strands-of-inspiration",
+      "date": "accessed 2026-09-30",
+      "region": "Black cultural histories; no single continental uniform hairstyle",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "met_roman",
+      "title": "The Met: Roman Portraits, portrait 72",
+      "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Roman_Portraits_Sculptures_in_Stone_and_Bronze.pdf",
+      "date": "ca. 90 CE artifact",
+      "region": "Roman, late Flavian",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "india_braiding",
+      "title": "NGMA Bengaluru: Toilet, S. Dhanpal",
+      "url": "https://museumsofindia.gov.in/repository/record/ngma_blr-acc-no-01695-525",
+      "date": "modern sculpture",
+      "region": "India; domestic braiding evidence, not ancient attribution",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "bm_egypt_wig",
+      "title": "British Museum EA2560",
+      "url": "https://www.britishmuseum.org/collection/object/Y_EA2560",
+      "date": "18th Dynasty",
+      "region": "Egypt; object likely male, not generic female preset",
+      "accessedAt": "2026-09-30"
+    },
+    {
+      "id": "vam_europe",
+      "title": "V&A Europe 1600–1815",
+      "url": "https://www.vam.ac.uk/collections/europe",
+      "date": "collection portal",
+      "region": "Europe; research entry point only",
+      "accessedAt": "2026-09-30"
+    }
+  ],
+  "presets": [
+    {
+      "id": "blunt_bob",
+      "label": "齐下巴钝线波波",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "chin-length",
+        "cut": "one-length blunt perimeter",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "straight",
+        "volume": "moderate lateral volume",
+        "arrangement": "loose",
+        "front": "forehead exposed",
+        "sides": "even panels beside cheeks",
+        "back": "level nape perimeter"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "covered",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "long_bob",
+      "label": "锁骨长波波",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "collarbone-length",
+        "cut": "one-length long bob",
+        "fringe": "none",
+        "part": "off-center part",
+        "texture": "softly bent",
+        "volume": "moderate",
+        "arrangement": "loose",
+        "front": "open forehead",
+        "sides": "long panels beside cheeks",
+        "back": "clean collarbone perimeter"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "covered",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "graduated_bob",
+      "label": "后枕堆叠渐层波波",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "jaw-length at front",
+        "cut": "graduated stacked nape",
+        "fringe": "side-swept",
+        "part": "side part",
+        "texture": "straight",
+        "volume": "full occipital volume",
+        "arrangement": "loose",
+        "front": "swept fringe clear of eyes",
+        "sides": "angled jaw-length sides",
+        "back": "short stacked nape"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "asymmetric_bob",
+      "label": "不对称波波",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "jaw-to-shoulder asymmetric lengths",
+        "cut": "asymmetric bob perimeter",
+        "fringe": "none",
+        "part": "deep side part",
+        "texture": "straight",
+        "volume": "asymmetric lateral volume",
+        "arrangement": "loose",
+        "front": "forehead open",
+        "sides": "one side jaw-length and the other shoulder-length",
+        "back": "diagonal perimeter"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "pixie",
+      "label": "柔和精灵短发",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "short",
+        "cut": "short layered pixie",
+        "fringe": "short piecey",
+        "part": "side part",
+        "texture": "soft piecey texture",
+        "volume": "modest crown lift",
+        "arrangement": "loose",
+        "front": "short separated fringe",
+        "sides": "short sides exposing ears",
+        "back": "tapered nape"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "bixie",
+      "label": "波波与精灵头混合短发",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "ear-to-nape length",
+        "cut": "layered pixie-bob hybrid",
+        "fringe": "long side-swept",
+        "part": "side part",
+        "texture": "piecey",
+        "volume": "rounded crown",
+        "arrangement": "loose",
+        "front": "swept forehead fringe",
+        "sides": "ear-length side panels",
+        "back": "longer soft nape"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "buzz_crop",
+      "label": "贴头极短发",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "very short",
+        "cut": "uniform close crop",
+        "fringe": "none",
+        "part": "none",
+        "texture": "short natural texture",
+        "volume": "minimal",
+        "arrangement": "loose",
+        "front": "hairline fully visible",
+        "sides": "ears and temples exposed",
+        "back": "close nape"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "requires": {
+        "materialMode": [
+          "natural",
+          "wig"
+        ]
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "undercut_long_top",
+      "label": "底部剃短长顶区",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "short sides and longer crown",
+        "cut": "disconnected undercut",
+        "fringe": "long swept",
+        "part": "side part",
+        "texture": "straight",
+        "volume": "lifted top",
+        "arrangement": "loose",
+        "front": "top swept away from eyes",
+        "sides": "close-cropped sides",
+        "back": "close-cropped nape"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "long_straight",
+      "label": "中分长直发",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "mid-back",
+        "cut": "long even perimeter",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "straight",
+        "volume": "low",
+        "arrangement": "loose",
+        "front": "forehead exposed",
+        "sides": "long panels outside face",
+        "back": "straight long lengths"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "covered",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "long_u_layers",
+      "label": "U形长层次",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "mid-back",
+        "cut": "long layers with U-shaped perimeter",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "soft waves",
+        "volume": "moderate",
+        "arrangement": "loose",
+        "front": "soft face-framing sections",
+        "sides": "graduated long side layers",
+        "back": "rounded U-shaped back perimeter"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "shag",
+      "label": "蓬松碎层次 Shag",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "shoulder-length",
+        "cut": "short crown layers blending into tapered ends",
+        "fringe": "piecey brow fringe",
+        "part": "soft center split",
+        "texture": "tousled waves",
+        "volume": "high crown",
+        "arrangement": "loose",
+        "front": "broken fringe above eyes",
+        "sides": "layered cheek-framing pieces",
+        "back": "tapered layered back"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "sally_shag"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "wolf",
+      "label": "狼尾层次 Wolf cut",
+      "category": "trend_alias",
+      "geometry": {
+        "length": "shoulder-length back",
+        "cut": "shag-mullet hybrid with shorter crown and longer back",
+        "fringe": "piecey",
+        "part": "center split",
+        "texture": "tousled",
+        "volume": "crown-heavy",
+        "arrangement": "loose",
+        "front": "piecey fringe clear of eyes",
+        "sides": "shorter layered sides",
+        "back": "long tapered nape"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "wolf_samvilla"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "trendContext": {
+        "region": "US professional education",
+        "evidenceDate": "2022",
+        "claim": "historically documented label; not claimed as 2026 newest"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "butterfly",
+      "label": "蝴蝶层次 Butterfly cut",
+      "category": "trend_alias",
+      "geometry": {
+        "length": "below shoulders",
+        "cut": "feathered shorter upper layers over retained long lengths",
+        "fringe": "long curtain",
+        "part": "center part",
+        "texture": "large soft bends",
+        "volume": "bouncy crown and sides",
+        "arrangement": "loose",
+        "front": "long swept face frame",
+        "sides": "outward feathered layers",
+        "back": "retained flowing lower length"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "butterfly_loreal",
+        "aveda_2026"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "trendContext": {
+        "region": "US / Winnipeg brand and salon education",
+        "evidenceDate": "2026-08-31",
+        "claim": "covered in current editorial; no popularity ranking"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "jellyfish",
+      "label": "水母断层剪裁",
+      "category": "trend_alias",
+      "geometry": {
+        "length": "long lower section",
+        "cut": "disconnected rounded bob cap over long underlayer",
+        "fringe": "blunt brow fringe",
+        "part": "not visible",
+        "texture": "straight",
+        "volume": "rounded upper volume",
+        "arrangement": "loose",
+        "front": "horizontal fringe above eyes",
+        "sides": "jaw-length bob shell",
+        "back": "long distinct lower tails"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "covered",
+        "ears": "covered",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "jellyfish_loreal"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "trendContext": {
+        "region": "US brand editorial",
+        "evidenceDate": "2025-08-14",
+        "claim": "documented social-media-associated name"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "hime_geometry",
+      "label": "姬发式几何变体",
+      "category": "modern_cut",
+      "geometry": {
+        "length": "long",
+        "cut": "long back with blunt cheek-length sidelocks",
+        "fringe": "straight brow fringe",
+        "part": "not visible",
+        "texture": "straight",
+        "volume": "low",
+        "arrangement": "loose",
+        "front": "straight fringe above eyes",
+        "sides": "separate blunt cheek-level side panels",
+        "back": "long straight back"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "covered",
+        "ears": "covered",
+        "cheeks": "partial",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "historicalContext": {
+        "claim": "modern geometric label only; no Heian provenance asserted"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "curly_bob",
+      "label": "自然卷波波轮廓",
+      "category": "texture_styling",
+      "geometry": {
+        "length": "jaw-length visible silhouette",
+        "cut": "rounded bob shape",
+        "fringe": "curly short fringe",
+        "part": "soft side part",
+        "texture": "defined curls",
+        "volume": "rounded",
+        "arrangement": "loose",
+        "front": "curl clusters above eyes",
+        "sides": "rounded curl silhouette beside face",
+        "back": "rounded short back"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "rounded_coils",
+      "label": "圆形紧卷轮廓",
+      "category": "texture_styling",
+      "geometry": {
+        "length": "short-to-medium visible silhouette",
+        "cut": "rounded silhouette",
+        "fringe": "none",
+        "part": "none",
+        "texture": "tight coils",
+        "volume": "full spherical",
+        "arrangement": "loose",
+        "front": "coil volume above forehead",
+        "sides": "balanced coily side volume",
+        "back": "rounded coily back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "smithsonian_black_hair"
+      ],
+      "evidenceStatus": "geometry_with_cultural_context",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "tapered_coils",
+      "label": "侧后收短紧卷",
+      "category": "texture_styling",
+      "geometry": {
+        "length": "short visible silhouette",
+        "cut": "tapered sides and nape with fuller crown",
+        "fringe": "none",
+        "part": "none",
+        "texture": "tight coils",
+        "volume": "top-heavy",
+        "arrangement": "loose",
+        "front": "raised coil crown",
+        "sides": "tapered sides expose ears",
+        "back": "short tapered nape"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "defined_long_curls",
+      "label": "长螺旋卷",
+      "category": "texture_styling",
+      "geometry": {
+        "length": "below shoulders",
+        "cut": "long layered",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "defined ringlets",
+        "volume": "full",
+        "arrangement": "loose",
+        "front": "open forehead",
+        "sides": "ringlets beside cheeks",
+        "back": "long cascading ringlets"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "covered",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "beach_waves",
+      "label": "松散海滩波纹",
+      "category": "texture_styling",
+      "geometry": {
+        "length": "below shoulders",
+        "cut": "long layers",
+        "fringe": "none",
+        "part": "off-center part",
+        "texture": "loose irregular S-waves",
+        "volume": "airy",
+        "arrangement": "loose",
+        "front": "open forehead",
+        "sides": "soft waves outside cheeks",
+        "back": "irregular softly waved ends"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "aveda_2026"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "blowout",
+      "label": "大弧度吹整",
+      "category": "texture_styling",
+      "geometry": {
+        "length": "below shoulders",
+        "cut": "long layers",
+        "fringe": "long curtain",
+        "part": "center part",
+        "texture": "smooth large bends",
+        "volume": "bouncy root lift",
+        "arrangement": "loose",
+        "front": "outward swept curtain sections",
+        "sides": "rounded flowing bends",
+        "back": "curved full ends"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "sam_mcknight_journal"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "finger_waves",
+      "label": "贴头指推波纹",
+      "category": "retro_styling",
+      "geometry": {
+        "length": "short",
+        "cut": "unspecified",
+        "fringe": "side-swept",
+        "part": "deep side part",
+        "texture": "sculpted flat S-waves",
+        "volume": "low",
+        "arrangement": "loose",
+        "front": "defined wave ridges at forehead",
+        "sides": "flat waves close to temples",
+        "back": "smooth fitted back"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "historicalContext": {
+        "claim": "retro styling preset; no exact date asserted"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "wet_slick_back",
+      "label": "湿感后梳",
+      "category": "texture_styling",
+      "geometry": {
+        "length": "shoulder-length",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "brushed back",
+        "texture": "wet-look sleek",
+        "volume": "low",
+        "arrangement": "loose",
+        "front": "all front hair swept back",
+        "sides": "sides close to scalp and behind ears",
+        "back": "loose slicked-back lengths"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "aveda_2026"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "sleek_low_bun",
+      "label": "贴头低盘髻",
+      "category": "gathered",
+      "geometry": {
+        "length": "long hair gathered up",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "smooth",
+        "volume": "low",
+        "arrangement": "single low bun",
+        "front": "combed flat away from forehead",
+        "sides": "tucked behind both ears",
+        "back": "compact coiled bun at nape"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "aveda_2026"
+      ],
+      "evidenceStatus": "source_backed_family",
+      "requires": {
+        "minGatherableLength": "nape-reaching or hairpiece"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "high_bun",
+      "label": "高位圆髻",
+      "category": "gathered",
+      "geometry": {
+        "length": "long hair gathered up",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "brushed back",
+        "texture": "smooth",
+        "volume": "high crown bun",
+        "arrangement": "single high bun",
+        "front": "forehead exposed",
+        "sides": "sides drawn upward",
+        "back": "rounded bun at crown"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "requires": {
+        "minGatherableLength": "crown-reaching or hairpiece"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "messy_bun",
+      "label": "松散盘髻",
+      "category": "gathered",
+      "geometry": {
+        "length": "medium-to-long gathered hair",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "soft off-center part",
+        "texture": "tousled",
+        "volume": "airy",
+        "arrangement": "loose bun",
+        "front": "few loose wisps beside forehead",
+        "sides": "soft temple wisps",
+        "back": "loose folded bun with escaped ends"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "none",
+        "cheeks": "partial",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "french_twist",
+      "label": "纵向法式卷髻",
+      "category": "gathered",
+      "geometry": {
+        "length": "long hair gathered up",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "side part",
+        "texture": "smooth",
+        "volume": "moderate crown",
+        "arrangement": "vertical rolled updo",
+        "front": "front swept away",
+        "sides": "smooth sides behind ears",
+        "back": "vertical inward roll at back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "high_ponytail",
+      "label": "高马尾",
+      "category": "gathered",
+      "geometry": {
+        "length": "long gathered hair",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "brushed back",
+        "texture": "smooth",
+        "volume": "high tail",
+        "arrangement": "single high ponytail",
+        "front": "forehead exposed",
+        "sides": "sides drawn upward",
+        "back": "tail descends from crown"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "low_ponytail",
+      "label": "低马尾",
+      "category": "gathered",
+      "geometry": {
+        "length": "medium-to-long gathered hair",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "smooth",
+        "volume": "low",
+        "arrangement": "single low ponytail",
+        "front": "forehead exposed",
+        "sides": "sides behind ears",
+        "back": "tail starts at nape"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "half_up",
+      "label": "半扎披发",
+      "category": "gathered",
+      "geometry": {
+        "length": "long",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "soft waves",
+        "volume": "moderate",
+        "arrangement": "half-up half-down",
+        "front": "upper front drawn back",
+        "sides": "upper sides gathered; lower side lengths loose",
+        "back": "small upper tie above loose long back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "twin_tails",
+      "label": "双马尾",
+      "category": "gathered",
+      "geometry": {
+        "length": "long",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "straight",
+        "volume": "balanced",
+        "arrangement": "two symmetric ponytails",
+        "front": "open forehead",
+        "sides": "two lateral gathered tails",
+        "back": "clean center division at back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "double_buns",
+      "label": "双圆髻",
+      "category": "gathered",
+      "geometry": {
+        "length": "long gathered hair",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "smooth",
+        "volume": "two rounded upper volumes",
+        "arrangement": "two symmetric buns",
+        "front": "forehead open",
+        "sides": "sides drawn to two anchors",
+        "back": "paired coiled buns"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "claw_clip_twist",
+      "label": "抓夹卷起",
+      "category": "gathered",
+      "geometry": {
+        "length": "medium-to-long",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "off-center part",
+        "texture": "soft texture",
+        "volume": "moderate",
+        "arrangement": "clipped twist",
+        "front": "front swept back",
+        "sides": "ears exposed",
+        "back": "back hair twisted upward under a claw clip"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "accessories": [
+        "claw clip"
+      ],
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "single_braid",
+      "label": "后置三股辫",
+      "category": "braided",
+      "geometry": {
+        "length": "long",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "braided",
+        "volume": "low",
+        "arrangement": "single three-strand braid",
+        "front": "forehead open",
+        "sides": "sides swept back",
+        "back": "single braid from nape downward"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "twin_braids",
+      "label": "双三股辫",
+      "category": "braided",
+      "geometry": {
+        "length": "long",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "braided",
+        "volume": "low",
+        "arrangement": "two three-strand braids",
+        "front": "forehead open",
+        "sides": "two braids beside shoulders",
+        "back": "center-parted back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "crown_braid",
+      "label": "环绕编辫",
+      "category": "braided",
+      "geometry": {
+        "length": "long arranged hair",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "braided",
+        "volume": "moderate",
+        "arrangement": "braid encircling crown",
+        "front": "hairline visible below braid",
+        "sides": "braid arcs above ears",
+        "back": "braided ring continues across back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "scalp_braids",
+      "label": "贴头编辫 Cornrows",
+      "category": "braided",
+      "geometry": {
+        "length": "variable braided length",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "parallel sections",
+        "texture": "scalp-hugging braids",
+        "volume": "low",
+        "arrangement": "multiple close-to-scalp braids",
+        "front": "clear forehead and visible section lines",
+        "sides": "rows running along scalp",
+        "back": "braid lengths continue behind head"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "smithsonian_black_hair"
+      ],
+      "evidenceStatus": "geometry_with_cultural_context",
+      "culturalContext": "Black hairstyling traditions; row pattern must be specified, do not collapse into generic African hair",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "sectioned_box_braids",
+      "label": "分区散落编辫",
+      "category": "braided",
+      "geometry": {
+        "length": "long braided length",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "box-shaped scalp sections",
+        "texture": "individual braids",
+        "volume": "moderate",
+        "arrangement": "many freely hanging braids",
+        "front": "visible section pattern",
+        "sides": "individual braids beside face",
+        "back": "braids hanging independently"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "culturalContext": "Do not equate braids, twists and locs",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "two_strand_twists",
+      "label": "双股拧绳造型",
+      "category": "braided",
+      "geometry": {
+        "length": "medium-to-long",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "sectioned",
+        "texture": "two-strand twists",
+        "volume": "moderate",
+        "arrangement": "multiple rope-like twists",
+        "front": "sectioned roots visible",
+        "sides": "twists beside cheeks",
+        "back": "separate twists down the back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "locs_loose",
+      "label": "垂落锁状发束 Locs",
+      "category": "locs",
+      "geometry": {
+        "length": "shoulder-length",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "sectioned",
+        "texture": "mature loc structure",
+        "volume": "moderate",
+        "arrangement": "loose locs",
+        "front": "roots visible",
+        "sides": "individual locs frame face",
+        "back": "locs fall independently"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "requires": {
+        "materialMode": [
+          "natural_locs",
+          "loc_extensions",
+          "wig"
+        ]
+      },
+      "conflicts": [
+        {
+          "field": "texture",
+          "values": [
+            "loose straight hair"
+          ],
+          "reason": "Loc structure and loose strands are different states"
+        }
+      ],
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "bantu_knots",
+      "label": "多区卷结 Bantu knots",
+      "category": "gathered",
+      "geometry": {
+        "length": "hair gathered in sections",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "geometric sections",
+        "texture": "coiled knots",
+        "volume": "distributed small volumes",
+        "arrangement": "multiple separate knots",
+        "front": "visible geometric root sections",
+        "sides": "small coiled knots at side anchors",
+        "back": "multiple knots continue around head"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "smithsonian_black_hair"
+      ],
+      "evidenceStatus": "geometry_with_cultural_context",
+      "culturalContext": "Retain specific cultural name; not a texture or ancestry attribute",
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "sally_shag_reference",
+      "label": "Sally Hershberger 柔化 Shag 参考",
+      "category": "designer_reference",
+      "geometry": {
+        "length": "medium",
+        "cut": "blended shag layers with softened corners",
+        "fringe": "piecey face-framing",
+        "part": "soft center split",
+        "texture": "lived-in texture",
+        "volume": "airy crown",
+        "arrangement": "loose",
+        "front": "fringe and side fringe shaped around face",
+        "sides": "soft blended perimeter",
+        "back": "layered tapered back"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "sally_shag"
+      ],
+      "evidenceStatus": "source_backed_reference",
+      "authorship": {
+        "name": "Sally Hershberger",
+        "claim": "geometry-based interpretation of published demonstration; not exact reproduction"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "sassoon_interference_reference",
+      "label": "Sassoon Interference 断裂轮廓参考",
+      "category": "designer_reference",
+      "geometry": {
+        "length": "variable uneven lengths",
+        "cut": "asymmetric disconnected layers and fractured outline",
+        "fringe": "irregular above-eye fringe",
+        "part": "irregular sectioning",
+        "texture": "fragmented piecey texture",
+        "volume": "irregular controlled volume",
+        "arrangement": "loose",
+        "front": "uneven clear-of-eye front edges",
+        "sides": "asymmetric broken side contours",
+        "back": "disconnected uneven back silhouette"
+      },
+      "occlusion": {
+        "forehead": "partial",
+        "temples": "partial",
+        "ears": "partial",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "sassoon_interference"
+      ],
+      "evidenceStatus": "source_backed_reference",
+      "authorship": {
+        "name": "Sassoon creative collection",
+        "collection": "Interference SS 2026",
+        "claim": "collection design language, not a single named haircut"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "luoji_artifact_reference",
+      "label": "螺髻·故宫图像参考",
+      "category": "historical_reference",
+      "geometry": {
+        "length": "long hair arranged up",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "swept up",
+        "texture": "smooth coiled sections",
+        "volume": "high front volume",
+        "arrangement": "stacked spiral coil",
+        "front": "high spiral coil above forehead",
+        "sides": "sides swept into coiffure",
+        "back": "gathered supporting back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "dpm_luoji"
+      ],
+      "evidenceStatus": "museum_supported_reference",
+      "accessories": [
+        "securing hairpin"
+      ],
+      "historicalContext": {
+        "region": "China",
+        "period": "Qing painting with museum discussion of Tang precedents",
+        "precision": "artifact-linked reference; not one uniform dynasty hairstyle"
+      },
+      "requires": {
+        "support": [
+          "pins",
+          "optional hairpiece"
+        ]
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "liangbatou_reference",
+      "label": "两把头·扁方结构参考",
+      "category": "historical_reference",
+      "geometry": {
+        "length": "long hair arranged up",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "swept up",
+        "texture": "smooth",
+        "volume": "wide upper silhouette",
+        "arrangement": "two hair sections anchored on flat hairpin",
+        "front": "forehead open",
+        "sides": "two outward upper sections",
+        "back": "gathered rear base"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "dpm_bianfang"
+      ],
+      "evidenceStatus": "museum_supported_reference",
+      "accessories": [
+        "flat horizontal bianfang hairpin"
+      ],
+      "historicalContext": {
+        "region": "Manchu, Qing China",
+        "precision": "real-hair early construction; do not conflate with later satin headpiece"
+      },
+      "requires": {
+        "support": [
+          "bianfang hairpin"
+        ]
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "qing_satin_headpiece",
+      "label": "晚清缎制头饰·独立饰件",
+      "category": "historical_reference",
+      "geometry": {
+        "length": "hair gathered as supporting base",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "swept back",
+        "texture": "smooth",
+        "volume": "wide headpiece silhouette",
+        "arrangement": "hair base under separate satin headpiece",
+        "front": "forehead open",
+        "sides": "side hair swept to supporting base",
+        "back": "hair base supports mounted headpiece"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "dpm_bianfang"
+      ],
+      "evidenceStatus": "museum_supported_reference",
+      "accessories": [
+        "separate dark satin headpiece",
+        "bianfang fixing pin"
+      ],
+      "historicalContext": {
+        "region": "Manchu, late Qing China",
+        "precision": "headpiece, not a haircut; silhouette needs artifact reference"
+      },
+      "requires": {
+        "support": [
+          "separate headpiece"
+        ]
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "shimada_reference",
+      "label": "岛田髻·博物馆图像参考",
+      "category": "historical_reference",
+      "geometry": {
+        "length": "long hair arranged up",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "smooth",
+        "volume": "rear folded volume",
+        "arrangement": "folded-back tied tresses",
+        "front": "center-parted clear forehead",
+        "sides": "sides swept toward rear",
+        "back": "long tresses folded back and secured"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "bm_shimada"
+      ],
+      "evidenceStatus": "museum_supported_reference",
+      "accessories": [
+        "paper ties"
+      ],
+      "historicalContext": {
+        "region": "Japan",
+        "period": "Edo, source painting 1661–1688 with dating uncertainty",
+        "precision": "one Shimada-family version, not all geisha or all Japanese women"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "eonjeun_reference",
+      "label": "朝鲜盘绕加髢·얹은머리参考",
+      "category": "historical_reference",
+      "geometry": {
+        "length": "long hair plus added hair",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "swept up",
+        "texture": "braided and coiled",
+        "volume": "large raised volume",
+        "arrangement": "added-hair coiffure",
+        "front": "forehead kept open",
+        "sides": "coiled added hair around upper sides",
+        "back": "coiled hair gathered above head"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "nfm_joseon"
+      ],
+      "evidenceStatus": "museum_supported_family",
+      "historicalContext": {
+        "region": "Korea, Joseon",
+        "precision": "museum family-level account; scale changed over time; exact variant requires visual reference"
+      },
+      "requires": {
+        "support": [
+          "added hair"
+        ]
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "jjok_reference",
+      "label": "朝鲜后盘髻·쪽머리参考",
+      "category": "historical_reference",
+      "geometry": {
+        "length": "long gathered hair",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "smooth",
+        "volume": "low rear volume",
+        "arrangement": "compact rear bun",
+        "front": "forehead exposed",
+        "sides": "side hair combed back",
+        "back": "coiled bun at back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "nfm_joseon"
+      ],
+      "evidenceStatus": "museum_supported_family",
+      "historicalContext": {
+        "region": "Korea",
+        "period": "late Joseon context",
+        "precision": "simplified family-level prompt; accessory/status variants not inferred"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "roman_flavian_reference",
+      "label": "弗拉维王朝肖像卷发参考",
+      "category": "historical_reference",
+      "geometry": {
+        "length": "hair arranged up",
+        "cut": "unspecified",
+        "fringe": "raised curl rows",
+        "part": "not visible",
+        "texture": "sculpted ringlets and braids",
+        "volume": "high front volume",
+        "arrangement": "front curl rows with braided rear",
+        "front": "raised organized curls above brow",
+        "sides": "braids lie close to skull behind curls",
+        "back": "braided rear arrangement"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "met_roman"
+      ],
+      "evidenceStatus": "museum_supported_reference",
+      "historicalContext": {
+        "region": "Roman",
+        "period": "ca. 90 CE, portrait 72",
+        "precision": "artifact-specific, not all Roman women"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    },
+    {
+      "id": "south_asian_braid_reference",
+      "label": "印度日常长辫·现代作品参考",
+      "category": "cultural_reference",
+      "geometry": {
+        "length": "long",
+        "cut": "unspecified",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "smooth braided",
+        "volume": "low",
+        "arrangement": "single long braid",
+        "front": "forehead open",
+        "sides": "sides drawn back",
+        "back": "single braid down the back"
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "none",
+        "ears": "none",
+        "cheeks": "none",
+        "jaw": "none",
+        "eyes": "none"
+      },
+      "sourceIds": [
+        "india_braiding"
+      ],
+      "evidenceStatus": "museum_supported_context",
+      "historicalContext": {
+        "region": "India",
+        "period": "modern sculptural depiction",
+        "precision": "domestic braiding context only; no ancient date or bridal rule inferred"
+      },
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "requirements": {},
+      "conflicts": [],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition."
+    }
+  ],
+  "backlog": [
+    {
+      "group": "East Asian historical",
+      "names": [
+        "垂鬟髻",
+        "双环髻",
+        "飞天髻",
+        "灵蛇髻",
+        "百合髻",
+        "堕马髻",
+        "高椎髻",
+        "平安垂发/垂髪",
+        "兵库髷",
+        "桃割",
+        "丸髷",
+        "舞妓割れしのぶ",
+        "어여머리",
+        "떠구지머리"
+      ],
+      "status": "needs_artifact_or_specialist_verification",
+      "reason": "Names can cross periods or be modern reconstruction labels; require object, region, time, construction and multiple-view geometry."
+    },
+    {
+      "group": "Historical Europe",
+      "names": [
+        "medieval braided coils",
+        "Renaissance coazzone",
+        "18th-century pouf",
+        "Regency ringlets",
+        "Victorian center-part chignon",
+        "Gibson-style updo",
+        "1940s victory rolls",
+        "1960s beehive"
+      ],
+      "status": "needs_specific_source",
+      "reason": "Useful geometric presets can be authored without pretending each represents all women in an era."
+    },
+    {
+      "group": "Living regional traditions",
+      "names": [
+        "Tamil bridal braid with ornaments",
+        "Maharashtrian ambada",
+        "Bengali khopa",
+        "Burmese high knot",
+        "Thai traditional chignon",
+        "Hopi squash-blossom whorls",
+        "Miao regional coiffures",
+        "Mongolian region-specific coiffures",
+        "Fulani braid variants"
+      ],
+      "status": "needs_community_specific_sources",
+      "reason": "Do not infer ethnicity, marital status or ritual entitlement from hairstyle; separate ornaments from hair."
+    },
+    {
+      "group": "Social trend labels",
+      "names": [
+        "hush cut",
+        "octopus cut",
+        "jelly perm",
+        "cloud perm",
+        "French bob",
+        "Italian bob",
+        "Riviera bob",
+        "old-money bob",
+        "kitty cut",
+        "hush layers",
+        "水母烫",
+        "公主切",
+        "胎毛刘海",
+        "韩式八字刘海"
+      ],
+      "status": "alias_candidates_not_ranked_trends",
+      "reason": "Map to measured geometry first; add dated regional primary source before current-trend badge."
+    },
+    {
+      "group": "Designer collections",
+      "names": [
+        "ARIMINO A essence AW2026 individual looks",
+        "Sassoon Youth 2026 individual looks",
+        "Sam McKnight runway-specific updos"
+      ],
+      "status": "collection_verified_look_geometry_pending",
+      "reason": "Collection existence verified; do not fabricate a named cut or exact silhouette from textual marketing."
+    },
+    {
+      "group": "Egyptian ancient wigs",
+      "names": [
+        "female New Kingdom wig",
+        "Merit wig reconstruction"
+      ],
+      "status": "female_artifact_required",
+      "reason": "British Museum EA2560 likely male; do not relabel that object as a female Cleopatra haircut."
+    }
+  ]
+}

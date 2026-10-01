@@ -1,0 +1,156 @@
+{
+  "version": "hair-demo-v0.7",
+  "base": "base-profile.json",
+  "compiler_options": {
+    "preset": "profile",
+    "enhancers": true,
+    "appearance": {
+      "version": "appearance-v0.1",
+      "hair": {
+        "state": "selected",
+        "preset": "open_double_loop_reference",
+        "overrides": {
+          "color": "black",
+          "accessories": []
+        }
+      },
+      "makeup": {
+        "state": "off"
+      },
+      "expression": {
+        "state": "selected",
+        "preset": "relaxed_neutral"
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25
+      }
+    }
+  },
+  "appearance_resolution": {
+    "config": {
+      "version": "appearance-v0.1",
+      "hair": {
+        "state": "selected",
+        "preset": "open_double_loop_reference",
+        "overrides": {
+          "color": "black",
+          "accessories": []
+        }
+      },
+      "makeup": {
+        "state": "off"
+      },
+      "expression": {
+        "state": "selected",
+        "preset": "relaxed_neutral"
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25
+      }
+    },
+    "catalog_version": "appearance-catalog-v0.1",
+    "catalog_sha256": "93974b60e9583f9607ec59221921c3b68e7974ace17a590dc87a15ebfdaeb2f2",
+    "paragraphs": [
+      "Hair styling: arrangement: two tall slender open hair loops above the two sides of the crown, plus a central pointed hair mass; front: clearly visible hollow centers inside both elongated loops; sides: slender loop outlines rise vertically rather than round solid buns; color: black; accessories: none.",
+      "Relaxed neutral expression, resting brows, naturally open eyes and relaxed closed lips."
+    ],
+    "modules": {
+      "hair": {
+        "state": "selected",
+        "preset": "open_double_loop_reference",
+        "requestedPreset": "open_double_loop_reference",
+        "referenceIds": [
+          "aam-dancer"
+        ],
+        "family": "upright_paired_loops",
+        "variantOf": "upright_double_roll_reference",
+        "label": "高耸双大环文物轮廓",
+        "resolved": {
+          "arrangement": "two tall slender open hair loops above the two sides of the crown, plus a central pointed hair mass",
+          "front": "clearly visible hollow centers inside both elongated loops",
+          "sides": "slender loop outlines rise vertically rather than round solid buns",
+          "color": "black",
+          "accessories": []
+        },
+        "sourceIds": [
+          "aam-dancer_0"
+        ],
+        "evidenceStatus": "museum_object_visible_geometry",
+        "context": {
+          "historical": {
+            "objects": [
+              {
+                "referenceId": "aam-dancer",
+                "era": "唐，约618—700年",
+                "namedMatch": "museum_geometry_only",
+                "provenance": "The Avery Brundage Collection；年代为馆方约定范围，非明确纪年墓年代"
+              }
+            ],
+            "claim": "Object-specific visible structure only; no universal dynasty, rank, regional or construction claim."
+          },
+          "trend": null,
+          "cultural": null,
+          "recipe": null
+        },
+        "occlusion": null,
+        "occlusionStatus": "requires_reassessment_after_overrides",
+        "requirements": {},
+        "materialModes": [
+          "natural",
+          "wig",
+          "hairpiece"
+        ],
+        "identityNote": "Reference names stay in source metadata. Do not change face, age, ancestry, costume or identity to match a reference.",
+        "geometryIs": "Authored reusable structural description based on inspected reference evidence; internal support and unseen geometry are not proven.",
+        "authorship": null,
+        "conflicts": [],
+        "sources": [
+          {
+            "id": "aam-dancer_0",
+            "title": "Dancer",
+            "url": "https://education.asianart.org/resources/dancer-approx-618-700/",
+            "rights": "馆方网页图像；未发现明确开放再利用许可，仅作研究参考，公开再发布需核查授权",
+            "accessedAt": "2026-09-30",
+            "evidenceTier": "A｜馆方实物记录＋已检视原图",
+            "referenceId": "aam-dancer"
+          }
+        ],
+        "impact": "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+        "warnings": [
+          "Hair silhouette and occlusion can alter perceived facial proportions.",
+          "Unobserved construction and rear topology are not established; this is a visible-silhouette interpretation, not an exact reconstruction.",
+          "馆方称two large loops，未给传统汉语髻名；不能强认双环望仙或飞天"
+        ]
+      },
+      "makeup": {
+        "state": "off",
+        "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25,
+        "impact": "Age cues can change perceived soft tissue, skin texture and facial proportions; baseline parameters are unchanged. This is an approximate appearance target, not an exact age guarantee."
+      },
+      "expression": {
+        "state": "selected",
+        "preset": "relaxed_neutral",
+        "impact": "Muscle action changes visible brow height, eye aperture, cheek lift and mouth shape; neutral feature values are not a pixel-level lock."
+      }
+    },
+    "warnings": [
+      "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+      "Hair silhouette and occlusion can alter perceived facial proportions.",
+      "Unobserved construction and rear topology are not established; this is a visible-silhouette interpretation, not an exact reconstruction.",
+      "馆方称two large loops，未给传统汉语髻名；不能强认双环望仙或飞天",
+      "hair overrides are authored free-text geometry. Historical accuracy, physical compatibility and preset occlusion metadata are not guaranteed after overrides.",
+      "Age cues can change perceived soft tissue, skin texture and facial proportions; baseline parameters are unchanged. This is an approximate appearance target, not an exact age guarantee.",
+      "Muscle action changes visible brow height, eye aperture, cheek lift and mouth shape; neutral feature values are not a pixel-level lock.",
+      "Legacy overall impression remains active and can bias appearance; use enhancers false for isolated module comparisons.",
+      "Profile capture is free text: check lighting, view and styling words manually for semantic conflicts."
+    ]
+  },
+  "prompt_sha256": "d780c194fbce962a88531e904d9f9acae78157207ecf5c374433308f2b9a7e01",
+  "purpose": "Observable hairstyle constraints; shared input geometry does not establish same-image identity. Generated images are a separate test result."
+}

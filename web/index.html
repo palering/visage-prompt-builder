@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark"><meta name="description" content="Visage 成人角色提示词工作台：本地参数、独立角色与版本、静态参考和实时提示词。">
+<title>Visage · 角色提示词工作台 0.12</title>
+<link rel="stylesheet" href="./workbench.css">
+</head>
+<body>
+<a class="skip-link" href="#prompt-output">跳到输出提示词</a>
+<div class="shell" id="app-shell">
+<nav class="global-nav card" aria-label="全局导航">
+ <div class="nav-brand" aria-label="Visage">V</div>
+ <button id="nav-workbench" class="nav-button active" type="button" title="角色工作台" aria-label="角色工作台" data-icon="users"></button>
+ <button id="nav-workspace" class="nav-button" type="button" title="本机工作区" aria-label="本机工作区" data-icon="folder"></button>
+ <button id="nav-inspector" class="nav-button" type="button" title="参数检查器" aria-label="参数检查器" data-icon="sliders"></button>
+ <div class="nav-spacer"></div>
+ <button id="theme-toggle" class="nav-button" type="button" title="切换深色主题" aria-label="切换深色主题" data-icon="moon"></button>
+ <button id="nav-help" class="nav-button" type="button" title="使用说明" aria-label="使用说明" data-icon="help-circle"></button>
+ <button id="collapse-nav" class="nav-button" type="button" title="收起全局导航" aria-label="收起全局导航" aria-expanded="true" data-icon="sidebar"></button>
+</nav>
+<aside class="character-panel card" id="character-panel" aria-labelledby="characters-title">
+ <header class="brand-header"><div><div class="brand">VISAGE</div><p>角色外观提示词构建器</p></div><button id="expand-nav" class="icon-button" type="button" aria-label="展开全局导航" title="展开全局导航" data-icon="sidebar" hidden></button></header>
+ <div class="list-heading"><h1 id="characters-title">我的角色</h1><button id="new-character" class="icon-button" type="button" title="新建角色" aria-label="新建角色" data-icon="plus"></button></div>
+ <div id="character-list" class="character-list" aria-label="角色与已保存版本"></div>
+ <div class="workspace-panel" id="workspace-panel">
+  <div class="workspace-title"><span data-icon="monitor"></span><strong>本机工作区</strong><span class="version">0.12</span></div>
+  <p id="workspace-status">当前会话 · 尚未保存</p>
+  <div class="workspace-actions"><button id="save-local" type="button" data-icon="save">保存到本机</button><button id="load-local" class="quiet" type="button">读取</button></div>
+  <details id="workspace-files"><summary>配置与备份</summary><div class="workspace-actions"><button id="export-json" type="button" data-icon="download">导出当前 JSON</button><button id="import-json" type="button" data-icon="upload">导入 JSON</button></div><input type="file" id="import-file" accept=".json,application/json" hidden><p>JSON 仅含当前参数；本机保存含角色与版本。参考图片仅保留在当前会话。</p></details>
+ </div>
+</aside>
+<main class="center-column" id="center-column">
+ <section class="preview-card card" aria-labelledby="current-character-title">
+  <header class="canvas-toolbar"><div class="character-heading"><h2 id="current-character-title">未命名角色</h2><span class="current-revision" id="current-revision">草稿</span><button id="rename-character" class="icon-button" type="button" aria-label="重命名角色" title="重命名角色" data-icon="edit-2"></button></div><button id="import-reference" type="button" data-icon="image">导入图片</button></header>
+  <form id="rename-form" class="rename-form" hidden><label for="character-name">角色名称</label><input id="character-name" type="text" maxlength="80" autocomplete="off"><button id="confirm-rename" type="submit">保存</button><button id="cancel-rename" class="quiet" type="button">取消</button></form>
+  <div class="reference-stage" id="reference-stage"><img id="reference-image" alt="当前角色的本地静态参考" hidden><div id="reference-empty" class="reference-empty"><span data-icon="image"></span><h3>给角色一张参考</h3><p>此无图片备份未附带示例图，请导入本地图片<br>参数调整只更新下方提示词</p><button id="load-example" class="quiet" type="button" hidden disabled>查看静态示例</button></div><button id="clear-reference" class="icon-button stage-clear" type="button" title="移除当前参考" aria-label="移除当前参考" data-icon="x" hidden></button><span class="source-badge" id="reference-source" hidden></span></div>
+  <div class="reference-caption"><span data-icon="info"></span><p id="reference-label">参考图片仅在本机展示，不随参数变化</p></div>
+  <input id="reference-file" type="file" accept="image/png,image/jpeg,image/webp,image/gif" hidden>
+ </section>
+ <div id="preview-divider" class="preview-divider" role="separator" tabindex="0" aria-label="调整参考图与提示词高度" aria-orientation="horizontal" aria-valuemin="35" aria-valuemax="78" aria-valuenow="65" aria-controls="reference-stage prompt-panel" title="拖动调整高度，或用上下方向键"><span data-icon="more-horizontal"></span></div>
+ <section class="prompt-panel card" id="prompt-panel" aria-labelledby="preview-title">
+  <header class="prompt-header"><h2 id="preview-title">输出提示词</h2><details class="output-menu" id="output-settings"><summary id="output-summary" aria-label="提示词输出范围与展示上下文">全部模块</summary><div class="output-settings-card"><label for="output-scope">描述范围</label><select id="output-scope"><option value="full">完整角色 · 已启用模块</option><option value="face">仅面部 · 结构与肤色</option><option value="hair">仅发型</option><option value="body">仅身体</option><option value="custom">自选模块组合…</option></select><fieldset id="output-module-options" hidden><legend>选择要描述的模块</legend></fieldset><label for="output-context">补充未选项 · 可选展示上下文</label><select id="output-context"><option value="none">不补充 · 只写选中内容</option><option value="default">中性默认展示</option><option value="random">随机展示上下文</option><option value="clay">白模展示 · 仅未选部分</option></select><div id="context-random-controls" hidden><button id="reroll-context" type="button" data-icon="refresh-cw">换一个展示上下文</button><p class="field-note">上下文种子 <span id="context-seed" class="mono"></span></p></div><p class="field-note" id="output-scope-note">仅改变提示词，不改变人物参数、固定或角色随机种子。</p><p class="field-note">发型单选不会附带人物身份或面部参数；白模只用于未选的展示载体。身体关闭或头肩构图时仍不会输出身体。</p></div></details><button id="prompt-language" class="language-toggle" type="button" aria-label="提示词语言：英文；点击切换中文" title="切换中英文提示词">EN</button><button id="copy-prompt" type="button" data-icon="copy">复制</button></header>
+  <div class="prompt-content"><textarea id="prompt-output" class="prompt-output" aria-labelledby="preview-title" readonly spellcheck="false" aria-describedby="prompt-help" placeholder="正在载入工作台…"></textarea><details class="warnings" id="warnings" hidden><summary id="warnings-title">编译提示</summary><ul id="warning-list"></ul></details></div>
+  <footer class="prompt-footer"><span id="compile-status" class="ready"><span class="status-dot"></span>实时编译</span><span id="prompt-length">0 字符</span><button id="select-prompt" class="text-button" type="button">全选</button><details class="prompt-meta"><summary aria-label="提示词模块与种子" data-icon="info"></summary><div><div class="module-summary" id="module-summary"></div><p>SEED <span id="seed-value" class="mono"></span></p><p id="prompt-help">仅输出提示词，不生成图片。参数是成年角色的创作描述，不是人体测量。固定保留参数，不锁定画面像素。</p></div></details></footer>
+ </section>
+</main>
+<aside class="inspector card" id="inspector" aria-labelledby="inspector-title">
+ <header class="inspector-header"><h2 id="inspector-title">参数检查器</h2><button id="reset" class="icon-button" type="button" title="重置当前参数" aria-label="重置当前参数" data-icon="rotate-ccw"></button></header>
+ <div class="global-reroll"><button class="primary" id="randomize" type="button" data-icon="refresh-cw">全局重抽未固定项</button><p>头部 + 外观 + 已启用身体 · 不受当前标签限制</p></div>
+ <div class="inspector-tabs" role="tablist" aria-label="参数分类"><button id="tab-head" type="button" role="tab" aria-selected="true" aria-controls="panel-head" tabindex="0">头部</button><button id="tab-appearance" type="button" role="tab" aria-selected="false" aria-controls="panel-appearance" tabindex="-1">外观</button><button id="tab-body" type="button" role="tab" aria-selected="false" aria-controls="panel-body" tabindex="-1">身体</button></div>
+ <div class="inspector-scroll" id="inspector-scroll">
+ <div class="direction-row"><label for="direction-select">风格方向</label><select id="direction-select"></select></div>
+<div id="panel-head" role="tabpanel" aria-labelledby="tab-head"><details class="inspector-detail" id="identity-settings"><summary>人物设定<span>原文 / 候选 / 固定</span></summary><div class="card-header"><div><h2 id="identity-title">人物设定</h2><p>按原文保留；不按族裔推导五官。固定只防随机，仍可手动修改。</p></div></div><div class="card-body appearance-grid" id="identity-fields"></div></details><section class="parameter-section" aria-labelledby="head-title">
+          <div class="card-header">
+            <div><div class="card-title"><span class="section-number">01</span><h2 id="head-title">头部结构</h2></div><p>展开分组，勾选需要写入提示词的形态参数</p></div>
+            <span id="lock-head"></span><label class="toggle"><input id="head-enabled" type="checkbox" checked> 启用</label>
+          </div>
+          <div class="card-body" id="head-fields"><p class="section-caption">0–100 是相对艺术刻度。50 表示中性，不等于关闭。</p><div class="group-grid" id="head-groups"></div></div>
+        </section></div><div id="panel-appearance" role="tabpanel" aria-labelledby="tab-appearance" hidden><section class="parameter-section" aria-labelledby="appearance-title">
+          <div class="card-header"><div><div class="card-title"><span class="section-number">02</span><h2 id="appearance-title">头部外观</h2></div><p>发型、妆容、表情与成年年龄各自独立</p></div></div>
+          <div class="card-body appearance-grid">
+            <div class="field"><label for="hair-select">发型 <span id="hair-total" class="muted"></span></label><input id="hair-search" type="search" placeholder="搜索发型名称、英文别名…" aria-label="搜索发型" autocomplete="off"><select id="hair-select"></select><p class="field-note" id="hair-note"></p><div class="module-constraints" id="hair-constraint"></div></div>
+            <div class="field"><label for="makeup-select">妆容</label><input id="makeup-search" type="search" placeholder="搜索妆容名称、区域…" aria-label="搜索妆容" autocomplete="off"><select id="makeup-select"></select><p class="field-note" id="makeup-note">选择一项妆容配方；不改变原始面部参数。</p><div class="module-constraints" id="makeup-constraint"></div></div>
+            <div class="field"><label for="expression-select">表情</label><select id="expression-select"></select><p class="field-note">表情会改变可见的眉眼与唇部形态。</p><div class="module-constraints" id="expression-constraint"></div></div>
+            <div class="field"><label for="age-mode">外观年龄 · 仅成年人</label><select id="age-mode"><option value="inherit">继承原配置</option><option value="off">关闭年龄修饰</option><option value="selected">指定成年年龄</option></select><div class="age-control" id="age-control" hidden><div class="age-head"><label for="age-number">目标外观年龄</label><input id="age-number" aria-label="目标外观年龄数值" type="number" min="18" max="90" step="1" value="26"></div><input id="age-range" aria-label="目标外观年龄" type="range" min="18" max="90" step="1" value="26"><div class="axis-scale"><span>18 岁</span><span>90 岁</span></div></div><p class="field-note">近似外观目标；不能保证画面中的精确年龄。</p><div class="module-constraints" id="age-constraint"></div></div>
+          </div>
+        </section></div><div id="panel-body" role="tabpanel" aria-labelledby="tab-body" hidden><section class="parameter-section" aria-labelledby="body-title">
+          <div class="card-header"><div><div class="card-title"><span class="section-number">03</span><h2 id="body-title">身体轮廓</h2><span class="version">可选</span></div><p>成人身体的简要比例、体量与轮廓</p></div><span id="lock-body"></span><label class="toggle"><input id="body-enabled" type="checkbox"> 启用</label></div>
+          <div class="card-body"><div class="body-placeholder" id="body-placeholder"><strong>需要完整人物时，再打开身体模块</strong>默认关闭。启用后切换为全身构图；服装模块暂未加入。</div><div id="body-fields" hidden><p class="section-caption">只表达视觉方向，不推断健康、体脂、BMI 或解剖测量。</p><div class="group-grid" id="body-groups"></div></div></div>
+        </section></div><details class="inspector-detail" id="sampling-settings"><summary>随机边界<span id="constraint-count"></span></summary><div class="card-header"><div><h2 id="sampling-title">随机边界</h2></div><div><button type="button" id="lock-everything">全部固定</button> <button type="button" id="unlock-everything" class="quiet">全部解锁</button></div></div><div class="card-body"><p class="section-caption">数值范围参考 · 只在勾选的预设内重抽，不会随机改变这组选项</p><div id="bundle-options" class="bundle-options"></div><p class="field-note">范围不是固定值，也不是族裔或解剖规则。脸型文字原样保留；关联组中任一字段固定，整组跳过。随机会补入预设中未固定的头部数值；无预设的数值需设置范围才参与随机。全局重抽包含已启用的身体数值；底部按钮只重抽当前标签。未启用身体与身体轴保持关闭。外观使用你设置的候选；继承的旧外观可采用所选风格方向，明确关闭的模块保持关闭（除非你为它设定了候选）。</p></div></details><section class="parameter-section capture-section" aria-labelledby="capture-title"><div class="card-header"><div class="card-title"><span class="section-number">04</span><h2 id="capture-title">画面范围</h2></div></div><div class="card-body"><div class="capture-card"><div><h3>选择提示词的构图</h3><p>头部特写保留头部细节，全身构图可带入身体参数。</p></div><div><label for="capture" class="sr-only">画面范围</label><select id="capture"><option value="head">头部 / 肩部特写</option><option value="full_body">全身构图</option></select></div></div><p class="capture-note" id="capture-note" hidden>当前为头部构图：身体参数保留在配置中，但不会写入最终提示词。</p></div></section>
+ </div>
+ <footer class="inspector-footer"><button class="primary" id="randomize-tab" type="button" aria-controls="panel-head" data-icon="refresh-cw">只重抽头部</button><button id="undo-randomize" type="button" data-icon="corner-up-left" disabled>撤销</button></footer>
+</aside>
+</div>
+<div id="status" class="status" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+<dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title"><header><h2 id="help-title">本地创作，实时编译</h2><button id="close-help" class="icon-button" type="button" aria-label="关闭说明" data-icon="x"></button></header><p>编辑头部、外观与可选身体参数，实时得到中英文提示词（自定义文字保留原文）。数值是艺术刻度，50 表示中性，关闭表示不输出。</p><p>顶部全局重抽包含头部、外观与已启用身体；底部只重抽当前标签。固定只阻止随机更改，仍可手动修改。随机范围与文字候选在各字段下展开；关联组中任意字段固定，整组跳过。</p><p>参考图是静态图片，参数改变不会生成新图片，也不会保证图像身份。图片仅留在当前会话，不保存、不上传。</p><p>角色草稿在切换时保留；“保存版本”创建快照。“保存到本机”才会持久保存整个工作区。导出 JSON 用于当前参数的迁移和备份。</p><p>中间分割条可拖动，或聚焦后按上下方向键；Home / End 调整到边界。浅色 / 深色与分割比例会记住。</p><p>输出范围与人物参数分离：可选仅面部、发型、身体或自选组合，再按需补充中性、随机或白模展示上下文。展示随机只在点击重抽时换种子；白模只影响未选载体。中文翻译覆盖内置编译模板与外观目录，自定义文字不自动翻译。</p><small>图标：Feather 4.29.2 · MIT License。此无图片备份不附带示例图。</small></dialog>
+<noscript>请启用 JavaScript。工作台可完全离线使用，无需账号或图像 API。</noscript>
+<script type="module" src="./app.mjs"></script>
+</body></html>

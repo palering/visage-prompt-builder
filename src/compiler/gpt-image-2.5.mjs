@@ -1,161 +1,194 @@
-const clamp = (value) => Math.max(0, Math.min(100, Number(value)));
+import { validateProfile } from './validate.mjs';
+import { resolveAppearance } from '../appearance/modules.mjs';
+import { resolveBody } from '../body/body.mjs';
 
-function intensity(value) {
-  const v = clamp(value);
-  if (v <= 14) return { direction: -1, degree: 'extremely' };
-  if (v <= 29) return { direction: -1, degree: 'distinctly' };
-  if (v <= 42) return { direction: -1, degree: 'moderately' };
-  if (v <= 47) return { direction: -1, degree: 'slightly' };
-  if (v <= 52) return { direction: 0, degree: 'balanced' };
-  if (v <= 57) return { direction: 1, degree: 'slightly' };
-  if (v <= 70) return { direction: 1, degree: 'moderately' };
-  if (v <= 85) return { direction: 1, degree: 'distinctly' };
-  return { direction: 1, degree: 'extremely' };
+export const COMPILER_VERSION = 'gpt-image-2.5-v0.3';
+
+const words = (value) => value.replaceAll('_', ' ').replace(/\s+/g, ' ').trim();
+const sentence = (parts) => parts.filter(Boolean).join('; ') + '.';
+
+function adjective(value, negative, positive, neutral = 'moderate') {
+  if (value <= 14) return `extremely ${negative}`;
+  if (value <= 29) return `distinctly ${negative}`;
+  if (value <= 42) return `moderately ${negative}`;
+  if (value <= 47) return `slightly ${negative}`;
+  if (value <= 52) return neutral;
+  if (value <= 57) return `slightly ${positive}`;
+  if (value <= 70) return `moderately ${positive}`;
+  if (value <= 85) return `distinctly ${positive}`;
+  return `extremely ${positive}`;
 }
 
-function axisAdj(value, negative, positive, neutral = 'balanced') {
-  const { direction, degree } = intensity(value);
-  if (direction === 0) return neutral;
-  return `${degree} ${direction < 0 ? negative : positive}`;
-}
-
-function words(value = '') {
-  return String(value).replaceAll('_', ' ').replace(/\s+/g, ' ').trim();
-}
-
-function joinNatural(items) {
-  const clean = items.filter(Boolean);
-  if (clean.length <= 1) return clean[0] ?? '';
-  if (clean.length === 2) return `${clean[0]} and ${clean[1]}`;
-  return `${clean.slice(0, -1).join(', ')}, and ${clean.at(-1)}`;
-}
-
-function makeupIntensity(value) {
-  const v = clamp(value);
-  if (v <= 10) return 'barely visible';
-  if (v <= 30) return 'minimal';
-  if (v <= 50) return 'light';
-  if (v <= 70) return 'moderate';
-  if (v <= 85) return 'strong';
-  return 'very strong';
-}
-
-function buildCapture(presetName, p) {
-  if (presetName === 'none') return '';
-
-  if (presetName === 'profile') {
-    const c = p.capture ?? {};
-    return `Use a ${words(c.view || 'front')} view, ${words(c.camera_height || 'eye level')} camera height, ${words(c.lens_equivalent || '85mm')} lens perspective, ${words(c.camera_distance || 'portrait')} camera distance, ${words(c.lighting || 'soft neutral studio')} lighting, and a ${words(c.background || 'neutral plain')} background.`;
+// Each axis retains its own meaning. Size, horizontal length, aperture and socket
+// depth are deliberately not collapsed into one eye-size or "almond" label.
+const axes = {
+  face_geometry: {
+    face_length: ['facial length', 'short', 'long'],
+    face_width: ['facial width', 'narrow', 'wide'],
+    forehead_width: ['forehead width', 'narrow', 'broad'],
+    forehead_height: ['forehead height', 'low', 'tall'],
+    cheekbone_width: ['cheekbone width', 'narrow', 'broad'],
+    cheekbone_height: ['cheekbone placement', 'low-set', 'high-set'],
+    jaw_width: ['jaw width', 'narrow', 'wide'],
+    jaw_angle: ['jaw angles', 'soft and rounded', 'angular and defined', 'gently defined'],
+    chin_width: ['chin width', 'narrow', 'broad'],
+    chin_length: ['chin length', 'short', 'long'],
+    chin_projection: ['chin projection', 'recessed', 'projected']
+  },
+  soft_tissue: {
+    upper_medial_cheek_fullness: ['upper-medial cheek volume', 'lean', 'full', 'moderate'],
+    lateral_cheek_fullness: ['lateral cheek volume', 'restrained', 'full', 'moderate'],
+    cheek_fullness: ['cheek volume', 'lean', 'full'],
+    midface_length: ['midface length', 'short', 'long'],
+    under_eye_volume: ['under-eye volume', 'hollow', 'full'],
+    nasolabial_definition: ['nasolabial definition', 'soft', 'pronounced', 'subtle'],
+    facial_softness: ['facial soft tissue', 'lean and defined', 'soft and rounded'],
+    temple_fullness: ['temple volume', 'hollow', 'full']
+  },
+  eyes: {
+    eye_size: ['eye size', 'small', 'large', 'medium'],
+    eye_length: ['horizontal eye length', 'short', 'long'],
+    eye_roundness: ['eye aperture', 'narrow', 'round'],
+    eye_spacing: ['eye spacing', 'close-set', 'wide-set'],
+    eye_tilt: ['outer eye corners', 'downturned', 'upturned', 'level'],
+    eye_socket_depth: ['eye sockets', 'shallow', 'deep']
+  },
+  eyebrows: {
+    brow_thickness: ['brows', 'thin', 'thick', 'medium-thickness'],
+    brow_height: ['brow placement', 'low-set', 'high-set'],
+    brow_arch: ['brow shape', 'straight', 'arched', 'gently curved'],
+    brow_length: ['brow length', 'short', 'long'],
+    brow_density: ['brow hair', 'sparse', 'dense', 'medium-density']
+  },
+  nose: {
+    bridge_height: ['nasal bridge height', 'low', 'high'],
+    bridge_width: ['nasal bridge width', 'narrow', 'broad'],
+    nose_length: ['nose length', 'short', 'long'],
+    nose_projection: ['nose projection', 'subtle', 'prominent'],
+    tip_size: ['nasal tip', 'small', 'large', 'medium-sized'],
+    tip_roundness: ['nasal tip shape', 'defined', 'rounded', 'gently rounded'],
+    tip_rotation: ['nasal tip rotation', 'downturned', 'upturned', 'neutral'],
+    alar_width: ['alar width', 'narrow', 'broad'],
+    nostril_visibility: ['nostril visibility', 'low', 'high']
+  },
+  mouth: {
+    mouth_width: ['mouth width', 'narrow', 'wide'],
+    upper_lip_fullness: ['upper lip', 'thin', 'full', 'medium-full'],
+    lower_lip_fullness: ['lower lip', 'thin', 'full', 'medium-full'],
+    cupid_bow_definition: ["cupid's bow", 'soft-edged', 'strongly defined', 'moderately defined'],
+    mouth_corner_direction: ['mouth corners', 'downturned', 'upturned', 'neutral'],
+    philtrum_length: ['philtrum length', 'short', 'long']
+  },
+  skin: {
+    translucency: ['skin translucency', 'low', 'high'],
+    blemish_visibility: ['visible skin variation', 'low', 'high'],
+    freckle_visibility: ['freckling', 'minimal', 'prominent']
+  },
+  hair: { volume: ['hair volume', 'low', 'high'] },
+  expression: {
+    eye_openness: ['eyes', 'relaxed', 'open', 'naturally open'],
+    mouth_relaxation: ['mouth posture', 'tense', 'relaxed', 'naturally relaxed']
   }
+};
 
-  return `Front-facing head-and-shoulders portrait.
-Neutral head position and neutral relaxed expression.
-Looking directly at the camera.
-Keep the main facial contours clearly visible.
-Eye-level camera with an 85mm portrait-lens perspective and no wide-angle distortion.
-Soft symmetrical neutral studio lighting on a neutral light-grey background.
-Realistic natural skin texture. No beauty filter. No stylized facial proportions.`;
+function axisPhrases(section, values = {}) {
+  const regional = section === 'soft_tissue' && (values.upper_medial_cheek_fullness !== undefined || values.lateral_cheek_fullness !== undefined);
+  return Object.entries(axes[section]).filter(([key]) => !(regional && key === 'cheek_fullness')).flatMap(([key, [noun, low, high, neutral]]) =>
+    values[key] === undefined ? [] : [`${adjective(values[key], low, high, neutral)} ${noun}`]);
+}
+
+// UI descriptions use the very same adjective mapping as final compilation.
+export function describeFaceValue(section, key, value) {
+  if (!Object.hasOwn(axes, section) || !Object.hasOwn(axes[section], key) || !Number.isFinite(value) || value < 0 || value > 100) throw new Error('Invalid face axis/value.');
+  return axisPhrases(section, { [key]: value })[0];
+}
+
+function textPhrases(values, fields) {
+  return Object.entries(fields).flatMap(([key, label]) =>
+    values?.[key] === undefined ? [] : [`${words(values[key])} ${label}`.trim()]);
+}
+
+function capture(preset, c = {}) {
+  if (preset === 'none') return '';
+  if (preset === 'calibration') {
+    return 'Front-facing head-and-shoulders portrait, neutral head position and relaxed neutral expression, looking at the camera. Hair clear of facial contours, minimal makeup, no jewelry. Eye-level 85mm perspective, soft symmetrical neutral studio lighting, plain light-grey background. Natural skin texture, no beauty filter or stylized proportions.';
+  }
+  const parts = textPhrases(c, {
+    view: 'view', camera_height: 'camera height', lens_equivalent: 'lens perspective',
+    camera_distance: 'camera distance', lighting: 'lighting', background: 'background'
+  });
+  for (const key of ['head_yaw', 'head_pitch', 'head_roll']) {
+    if (c[key] !== undefined) parts.push(`${words(key)} ${c[key]} degrees`);
+  }
+  if (c.image_softness !== undefined) parts.push(c.image_softness === 0 ? 'no image softening' : `${adjective(c.image_softness, 'low', 'high')} image softness`);
+  if (c.beauty_filter_strength !== undefined) parts.push(c.beauty_filter_strength === 0 ? 'no beauty filter' : `${adjective(c.beauty_filter_strength, 'low', 'high')} beauty-filter strength`);
+  return parts.length ? `Capture: ${sentence(parts)}` : '';
+}
+
+function styling(p, appearance) {
+  p = structuredClone(p);
+  for (const key of ['hair','makeup','expression']) if (appearance?.[key]) delete p[key];
+  const parts = [];
+  if (p.subject?.overall_impression?.length) parts.push(`Overall impression: ${[...new Set(p.subject.overall_impression.map(words))].join(', ')}.`);
+  const skin = [...textPhrases(p.skin, { tone: 'skin tone', texture: 'skin texture' }), ...axisPhrases('skin', p.skin)];
+  if (skin.length) parts.push(sentence(skin));
+  const hair = [...textPhrases(p.hair, { color: 'hair', length: 'hair length', texture: 'hair texture', parting: 'parting', face_framing: 'face framing' }), ...axisPhrases('hair', p.hair)];
+  if (hair.length) parts.push(sentence(hair));
+  const m = p.makeup ?? {};
+  if (m.intensity === 0) {
+    parts.push('No makeup.');
+  } else {
+    const details = textPhrases(m, { base: 'base', eyeliner: 'eyeliner', eyeshadow: 'eyeshadow', lashes: 'lashes', blush: 'blush', lip_style: 'lip styling', lip_color: 'lip color' });
+    const level = m.intensity === undefined ? '' : m.intensity <= 10 ? 'Barely visible' : m.intensity <= 30 ? 'Minimal' : m.intensity <= 50 ? 'Light' : m.intensity <= 70 ? 'Moderate' : m.intensity <= 85 ? 'Strong' : 'Very strong';
+    if (level || details.length) parts.push(`${level ? `${level} makeup` : 'Makeup'}${details.length ? `: ${details.join(', ')}` : ''}.`);
+  }
+  const expression = [...textPhrases(p.expression, { expression: 'expression' }), ...axisPhrases('expression', p.expression)];
+  if (expression.length) parts.push(sentence(expression));
+  return parts.join(' ');
 }
 
 export function compileFacePrompt(p, options = {}) {
+  validateProfile(p);
+  if (!options || typeof options !== 'object' || Array.isArray(options)) throw new Error('Compiler options must be an object.');
+  for (const key of Object.keys(options)) if (!['preset', 'enhancers', 'appearance', 'body', 'capture'].includes(key)) throw new Error(`Unknown compiler option: ${key}.`);
   const preset = options.preset ?? 'calibration';
+  if (!['calibration', 'profile', 'none'].includes(preset)) throw new Error(`Unknown preset: ${preset}. Expected calibration, profile, or none.`);
+  if (options.enhancers !== undefined && typeof options.enhancers !== 'boolean') throw new Error('enhancers must be a boolean.');
+  if (options.enhancers && preset === 'calibration') throw new Error('Profile enhancers conflict with calibration. Use preset profile or none with enhancers.');
 
-  if (p.schema_version !== 'face-v0.1') {
-    throw new Error(`Unsupported schema_version: ${p.schema_version ?? 'missing'}. Expected face-v0.1.`);
-  }
-
-  const g = p.face_geometry ?? {};
-  const s = p.soft_tissue ?? {};
-  const e = p.eyes ?? {};
-  const b = p.eyebrows ?? {};
-  const n = p.nose ?? {};
-  const m = p.mouth ?? {};
-  const skin = p.skin ?? {};
-  const makeup = p.makeup ?? {};
-  const hair = p.hair ?? {};
-  const expression = p.expression ?? {};
+  if (options.capture !== undefined && !['head','full_body'].includes(options.capture)) throw new Error('Capture must be head or full_body.');
+  const body = resolveBody(options.body, {profile:p, capture:options.capture ?? 'full_body'});
+  const fullBody = options.capture === 'full_body' || (body.active && options.capture === undefined);
+  if (fullBody && p.subject?.age_group !== 'adult') throw new Error('Full-body capture requires subject.age_group to be adult.');
+  const modules = resolveAppearance(options.appearance, {preset, enhancers: options.enhancers, profile:p});
   const subject = p.subject ?? {};
-
-  const impressions = Array.isArray(subject.overall_impression) && subject.overall_impression.length
-    ? ` Overall facial impression: ${subject.overall_impression.map(words).join(', ')}.`
-    : '';
-
-  const intro = `Create a realistic portrait of one ${words(subject.age_group || 'adult')} fictional ${words(subject.gender_presentation || 'person')}.${impressions}`;
-
-  const faceGeometry = [
-    `The face has an overall ${words(g.face_shape || 'oval')} shape, with ${axisAdj(g.face_length ?? 50, 'short', 'long')} facial length and ${axisAdj(g.face_width ?? 50, 'narrow', 'wide')} facial width.`,
-    `The forehead is ${axisAdj(g.forehead_width ?? 50, 'narrow', 'broad')} in width and ${axisAdj(g.forehead_height ?? 50, 'low', 'tall')} in height.`,
-    `The cheekbones are ${axisAdj(g.cheekbone_width ?? 50, 'narrow', 'broad')} in width and ${axisAdj(g.cheekbone_height ?? 50, 'low-set', 'high-set', 'balanced in height')}.`,
-    `The jaw is ${axisAdj(g.jaw_width ?? 50, 'narrow', 'wide')} with ${axisAdj(g.jaw_angle ?? 50, 'soft and rounded', 'angular and defined', 'balanced')} jaw angles.`,
-    `The chin is ${axisAdj(g.chin_width ?? 50, 'narrow', 'broad')} in width and ${axisAdj(g.chin_length ?? 50, 'short', 'long')} in length, with ${axisAdj(g.chin_projection ?? 50, 'recessed', 'projected')} forward projection.`
-  ].join('\n');
-
-  const eyes = [
-    `The eyes are ${axisAdj(e.eye_size ?? 50, 'small', 'large')} in size, ${axisAdj(e.eye_length ?? 50, 'short', 'long')} horizontally, and ${axisAdj(e.eye_roundness ?? 50, 'narrow', 'round')} in shape.`,
-    `Eye spacing is ${axisAdj(e.eye_spacing ?? 50, 'close-set', 'wide-set')}, with ${axisAdj(e.eye_tilt ?? 50, 'downturned', 'upturned', 'level')} outer corners.`,
-    `The eye sockets are ${axisAdj(e.eye_socket_depth ?? 50, 'shallow', 'deep')} in depth.`,
-    e.upper_eyelid ? `The upper eyelids are ${words(e.upper_eyelid)}.` : '',
-    e.lower_eyelid_shape ? `The lower eyelids are ${words(e.lower_eyelid_shape)}.` : ''
-  ].filter(Boolean).join('\n');
-
-  const brows = [
-    `The eyebrows are ${axisAdj(b.brow_thickness ?? 50, 'thin', 'thick')}, ${axisAdj(b.brow_height ?? 50, 'low-set', 'high-set', 'balanced in placement')}, and ${axisAdj(b.brow_arch ?? 50, 'straight', 'arched', 'gently curved')}.`,
-    `They are ${axisAdj(b.brow_length ?? 50, 'short', 'long')} with ${axisAdj(b.brow_density ?? 50, 'sparse', 'dense')} density.`
-  ].join('\n');
-
-  const nose = [
-    `The nose has a ${axisAdj(n.bridge_height ?? 50, 'low', 'high')} bridge with ${axisAdj(n.bridge_width ?? 50, 'narrow', 'broad')} bridge width.`,
-    `The nose is ${axisAdj(n.nose_length ?? 50, 'short', 'long')} with ${axisAdj(n.nose_projection ?? 50, 'subtle', 'prominent')} projection.`,
-    `The nasal tip is ${axisAdj(n.tip_size ?? 50, 'small', 'large')}, ${axisAdj(n.tip_roundness ?? 50, 'defined', 'rounded')}, and ${axisAdj(n.tip_rotation ?? 50, 'downturned', 'upturned', 'neutral')} in rotation.`,
-    `The alar base is ${axisAdj(n.alar_width ?? 50, 'narrow', 'broad')}, with ${axisAdj(n.nostril_visibility ?? 50, 'low', 'high')} nostril visibility.`
-  ].join('\n');
-
-  const mouth = [
-    `The mouth is ${axisAdj(m.mouth_width ?? 50, 'narrow', 'wide')} in width.`,
-    `The upper lip is ${axisAdj(m.upper_lip_fullness ?? 50, 'thin', 'full')}, while the lower lip is ${axisAdj(m.lower_lip_fullness ?? 50, 'thin', 'full')}.`,
-    `The cupid's bow is ${axisAdj(m.cupid_bow_definition ?? 50, 'softly defined', 'strongly defined', 'moderately defined')}.`,
-    `The mouth corners are ${axisAdj(m.mouth_corner_direction ?? 50, 'downturned', 'upturned', 'neutral')}, with a ${axisAdj(m.philtrum_length ?? 50, 'short', 'long')} philtrum.`
-  ].join('\n');
-
-  const softTissue = [
-    `The cheeks are ${axisAdj(s.cheek_fullness ?? 50, 'lean', 'full')} in soft-tissue volume.`,
-    `The midface is ${axisAdj(s.midface_length ?? 50, 'short', 'long')} in vertical proportion.`,
-    `The under-eye area is ${axisAdj(s.under_eye_volume ?? 50, 'hollow', 'softly full')} in volume.`,
-    `The nasolabial region is ${axisAdj(s.nasolabial_definition ?? 50, 'soft', 'pronounced', 'subtle')} in definition.`,
-    `Overall facial soft tissue is ${axisAdj(s.facial_softness ?? 50, 'lean and defined', 'soft and rounded')}, with ${axisAdj(s.temple_fullness ?? 50, 'hollow', 'full')} temple volume.`
-  ].join('\n');
-
-  const skinText = `Skin tone is ${words(skin.tone || 'neutral')}, with ${words(skin.texture || 'natural')} texture, ${axisAdj(skin.translucency ?? 50, 'low', 'high')} translucency, ${axisAdj(skin.blemish_visibility ?? 50, 'low', 'high')} visible skin variation, and ${axisAdj(skin.freckle_visibility ?? 0, 'minimal', 'prominent')} freckling.`;
-
-  const makeupItems = [
-    makeup.base && words(makeup.base),
-    makeup.eyeliner && `${words(makeup.eyeliner)} eyeliner`,
-    makeup.eyeshadow && `${words(makeup.eyeshadow)} eyeshadow`,
-    makeup.lashes && `${words(makeup.lashes)} lashes`,
-    makeup.blush && `${words(makeup.blush)} blush`,
-    makeup.lip_style && `${words(makeup.lip_style)} lip styling`,
-    makeup.lip_color && `${words(makeup.lip_color)} lip color`
-  ].filter(Boolean);
-  const makeupText = `${makeupIntensity(makeup.intensity ?? 0)} makeup: ${joinNatural(makeupItems)}.`;
-
-  const hairText = `Hair is ${words(hair.color || 'natural')} and ${words(hair.length || 'medium')} length, with ${words(hair.texture || 'natural')} texture, ${axisAdj(hair.volume ?? 50, 'low', 'high')} volume, a ${words(hair.parting || 'natural')} parting, and ${words(hair.face_framing || 'natural')} face-framing strands.`;
-
-  const expressionText = `Expression is ${words(expression.expression || 'neutral')}, with ${axisAdj(expression.eye_openness ?? 50, 'relaxed', 'open', 'natural')} eye openness and a ${axisAdj(expression.mouth_relaxation ?? 50, 'tense', 'relaxed', 'natural relaxed')} mouth posture.`;
-
-  const capture = buildCapture(preset, p);
-
-  return [
-    intro,
-    `FACIAL STRUCTURE\n${faceGeometry}`,
-    `EYES AND EYEBROWS\n${eyes}\n${brows}`,
-    `NOSE\n${nose}`,
-    `MOUTH\n${mouth}`,
-    `FACIAL SOFT TISSUE\n${softTissue}`,
-    `SKIN\n${skinText}`,
-    `MAKEUP\n${makeupText}`,
-    `HAIR\n${hairText}`,
-    `EXPRESSION\n${expressionText}`,
-    capture ? `CAPTURE\n${capture}` : '',
-    `PRIORITY\nFacial geometry and feature proportions are the highest priority.\nMaintain realistic human anatomy.\nKeep all facial features mutually proportional and naturally integrated.\nDo not exaggerate individual features unless explicitly specified.`
-  ].filter(Boolean).join('\n\n');
+  const identity = [(options.appearance?.apparentAge?.state === 'selected' ? `adult, approximately ${options.appearance.apparentAge.years} years old,` : options.appearance?.apparentAge?.state === 'off' ? 'adult' : words(subject.age_group ?? 'adult')), 'fictional', words(subject.gender_presentation ?? 'person')].join(' ');
+  const appearance = subject.appearance ? ` with ${words(subject.appearance)}` : '';
+  const paragraphs = [`Create a realistic portrait of one ${identity}${appearance}.`];
+  for (const section of ['face_geometry', 'soft_tissue', 'eyes', 'eyebrows', 'nose', 'mouth']) {
+    const parts = axisPhrases(section, p[section]);
+    if (section === 'face_geometry' && p[section]?.face_shape !== undefined) parts.unshift(`${words(p[section].face_shape)} face shape`);
+    if (section === 'face_geometry' && p[section]?.cheek_to_chin_contour) {
+      parts.push({
+        smooth_taper: 'a continuous smooth contour tapering from the cheeks through the jaw to the chin',
+        angular_taper: 'an angular contour tapering from the cheeks through the jaw to the chin',
+        near_parallel: 'nearly parallel lateral contours from the cheeks to the jaw'
+      }[p[section].cheek_to_chin_contour]);
+    }
+    if (section === 'eyes') parts.push(...textPhrases(p.eyes, { upper_eyelid: 'upper eyelids', lower_eyelid_shape: 'lower eyelids' }));
+    if (parts.length) {
+      const text = sentence(parts);
+      paragraphs.push(text[0].toUpperCase() + text.slice(1));
+    }
+  }
+  if (options.enhancers) {
+    const enhanced = styling(p, options.appearance);
+    if (enhanced) paragraphs.push(enhanced);
+  }
+  paragraphs.push(...modules.paragraphs);
+  paragraphs.push(...body.paragraphs);
+  const setup = fullBody ? 'Full-body view, entire adult figure visible from head to feet, neutral eye-level perspective, relaxed standing pose. Plain opaque everyday clothing, no clothing style catalog. Soft neutral studio lighting, plain neutral background. Natural proportions and skin texture, no beauty filter.' : options.capture === 'head' ? 'Head-and-shoulders portrait, eye-level perspective, soft neutral studio lighting, plain neutral background. Natural proportions and skin texture, no beauty filter.' : capture(preset, p.capture);
+  if (setup) paragraphs.push(setup);
+  paragraphs.push(fullBody ? 'Preserve the specified facial and body proportions; keep the adult anatomy realistic and naturally integrated.' : 'Prioritize facial structure and feature proportions; keep the anatomy realistic and naturally integrated.');
+  return paragraphs.join('\n\n');
 }

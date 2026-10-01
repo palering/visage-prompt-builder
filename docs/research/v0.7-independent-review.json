@@ -1,0 +1,31 @@
+{
+  "review": "v0.7 hair catalog integration",
+  "date": "2026-09-30",
+  "status": "source review passed; final archive inspection pending",
+  "automated_suite": {"tests": 92, "passed": 92, "failed": 0},
+  "independent_checks": {
+    "hair_presets": 64,
+    "old_presets_preserved": 51,
+    "new_presets": 13,
+    "exact_aliases_tested": 16,
+    "reference_records": 42,
+    "anime_references": 30,
+    "historical_hair_objects": 10,
+    "accessory_objects": 2,
+    "all_entry_checks": ["compile", "sample structural invariance", "batch integration", "appearance-only iteration", "immutable saved roundtrip", "canonical resolved preset", "prompt hash", "revision hash", "alias prompt equivalence"],
+    "legacy_comparison": "Compared against v0.6 archive: all 51 hair geometry recipes and all makeup entries unchanged; hime metadata and aliases expanded.",
+    "behavior": "Existing omitted/off/selected, calibration conflict, strict unknown aliases, unknown fields, duplicate alias rejection, override warnings and compare integration pass.",
+    "source_safety": "Current non-git source tree is text-only; no embedded images, reference thumbnails, private image paths or credential artifacts found. Reference URLs and rights text are retained.",
+    "evidence_boundaries": "Museum names remain object-specific; uncertain historical names are not promoted to aliases. Two Ming metal hair covers remain accessory references. Character names and source metadata do not enter compiled geometry prompts. Unsupported unseen rear topology is omitted."
+  },
+  "fixed_findings_verified": [
+    "Inherited prototype properties could previously bypass appearance validation and calibration conflict; now non-plain prototypes reject and module resolution checks own properties. Regression verified.",
+    "nmc-double-high source geometry claimed smooth rear despite unknown rear angle; unsupported claim removed.",
+    "double_bun_tails treated pointed-bun/short-tail sailor1 as exact evidence; runtime direct evidence now cites sailor0 only, while sailor1 remains a labeled family variant in research references."
+  ],
+  "limitations": [
+    "This review verifies implementation, saved source mappings, evidence consistency and package boundaries; it does not independently re-inspect every original web image or re-establish historical provenance.",
+    "Actual image-generation tests are separate; passing compiler tests does not establish rendered hairstyle success or pixel identity consistency.",
+    "Final distributed ZIP must still be inspected after packaging."
+  ]
+}

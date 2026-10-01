@@ -1,0 +1,25 @@
+{
+  "schema_version": "face-v0.2",
+  "baseline_id": "example-synthetic-regional-001",
+  "source": "synthetic_example",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "person"
+  },
+  "face_geometry": {
+    "face_shape": "rectangular",
+    "face_width": 62,
+    "chin_width": 55,
+    "cheek_to_chin_contour": "near_parallel"
+  },
+  "soft_tissue": {
+    "upper_medial_cheek_fullness": 40,
+    "lateral_cheek_fullness": 65
+  },
+  "eyes": {
+    "eye_size": 50,
+    "eye_length": 65,
+    "eye_roundness": 40,
+    "eye_socket_depth": 50
+  }
+}

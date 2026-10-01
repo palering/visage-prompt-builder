@@ -1,0 +1,5 @@
+capture.camera_distance: "head and shoulders portrait" -> "head and upper torso portrait, entire head and complete hairstyle visible with generous space above and beside hair, no cropping"
+subject.appearance: (absent) -> "East Asian appearance"
+subject.gender_presentation: "person" -> "woman"
+Appearance config changes:
+: null -> {"apparentAge":{"state":"selected","years":25},"hair":{"overrides":{"accessories":[],"color":"black"},"preset":"low_ponytail","state":"selected"},"version":"appearance-v0.1"}

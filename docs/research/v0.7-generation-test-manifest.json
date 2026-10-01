@@ -1,0 +1,62 @@
+{
+  "date": "2026-09-30",
+  "method": "built-in imagegen",
+  "images_per_preset": 1,
+  "seed": null,
+  "reference_images": false,
+  "prompt_modifications": false,
+  "image_postprocessing": false,
+  "scope": "Exploratory only; not whole-catalog validation or identity lock",
+  "files": [
+    {
+      "name": "高根双钻卷-实测原图.png",
+      "bytes": 2381509,
+      "sha256": "dcf5b461b1d09df0582721c997a68b22fb75fed96285344ead999f3332ab9906"
+    },
+    {
+      "name": "anime-twin-drills.appearance.json",
+      "bytes": 367,
+      "sha256": "15f00a37f1df51d6d7770779c62c78924539e93906fd923911b534916ce2706d"
+    },
+    {
+      "name": "historical-double-loops.manifest.json",
+      "bytes": 6881,
+      "sha256": "0b37d1d6ce548f7ab6874a5b40afa85a818d7da29195d193279519090c4ecd57"
+    },
+    {
+      "name": "historical-double-loops.prompt.txt",
+      "bytes": 1500,
+      "sha256": "d780c194fbce962a88531e904d9f9acae78157207ecf5c374433308f2b9a7e01"
+    },
+    {
+      "name": "anime-twin-drills.manifest.json",
+      "bytes": 7292,
+      "sha256": "7b0ed66caab1897bdeacecc0228ad2b30026141b1414bb0848b7793b4ba3a367"
+    },
+    {
+      "name": "双大环轮廓-实测原图.png",
+      "bytes": 2223269,
+      "sha256": "27d77cd6f2b8a1ce48f75cfc8872fb926a030be7ff8368f7f6c26193e9c82397"
+    },
+    {
+      "name": "实图检查报告.txt",
+      "bytes": 3762,
+      "sha256": "6818094cce8a88219d06d84ca2016b2ca093df1922b0b60593eb521ec1f4dc77"
+    },
+    {
+      "name": "anime-twin-drills.prompt.txt",
+      "bytes": 1507,
+      "sha256": "4f0512e23cd60fa5d8d0fde379f40e1c7eddb31904830388c4e7f5df3b180735"
+    },
+    {
+      "name": "base-profile.json",
+      "bytes": 1378,
+      "sha256": "c77e1fa7e74c6783f87ebc0953b4e4e90e2d5d2f734e8c7c7344ca3c330a9d0c"
+    },
+    {
+      "name": "historical-double-loops.appearance.json",
+      "bytes": 377,
+      "sha256": "47c21f31ec0a59b9e9eca5c394c52af4e93425053e20878423e0cddf07d1c277"
+    }
+  ]
+}

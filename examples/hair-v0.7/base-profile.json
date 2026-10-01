@@ -1,0 +1,53 @@
+{
+  "schema_version": "face-v0.2",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "woman",
+    "appearance": "East Asian appearance",
+    "overall_impression": [
+      "beautiful",
+      "elegant"
+    ]
+  },
+  "capture": {
+    "view": "front-facing, relaxed neutral expression, looking at camera",
+    "camera_height": "eye_level",
+    "lens_equivalent": "85mm",
+    "camera_distance": "head and upper torso portrait, entire head and complete hairstyle visible with generous clear space above and beside hair, no top or side cropping",
+    "lighting": "soft symmetrical neutral studio",
+    "background": "plain light grey",
+    "image_softness": 0,
+    "beauty_filter_strength": 0
+  },
+  "expression": {
+    "expression": "relaxed neutral"
+  },
+  "face_geometry": {
+    "face_shape": "oval",
+    "cheek_to_chin_contour": "angular_taper",
+    "face_length": 55.9,
+    "face_width": 47.03,
+    "cheekbone_width": 44.88,
+    "jaw_width": 41.74,
+    "chin_width": 46.53,
+    "jaw_angle": 51.67
+  },
+  "soft_tissue": {
+    "upper_medial_cheek_fullness": 59.54,
+    "lateral_cheek_fullness": 48.21
+  },
+  "eyes": {
+    "eye_length": 44.63,
+    "eye_size": 40.17
+  },
+  "mouth": {
+    "upper_lip_fullness": 49.81,
+    "lower_lip_fullness": 55.96
+  },
+  "makeup": {
+    "intensity": 0
+  },
+  "hair": {
+    "face_framing": "tidy with facial contours visible"
+  }
+}

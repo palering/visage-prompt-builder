@@ -93,7 +93,7 @@ Do not silently translate a vague request such as "update things" into `rebuild 
 The current compiler accepts:
 
 ```text
-schema_version = face-v0.1
+schema_version = face-v0.1 or face-v0.2
 ```
 
 Profiles should be UTF-8 JSON.
@@ -118,7 +118,7 @@ Camera angle, lighting, beauty filters, hair occlusion, and makeup should not be
 
 ## Output contract
 
-A successful single build emits UTF-8 natural-language prompt text.
+A successful single build emits UTF-8 natural-language prompt text. Compiler v0.2 uses compact paragraphs instead of the old section headings; do not parse headings. Profile appearance is opt-in with `--enhancers` (requires `--preset profile` or `none`). The default is structure plus neutral calibration capture. See [v0.2 migration](face_schema_spec_v0.2.md).
 
 When no `--out` flag is supplied:
 
@@ -158,7 +158,7 @@ Within a fixed repository revision, the compiler is intended to be deterministic
 ```text
 same Face Schema
 + same compiler version
-+ same preset
++ same preset and enhancers selection
 = same prompt text
 ```
 
@@ -168,7 +168,7 @@ When a Skill needs reproducible output, record at least:
 
 - Face Schema version,
 - compiler target,
-- preset,
+- preset and enhancers selection,
 - repository commit or release version.
 
 ## Recommended Skill actions

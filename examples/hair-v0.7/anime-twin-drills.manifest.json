@@ -1,0 +1,161 @@
+{
+  "version": "hair-demo-v0.7",
+  "base": "base-profile.json",
+  "compiler_options": {
+    "preset": "profile",
+    "enhancers": true,
+    "appearance": {
+      "version": "appearance-v0.1",
+      "hair": {
+        "state": "selected",
+        "preset": "high_twin_drills",
+        "overrides": {
+          "color": "black",
+          "accessories": []
+        }
+      },
+      "makeup": {
+        "state": "off"
+      },
+      "expression": {
+        "state": "selected",
+        "preset": "relaxed_neutral"
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25
+      }
+    }
+  },
+  "appearance_resolution": {
+    "config": {
+      "version": "appearance-v0.1",
+      "hair": {
+        "state": "selected",
+        "preset": "high_twin_drills",
+        "overrides": {
+          "color": "black",
+          "accessories": []
+        }
+      },
+      "makeup": {
+        "state": "off"
+      },
+      "expression": {
+        "state": "selected",
+        "preset": "relaxed_neutral"
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25
+      }
+    },
+    "catalog_version": "appearance-catalog-v0.1",
+    "catalog_sha256": "93974b60e9583f9607ec59221921c3b68e7974ace17a590dc87a15ebfdaeb2f2",
+    "paragraphs": [
+      "Hair styling: length: long; texture: large sculpted spiral coils; arrangement: exactly two high lateral roots feeding two thick downward-tapering corkscrew columns; front: brow-level fringe with eyes visible; sides: large spiral turns with broad upper coils and narrower tips; color: black; accessories: none.",
+      "Relaxed neutral expression, resting brows, naturally open eyes and relaxed closed lips."
+    ],
+    "modules": {
+      "hair": {
+        "state": "selected",
+        "preset": "high_twin_drills",
+        "requestedPreset": "high_twin_drills",
+        "referenceIds": [
+          "anime_rezero6a",
+          "anime_nuibody"
+        ],
+        "family": "twin_drills",
+        "variantOf": "twin_drills",
+        "label": "高根粗锥双钻卷",
+        "resolved": {
+          "length": "long",
+          "texture": "large sculpted spiral coils",
+          "arrangement": "exactly two high lateral roots feeding two thick downward-tapering corkscrew columns",
+          "front": "brow-level fringe with eyes visible",
+          "sides": "large spiral turns with broad upper coils and narrower tips",
+          "color": "black",
+          "accessories": []
+        },
+        "sourceIds": [
+          "anime_rezero6a_0",
+          "anime_nuibody_0"
+        ],
+        "evidenceStatus": "official_character_visible_geometry",
+        "context": {
+          "historical": null,
+          "trend": null,
+          "cultural": null,
+          "recipe": null
+        },
+        "occlusion": null,
+        "occlusionStatus": "requires_reassessment_after_overrides",
+        "requirements": {},
+        "materialModes": [
+          "natural",
+          "wig",
+          "hairpiece"
+        ],
+        "identityNote": "Reference names stay in source metadata. Do not change face, age, ancestry, costume or identity to match a reference.",
+        "geometryIs": "Authored reusable structural description based on inspected reference evidence; internal support and unseen geometry are not proven.",
+        "authorship": null,
+        "conflicts": [],
+        "sources": [
+          {
+            "id": "anime_rezero6a_0",
+            "title": "Re:从零开始的异世界生活 官方角色页",
+            "url": "https://re-zero-anime.jp/tv/character/",
+            "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+            "accessedAt": "2026-09-30",
+            "evidenceTier": "official_image_visually_inspected",
+            "referenceId": "anime_rezero6a"
+          },
+          {
+            "id": "anime_nuibody_0",
+            "title": "斩服少女 官方角色页",
+            "url": "https://www.kill-la-kill.jp/character/13.html",
+            "rights": "官方版权图；仅本次私人研究的低分辨率参考缩图，不代表获得再分发、商用、训练或公开仓库使用授权。版权归原权利人；授权范围未核实。",
+            "accessedAt": "2026-09-30",
+            "evidenceTier": "official_image_visually_inspected",
+            "referenceId": "anime_nuibody"
+          }
+        ],
+        "impact": "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+        "warnings": [
+          "Hair silhouette and occlusion can alter perceived facial proportions.",
+          "Unobserved construction and rear topology are not established; this is a visible-silhouette interpretation, not an exact reconstruction.",
+          "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+          "无背面；夸张体积不承诺自然真发物理可实现，可用假发/发片模式。"
+        ]
+      },
+      "makeup": {
+        "state": "off",
+        "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25,
+        "impact": "Age cues can change perceived soft tissue, skin texture and facial proportions; baseline parameters are unchanged. This is an approximate appearance target, not an exact age guarantee."
+      },
+      "expression": {
+        "state": "selected",
+        "preset": "relaxed_neutral",
+        "impact": "Muscle action changes visible brow height, eye aperture, cheek lift and mouth shape; neutral feature values are not a pixel-level lock."
+      }
+    },
+    "warnings": [
+      "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+      "Hair silhouette and occlusion can alter perceived facial proportions.",
+      "Unobserved construction and rear topology are not established; this is a visible-silhouette interpretation, not an exact reconstruction.",
+      "后脑分区、发根固定方式和遮挡部分未证实，不由正面图推造。",
+      "无背面；夸张体积不承诺自然真发物理可实现，可用假发/发片模式。",
+      "hair overrides are authored free-text geometry. Historical accuracy, physical compatibility and preset occlusion metadata are not guaranteed after overrides.",
+      "Age cues can change perceived soft tissue, skin texture and facial proportions; baseline parameters are unchanged. This is an approximate appearance target, not an exact age guarantee.",
+      "Muscle action changes visible brow height, eye aperture, cheek lift and mouth shape; neutral feature values are not a pixel-level lock.",
+      "Legacy overall impression remains active and can bias appearance; use enhancers false for isolated module comparisons.",
+      "Profile capture is free text: check lighting, view and styling words manually for semantic conflicts."
+    ]
+  },
+  "prompt_sha256": "4f0512e23cd60fa5d8d0fde379f40e1c7eddb31904830388c4e7f5df3b180735",
+  "purpose": "Observable hairstyle constraints; shared input geometry does not establish same-image identity. Generated images are a separate test result."
+}

@@ -1,0 +1,30 @@
+{
+  "version": "variants-v0.1",
+  "seed": "synthetic-demo-01",
+  "count": 4,
+  "candidate_index_base": 0,
+  "unique_profiles": 4,
+  "unique_prompts": 4,
+  "candidates": [
+    {
+      "directory": "candidate-001",
+      "revision_id": "0a48f3ce5a1e8995172f14dd3603a8517827c49a197013f466b290190054ff21",
+      "seed": "df6bbcc1e222897663b26abfe026495ba1d1fae7a36d60ad27044681084f2b48"
+    },
+    {
+      "directory": "candidate-002",
+      "revision_id": "bfd863839157d0389306e89f4b56e317805337beee03f619bec1d0516bbe9492",
+      "seed": "36fdcdc524c739ae436577bfeb06b3db1db30d5e5e501cb8e11263f2dca0f704"
+    },
+    {
+      "directory": "candidate-003",
+      "revision_id": "c27de85aa33b9aeb917588105f9901550ba22a98ae02374dd9896389f7ddaa51",
+      "seed": "2aa74255178c49a0961a77dfd099df50ded68b5c53d42b6e0e5074cbfaa0372d"
+    },
+    {
+      "directory": "candidate-004",
+      "revision_id": "9e3ccffddfc123e2f1754acc769157af03f4a2bc603ae2044ada0844ba428439",
+      "seed": "5e0df4423b2d21faf589cccbc5ba7344ad70b7b5490fa8f8f97f98035213a3d9"
+    }
+  ]
+}

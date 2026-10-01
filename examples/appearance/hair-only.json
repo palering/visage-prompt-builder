@@ -1,0 +1,16 @@
+{
+  "version": "appearance-v0.1",
+  "hair": {
+    "state": "selected",
+    "preset": "blunt_bob"
+  },
+  "makeup": {
+    "state": "off"
+  },
+  "apparentAge": {
+    "state": "off"
+  },
+  "expression": {
+    "state": "off"
+  }
+}

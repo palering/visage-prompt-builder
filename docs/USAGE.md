@@ -42,8 +42,18 @@ npm run build -- baselines/example_synthetic_face_001.json --preset none
 ```
 
 - `calibration`: standardized front-facing portrait setup. This is the default.
-- `profile`: use the profile's `capture` block when available.
-- `none`: omit the CAPTURE section.
+- `profile`: use only supplied fields in the profile's `capture` block; no camera defaults are invented.
+- `none`: omit capture instructions.
+
+### Optional appearance
+
+```bash
+npm run build -- baselines/example_synthetic_face_001.json --preset profile --enhancers
+```
+
+`--enhancers` includes supplied skin, hair, makeup, expression and overall impression. It leaves the structural paragraphs unchanged. It requires `profile` or `none`; combining profile appearance with standardized `calibration` is an error. Missing appearance fields are omitted. Explicit makeup intensity zero overrides makeup descriptors.
+
+Both `face-v0.1` and `face-v0.2` profiles are supported. v0.2 adds optional regional cheek and contour controls; see [migration and field semantics](face_schema_spec_v0.2.md). Invalid values fail before output writes.
 
 The older `npm run prompt -- ...` command remains as a compatibility alias for `build`.
 
@@ -134,6 +144,8 @@ Without a TTY, a real rebuild fails unless `--yes` is supplied.
 
 ## Cleanup behavior
 
+After confirmation, all selected prompts are validated and compiled before any cleanup occurs. A compilation error leaves existing outputs intact. Filesystem write failures are not transactional.
+
 The selector also controls what is cleaned before generation:
 
 | Selector | Cleanup |
@@ -168,6 +180,8 @@ The initial configuration looks like:
   }
 }
 ```
+
+Each target can set `"enhancers": true` with `"preset": "profile"` or `"none"`; omission defaults to false, exactly as in the build CLI and programmatic API.
 
 Because this repository is public, only public-safe or synthetic inputs should be added to this file.
 
@@ -230,3 +244,7 @@ Detailed integration, exit-status, reproducibility, and public-repository safety
 ```text
 docs/SKILL_INTEGRATION.md
 ```
+
+## Archetype sampling
+
+Use `npm run sample -- --list` to inspect the v0.4 directions. Full design, composition rules, examples, editable ranges and reproducibility limits are in [ARCHETYPE_SAMPLING.zh-CN.md](ARCHETYPE_SAMPLING.zh-CN.md). Capture `--preset` flags are unchanged.

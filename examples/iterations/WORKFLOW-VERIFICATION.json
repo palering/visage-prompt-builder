@@ -1,0 +1,51 @@
+{
+  "synthetic": true,
+  "verified_profiles": 7,
+  "all_prompts_recompile_exactly": true,
+  "parent_snapshots_exact": true,
+  "locked_regions_unchanged": true,
+  "source_candidate_sha256": "3910469df8c61148f0dc84c18e9aa33fcb75337f056194d9c9aa649c2b763c7e",
+  "eye_changes": [
+    {
+      "path": "eyes.eye_length",
+      "before_present": true,
+      "before": 54.83,
+      "after_present": true,
+      "after": 55.56
+    },
+    {
+      "path": "eyes.eye_size",
+      "before_present": true,
+      "before": 50.85,
+      "after_present": true,
+      "after": 52.11
+    }
+  ],
+  "manual_changes": [
+    {
+      "path": "eyebrows",
+      "before_present": false,
+      "after_present": true,
+      "after": {
+        "brow_arch": 60
+      }
+    },
+    {
+      "path": "eyes.eye_size",
+      "before_present": true,
+      "before": 52.11,
+      "after_present": true,
+      "after": 62
+    }
+  ],
+  "branch_changes": [
+    {
+      "path": "eyes.eye_size",
+      "before_present": true,
+      "before": 52.11,
+      "after_present": true,
+      "after": 48
+    }
+  ],
+  "limitations": "No image generation or identity validation; only parameter and prompt workflow verified."
+}

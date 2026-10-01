@@ -1,0 +1,15 @@
+{
+  "version": "appearance-v0.1",
+  "hair": {
+    "state": "selected",
+    "preset": "low_ponytail",
+    "overrides": {
+      "color": "black",
+      "accessories": []
+    }
+  },
+  "apparentAge": {
+    "state": "selected",
+    "years": 25
+  }
+}

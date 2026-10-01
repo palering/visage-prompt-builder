@@ -1,0 +1,265 @@
+{
+  "schema_version": "face-v0.2",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "woman",
+    "overall_impression": [
+      "editorial beauty styling with natural skin texture",
+      "poised and composed fictional character"
+    ],
+    "appearance": "East Asian appearance"
+  },
+  "capture": {
+    "view": "front",
+    "camera_height": "eye_level",
+    "lens_equivalent": "85mm",
+    "camera_distance": "head and upper torso portrait, entire head and complete hairstyle visible with generous space above and beside hair, no cropping",
+    "lighting": "soft balanced studio",
+    "background": "plain neutral",
+    "image_softness": 0,
+    "beauty_filter_strength": 0
+  },
+  "expression": {
+    "expression": "calm poised subtle closed mouth smile",
+    "eye_openness": 53.48,
+    "mouth_relaxation": 62.56
+  },
+  "face_geometry": {
+    "face_shape": "rounded rectangular",
+    "cheek_to_chin_contour": "near_parallel",
+    "face_length": 54.2,
+    "face_width": 53.93,
+    "cheekbone_width": 48.31,
+    "jaw_width": 57.32,
+    "chin_width": 44.94,
+    "jaw_angle": 52.83
+  },
+  "soft_tissue": {
+    "upper_medial_cheek_fullness": 49.02,
+    "lateral_cheek_fullness": 49.05
+  },
+  "eyes": {
+    "eye_length": 54.07,
+    "eye_size": 52.06
+  },
+  "eyebrows": {
+    "brow_thickness": 52.71,
+    "brow_height": 43.88,
+    "brow_arch": 50.51,
+    "brow_length": 49.45,
+    "brow_density": 54.17
+  },
+  "nose": {
+    "bridge_height": 58.64,
+    "bridge_width": 50.75,
+    "nose_length": 49.78,
+    "nose_projection": 51.13,
+    "tip_size": 53.86,
+    "tip_roundness": 47.48,
+    "tip_rotation": 48.1,
+    "alar_width": 49.18,
+    "nostril_visibility": 51.66
+  },
+  "mouth": {
+    "upper_lip_fullness": 40.49,
+    "lower_lip_fullness": 49.13
+  },
+  "makeup": {
+    "intensity": 25,
+    "base": "light natural finish",
+    "lip_style": "soft satin"
+  },
+  "hair": {
+    "face_framing": "tidy with facial contours visible"
+  },
+  "metadata": {
+    "sampling": {
+      "sampler_version": "sampler-v0.1",
+      "catalog_version": "archetypes-v0.2",
+      "catalog_sha256": "2cdf321944648eb28dc55528947b9bdb27733e70ae4aca40e78ce7477709bd5e",
+      "compiler_version": "gpt-image-2.5-v0.3",
+      "compiler_sha256": "c9d974461ff1d0ad2fc8305e3d6e28b36d8d51e37c4c60669ee80d15af8d4dd6",
+      "seed": "v08-complete-head-20260930",
+      "archetypes": [
+        "beautiful",
+        "elegant"
+      ],
+      "morphology_bundle": "broad-contour",
+      "resolved_ranges": {
+        "face_geometry.face_length": {
+          "min": 38,
+          "mode": 52,
+          "max": 68,
+          "group": "length"
+        },
+        "face_geometry.face_width": {
+          "min": 48,
+          "mode": 61,
+          "max": 75,
+          "group": "width"
+        },
+        "face_geometry.cheekbone_width": {
+          "min": 38,
+          "mode": 52,
+          "max": 68,
+          "group": "width"
+        },
+        "face_geometry.jaw_width": {
+          "min": 47,
+          "mode": 60,
+          "max": 74,
+          "group": "width"
+        },
+        "face_geometry.chin_width": {
+          "min": 36,
+          "mode": 49,
+          "max": 64,
+          "group": "width"
+        },
+        "face_geometry.jaw_angle": {
+          "min": 28,
+          "mode": 48,
+          "max": 70,
+          "group": "definition"
+        },
+        "soft_tissue.upper_medial_cheek_fullness": {
+          "min": 38,
+          "mode": 54,
+          "max": 70,
+          "group": "fullness"
+        },
+        "soft_tissue.lateral_cheek_fullness": {
+          "min": 39,
+          "mode": 54,
+          "max": 69,
+          "group": "fullness"
+        },
+        "eyes.eye_length": {
+          "min": 38,
+          "mode": 54,
+          "max": 70,
+          "group": "eye"
+        },
+        "eyes.eye_size": {
+          "min": 35,
+          "mode": 50,
+          "max": 67,
+          "group": "eye"
+        },
+        "eyebrows.brow_thickness": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "brow_mass"
+        },
+        "eyebrows.brow_height": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "brow_height"
+        },
+        "eyebrows.brow_arch": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "brow_arch"
+        },
+        "eyebrows.brow_length": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "brow_length"
+        },
+        "eyebrows.brow_density": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "brow_mass"
+        },
+        "nose.bridge_height": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_bridge_height"
+        },
+        "nose.bridge_width": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_width"
+        },
+        "nose.nose_length": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_length"
+        },
+        "nose.nose_projection": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_projection"
+        },
+        "nose.tip_size": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_tip_size"
+        },
+        "nose.tip_roundness": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_tip_roundness"
+        },
+        "nose.tip_rotation": {
+          "min": 40,
+          "mode": 50,
+          "max": 60,
+          "group": "nose_tip_rotation"
+        },
+        "nose.alar_width": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_width"
+        },
+        "nose.nostril_visibility": {
+          "min": 35,
+          "mode": 50,
+          "max": 65,
+          "group": "nose_nostril_visibility"
+        },
+        "mouth.upper_lip_fullness": {
+          "min": 32,
+          "mode": 49,
+          "max": 67,
+          "group": "lips"
+        },
+        "mouth.lower_lip_fullness": {
+          "min": 40,
+          "mode": 56,
+          "max": 74,
+          "group": "lips"
+        },
+        "expression.eye_openness": {
+          "min": 44,
+          "mode": 52,
+          "max": 61,
+          "group": "performance"
+        },
+        "expression.mouth_relaxation": {
+          "min": 52,
+          "mode": 63,
+          "max": 74,
+          "group": "performance"
+        }
+      },
+      "compiler_options": {
+        "preset": "profile",
+        "enhancers": true
+      },
+      "limitations": "Authored artistic ranges, not validated measurements. Seed reproduces parameters and prompt, not image identity. Villain direction is fictional acting, not moral character inferred from facial anatomy."
+    }
+  }
+}

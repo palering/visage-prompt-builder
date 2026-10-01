@@ -1,6 +1,6 @@
 {
   "name": "visage-prompt-builder",
-  "version": "0.2.0",
+  "version": "0.12.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -10,6 +10,13 @@
     "build": "node src/cli.mjs",
     "prompt": "node src/cli.mjs",
     "rebuild": "node src/rebuild.mjs",
-    "test": "node --test"
+    "test": "node --test",
+    "sample": "node src/sample.mjs",
+    "batch": "node src/variants.mjs batch",
+    "iterate": "node src/variants.mjs iterate",
+    "compare": "node src/variants.mjs compare",
+    "appearance": "node src/appearance.mjs",
+    "build:web": "node scripts/build-web.mjs",
+    "test:ui": "node scripts/ui-harness.mjs && node scripts/ui-harness.mjs --bundle"
   }
 }

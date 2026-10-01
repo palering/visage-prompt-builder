@@ -26,6 +26,13 @@
           "compiler": "gpt-image-2.5",
           "preset": "none",
           "output": "example_synthetic_face_001.none.txt"
+        },
+        {
+          "name": "example-synthetic-regional-001.calibration",
+          "input": "baselines/example_synthetic_regional_001.json",
+          "compiler": "gpt-image-2.5",
+          "preset": "calibration",
+          "output": "example_synthetic_regional_001.calibration.txt"
         }
       ]
     }

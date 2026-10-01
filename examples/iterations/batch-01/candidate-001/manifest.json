@@ -1,0 +1,122 @@
+{
+  "version": "variants-v0.1",
+  "operation": "sample",
+  "batch_seed": "synthetic-demo-01",
+  "candidate_index": 0,
+  "seed": "df6bbcc1e222897663b26abfe026495ba1d1fae7a36d60ad27044681084f2b48",
+  "sampling": {
+    "sampler_version": "sampler-v0.1",
+    "catalog_version": "archetypes-v0.1",
+    "catalog_sha256": "c2a9000ed0086d898e3611b9459061fd9a971156299643dd885b8058e7451cad",
+    "compiler_sha256": "86624c352f9cf87cbcf9d0885ea3f7a372e8bbbfbb80ff015656173421ebc911",
+    "seed": "df6bbcc1e222897663b26abfe026495ba1d1fae7a36d60ad27044681084f2b48",
+    "archetypes": [
+      "beautiful",
+      "elegant"
+    ],
+    "morphology_bundle": "defined-taper",
+    "resolved_ranges": {
+      "face_geometry.face_length": {
+        "min": 38,
+        "mode": 52,
+        "max": 68,
+        "group": "length"
+      },
+      "face_geometry.face_width": {
+        "min": 39,
+        "mode": 52,
+        "max": 66,
+        "group": "width"
+      },
+      "face_geometry.cheekbone_width": {
+        "min": 38,
+        "mode": 52,
+        "max": 68,
+        "group": "width"
+      },
+      "face_geometry.jaw_width": {
+        "min": 36,
+        "mode": 49,
+        "max": 63,
+        "group": "width"
+      },
+      "face_geometry.chin_width": {
+        "min": 36,
+        "mode": 49,
+        "max": 64,
+        "group": "width"
+      },
+      "face_geometry.jaw_angle": {
+        "min": 28,
+        "mode": 48,
+        "max": 70,
+        "group": "definition"
+      },
+      "soft_tissue.upper_medial_cheek_fullness": {
+        "min": 38,
+        "mode": 54,
+        "max": 70,
+        "group": "fullness"
+      },
+      "soft_tissue.lateral_cheek_fullness": {
+        "min": 27,
+        "mode": 42,
+        "max": 58,
+        "group": "fullness"
+      },
+      "eyes.eye_length": {
+        "min": 38,
+        "mode": 54,
+        "max": 70,
+        "group": "eye"
+      },
+      "eyes.eye_size": {
+        "min": 35,
+        "mode": 50,
+        "max": 67,
+        "group": "eye"
+      },
+      "mouth.upper_lip_fullness": {
+        "min": 32,
+        "mode": 49,
+        "max": 67,
+        "group": "lips"
+      },
+      "mouth.lower_lip_fullness": {
+        "min": 40,
+        "mode": 56,
+        "max": 74,
+        "group": "lips"
+      },
+      "expression.eye_openness": {
+        "min": 44,
+        "mode": 52,
+        "max": 61,
+        "group": "performance"
+      },
+      "expression.mouth_relaxation": {
+        "min": 52,
+        "mode": 63,
+        "max": 74,
+        "group": "performance"
+      }
+    },
+    "compiler_options": {
+      "preset": "profile",
+      "enhancers": true
+    },
+    "limitations": "Authored artistic ranges, not validated measurements. Seed reproduces parameters and prompt, not image identity. Villain direction is fictional acting, not moral character inferred from facial anatomy.",
+    "profile_sha256": "e24e3543af1c8b36a6ec4d3ec1026750acdc587512421cce10a2538a47ba0382",
+    "prompt_sha256": "3e62adf1205f329730d96788337c80ce5b647d05dc200687d704cdfe1b9d2b3e"
+  },
+  "compiler_options": {
+    "preset": "profile",
+    "enhancers": true
+  },
+  "compiler_sha256": "9f0a013f21b26e7c44fec13e056f21e86ec4cfd842f659fae46fa79049674c82",
+  "algorithm_sha256": "313d9b6d58aff802c8e9992b0f304121e1183f6d6f36c792f580549c175b57a4",
+  "profile_sha256": "9676fdc2ed9cb4e6e186456b1a0f7a0aba15194318328e5b2148427517f3a43b",
+  "prompt_sha256": "3e62adf1205f329730d96788337c80ce5b647d05dc200687d704cdfe1b9d2b3e",
+  "limitations": "Parameters and prompts only; no image generation or identity guarantee. Authored range/group bounds are not validated anatomy. Different seeds can produce identical parameters or prompt text.",
+  "revision_id": "0a48f3ce5a1e8995172f14dd3603a8517827c49a197013f466b290190054ff21"
+}

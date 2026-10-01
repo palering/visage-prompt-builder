@@ -1,0 +1,182 @@
+{
+  "version": "variants-v0.1",
+  "operation": "edit",
+  "seed": "v08-complete-head-styling",
+  "parent_revision_id": null,
+  "parent_profile_sha256": "33cd031fc02404d2a05b490a144d5c9cb41a4393ee3e198242b6954b82de170b",
+  "source_compiler_options": {
+    "preset": "profile",
+    "enhancers": true
+  },
+  "regions": [],
+  "rerolled_paths": [],
+  "manual_edits": [
+    {
+      "path": "subject.gender_presentation",
+      "value": "woman"
+    },
+    {
+      "path": "subject.appearance",
+      "value": "East Asian appearance"
+    },
+    {
+      "path": "capture.camera_distance",
+      "value": "head and upper torso portrait, entire head and complete hairstyle visible with generous space above and beside hair, no cropping"
+    }
+  ],
+  "resolved_ranges": {},
+  "diff": [
+    {
+      "path": "capture.camera_distance",
+      "before_present": true,
+      "before": "head and shoulders portrait",
+      "after_present": true,
+      "after": "head and upper torso portrait, entire head and complete hairstyle visible with generous space above and beside hair, no cropping"
+    },
+    {
+      "path": "subject.appearance",
+      "before_present": false,
+      "after_present": true,
+      "after": "East Asian appearance"
+    },
+    {
+      "path": "subject.gender_presentation",
+      "before_present": true,
+      "before": "person",
+      "after_present": true,
+      "after": "woman"
+    }
+  ],
+  "appearance_diff": [
+    {
+      "path": "",
+      "before_present": true,
+      "before": null,
+      "after_present": true,
+      "after": {
+        "version": "appearance-v0.1",
+        "hair": {
+          "state": "selected",
+          "preset": "low_ponytail",
+          "overrides": {
+            "color": "black",
+            "accessories": []
+          }
+        },
+        "apparentAge": {
+          "state": "selected",
+          "years": 25
+        }
+      }
+    }
+  ],
+  "prompt_changed": true,
+  "compiler_options": {
+    "preset": "profile",
+    "enhancers": true,
+    "appearance": {
+      "version": "appearance-v0.1",
+      "hair": {
+        "state": "selected",
+        "preset": "low_ponytail",
+        "overrides": {
+          "color": "black",
+          "accessories": []
+        }
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25
+      }
+    }
+  },
+  "appearance_resolution": {
+    "config": {
+      "version": "appearance-v0.1",
+      "hair": {
+        "state": "selected",
+        "preset": "low_ponytail",
+        "overrides": {
+          "color": "black",
+          "accessories": []
+        }
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25
+      }
+    },
+    "catalog_version": "appearance-catalog-v0.1",
+    "catalog_sha256": "93974b60e9583f9607ec59221921c3b68e7974ace17a590dc87a15ebfdaeb2f2",
+    "paragraphs": [
+      "Hair styling: length: medium-to-long gathered hair; fringe: none; part: center part; texture: smooth; volume: low; arrangement: single low ponytail; front: forehead exposed; sides: sides behind ears; back: tail starts at nape; color: black; accessories: none."
+    ],
+    "modules": {
+      "hair": {
+        "state": "selected",
+        "preset": "low_ponytail",
+        "requestedPreset": "low_ponytail",
+        "referenceIds": [],
+        "family": null,
+        "variantOf": null,
+        "label": "低马尾",
+        "resolved": {
+          "length": "medium-to-long gathered hair",
+          "cut": "unspecified",
+          "fringe": "none",
+          "part": "center part",
+          "texture": "smooth",
+          "volume": "low",
+          "arrangement": "single low ponytail",
+          "front": "forehead exposed",
+          "sides": "sides behind ears",
+          "back": "tail starts at nape",
+          "color": "black",
+          "accessories": []
+        },
+        "sourceIds": [],
+        "evidenceStatus": "generic_geometry",
+        "context": {
+          "historical": null,
+          "trend": null,
+          "cultural": null,
+          "recipe": null
+        },
+        "occlusion": null,
+        "occlusionStatus": "requires_reassessment_after_overrides",
+        "requirements": {},
+        "materialModes": [
+          "natural",
+          "wig",
+          "hairpiece"
+        ],
+        "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+        "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition.",
+        "authorship": null,
+        "conflicts": [],
+        "sources": [],
+        "impact": "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+        "warnings": []
+      },
+      "apparentAge": {
+        "state": "selected",
+        "years": 25,
+        "impact": "Age cues can change perceived soft tissue, skin texture and facial proportions; baseline parameters are unchanged. This is an approximate appearance target, not an exact age guarantee."
+      }
+    },
+    "warnings": [
+      "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+      "hair overrides are authored free-text geometry. Historical accuracy, physical compatibility and preset occlusion metadata are not guaranteed after overrides.",
+      "Age cues can change perceived soft tissue, skin texture and facial proportions; baseline parameters are unchanged. This is an approximate appearance target, not an exact age guarantee.",
+      "Legacy overall impression remains active and can bias appearance; use enhancers false for isolated module comparisons.",
+      "Profile capture is free text: check lighting, view and styling words manually for semantic conflicts."
+    ]
+  },
+  "compiler_version": "gpt-image-2.5-v0.3",
+  "compiler_sha256": "c9d974461ff1d0ad2fc8305e3d6e28b36d8d51e37c4c60669ee80d15af8d4dd6",
+  "algorithm_sha256": "f17e29c47410579e1a0ea98e422b9f0b435f93b94306bfe59063fac01ffbd098",
+  "profile_sha256": "a5ef7a347bd49e428cbdf32fed5634bc9dd959ca88747cbe4a57d36c0a1dad86",
+  "prompt_sha256": "27a071fd4bfc1809814d925545fcb0116a1076aacca30befa31cf18ef2a7265a",
+  "limitations": "Parameters and prompts only; no image generation or identity guarantee. Authored range/group bounds are not validated anatomy. Different seeds can produce identical parameters or prompt text.",
+  "revision_id": "f4597a48112668b777c7bd0c61d1cc7e5e82e862868342b78399cb5ab967608c"
+}

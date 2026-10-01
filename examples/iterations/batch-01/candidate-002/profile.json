@@ -1,0 +1,161 @@
+{
+  "schema_version": "face-v0.2",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "person",
+    "overall_impression": [
+      "editorial beauty styling with natural skin texture",
+      "poised and composed fictional character"
+    ]
+  },
+  "capture": {
+    "view": "front",
+    "camera_height": "eye_level",
+    "lens_equivalent": "85mm",
+    "camera_distance": "head and shoulders portrait",
+    "lighting": "soft balanced studio",
+    "background": "plain neutral",
+    "image_softness": 0,
+    "beauty_filter_strength": 0
+  },
+  "expression": {
+    "expression": "calm poised subtle closed mouth smile",
+    "eye_openness": 51.03,
+    "mouth_relaxation": 58.15
+  },
+  "face_geometry": {
+    "face_shape": "rounded rectangular",
+    "cheek_to_chin_contour": "near_parallel",
+    "face_length": 56.17,
+    "face_width": 58.16,
+    "cheekbone_width": 48.78,
+    "jaw_width": 57.25,
+    "chin_width": 46.2,
+    "jaw_angle": 51.44
+  },
+  "soft_tissue": {
+    "upper_medial_cheek_fullness": 51.11,
+    "lateral_cheek_fullness": 52.5
+  },
+  "eyes": {
+    "eye_length": 54.83,
+    "eye_size": 50.85
+  },
+  "mouth": {
+    "upper_lip_fullness": 47.32,
+    "lower_lip_fullness": 54.7
+  },
+  "makeup": {
+    "intensity": 25,
+    "base": "light natural finish",
+    "lip_style": "soft satin"
+  },
+  "hair": {
+    "face_framing": "tidy with facial contours visible"
+  },
+  "metadata": {
+    "sampling": {
+      "sampler_version": "sampler-v0.1",
+      "catalog_version": "archetypes-v0.1",
+      "catalog_sha256": "c2a9000ed0086d898e3611b9459061fd9a971156299643dd885b8058e7451cad",
+      "compiler_sha256": "86624c352f9cf87cbcf9d0885ea3f7a372e8bbbfbb80ff015656173421ebc911",
+      "seed": "36fdcdc524c739ae436577bfeb06b3db1db30d5e5e501cb8e11263f2dca0f704",
+      "archetypes": [
+        "beautiful",
+        "elegant"
+      ],
+      "morphology_bundle": "broad-contour",
+      "resolved_ranges": {
+        "face_geometry.face_length": {
+          "min": 38,
+          "mode": 52,
+          "max": 68,
+          "group": "length"
+        },
+        "face_geometry.face_width": {
+          "min": 48,
+          "mode": 61,
+          "max": 75,
+          "group": "width"
+        },
+        "face_geometry.cheekbone_width": {
+          "min": 38,
+          "mode": 52,
+          "max": 68,
+          "group": "width"
+        },
+        "face_geometry.jaw_width": {
+          "min": 47,
+          "mode": 60,
+          "max": 74,
+          "group": "width"
+        },
+        "face_geometry.chin_width": {
+          "min": 36,
+          "mode": 49,
+          "max": 64,
+          "group": "width"
+        },
+        "face_geometry.jaw_angle": {
+          "min": 28,
+          "mode": 48,
+          "max": 70,
+          "group": "definition"
+        },
+        "soft_tissue.upper_medial_cheek_fullness": {
+          "min": 38,
+          "mode": 54,
+          "max": 70,
+          "group": "fullness"
+        },
+        "soft_tissue.lateral_cheek_fullness": {
+          "min": 39,
+          "mode": 54,
+          "max": 69,
+          "group": "fullness"
+        },
+        "eyes.eye_length": {
+          "min": 38,
+          "mode": 54,
+          "max": 70,
+          "group": "eye"
+        },
+        "eyes.eye_size": {
+          "min": 35,
+          "mode": 50,
+          "max": 67,
+          "group": "eye"
+        },
+        "mouth.upper_lip_fullness": {
+          "min": 32,
+          "mode": 49,
+          "max": 67,
+          "group": "lips"
+        },
+        "mouth.lower_lip_fullness": {
+          "min": 40,
+          "mode": 56,
+          "max": 74,
+          "group": "lips"
+        },
+        "expression.eye_openness": {
+          "min": 44,
+          "mode": 52,
+          "max": 61,
+          "group": "performance"
+        },
+        "expression.mouth_relaxation": {
+          "min": 52,
+          "mode": 63,
+          "max": 74,
+          "group": "performance"
+        }
+      },
+      "compiler_options": {
+        "preset": "profile",
+        "enhancers": true
+      },
+      "limitations": "Authored artistic ranges, not validated measurements. Seed reproduces parameters and prompt, not image identity. Villain direction is fictional acting, not moral character inferred from facial anatomy."
+    }
+  }
+}

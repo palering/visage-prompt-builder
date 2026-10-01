@@ -184,7 +184,7 @@ function compileTarget(target) {
   const profile = JSON.parse(fs.readFileSync(target.inputPath, 'utf8'));
 
   if (target.compiler === 'gpt-image-2.5') {
-    return compileFacePrompt(profile, { preset: target.preset || 'calibration' });
+    return compileFacePrompt(profile, { preset: target.preset ?? 'calibration', enhancers: target.enhancers ?? false });
   }
 
   throw new Error(`Unsupported compiler for target ${target.name}: ${target.compiler}`);
@@ -242,12 +242,13 @@ async function main() {
     return;
   }
 
+  const compiled = selected.map((target) => ({ target, prompt: compileTarget(target) }));
+
   for (const cleanup of cleanups) {
     fs.rmSync(cleanup, { recursive: true, force: true });
   }
 
-  for (const target of selected) {
-    const prompt = compileTarget(target);
+  for (const { target, prompt } of compiled) {
     fs.mkdirSync(path.dirname(target.outputPath), { recursive: true });
     fs.writeFileSync(target.outputPath, `${prompt}\n`, 'utf8');
     console.log(`Built ${path.relative(projectRoot, target.outputPath)}`);

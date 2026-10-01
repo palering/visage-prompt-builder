@@ -1,0 +1,151 @@
+{
+  "schema_version": "face-v0.2",
+  "subject": {
+    "age_group": "adult",
+    "gender_presentation": "person",
+    "overall_impression": [
+      "fictional villain theatrical performance, no moral inference from anatomy"
+    ]
+  },
+  "capture": {
+    "view": "front",
+    "camera_height": "eye_level",
+    "lens_equivalent": "85mm",
+    "camera_distance": "head and shoulders portrait",
+    "lighting": "dramatic side",
+    "background": "plain neutral",
+    "image_softness": 0,
+    "beauty_filter_strength": 0
+  },
+  "expression": {
+    "expression": "calculating theatrical narrowed gaze and restrained asymmetric smirk",
+    "eye_openness": 40.47,
+    "mouth_relaxation": 43.37
+  },
+  "face_geometry": {
+    "face_shape": "oval",
+    "cheek_to_chin_contour": "angular_taper",
+    "face_length": 50.13,
+    "face_width": 53,
+    "cheekbone_width": 50.51,
+    "jaw_width": 49.53,
+    "chin_width": 48.1,
+    "jaw_angle": 52.38
+  },
+  "soft_tissue": {
+    "upper_medial_cheek_fullness": 57,
+    "lateral_cheek_fullness": 49.22
+  },
+  "eyes": {
+    "eye_length": 56.71,
+    "eye_size": 49.97
+  },
+  "mouth": {
+    "upper_lip_fullness": 47.37,
+    "lower_lip_fullness": 57.14
+  },
+  "metadata": {
+    "sampling": {
+      "sampler_version": "sampler-v0.1",
+      "catalog_version": "archetypes-v0.1",
+      "catalog_sha256": "c2a9000ed0086d898e3611b9459061fd9a971156299643dd885b8058e7451cad",
+      "compiler_sha256": "86624c352f9cf87cbcf9d0885ea3f7a372e8bbbfbb80ff015656173421ebc911",
+      "seed": "demo",
+      "archetypes": [
+        "sinister"
+      ],
+      "morphology_bundle": "defined-taper",
+      "resolved_ranges": {
+        "face_geometry.face_length": {
+          "min": 38,
+          "mode": 52,
+          "max": 68,
+          "group": "length"
+        },
+        "face_geometry.face_width": {
+          "min": 39,
+          "mode": 52,
+          "max": 66,
+          "group": "width"
+        },
+        "face_geometry.cheekbone_width": {
+          "min": 38,
+          "mode": 52,
+          "max": 68,
+          "group": "width"
+        },
+        "face_geometry.jaw_width": {
+          "min": 36,
+          "mode": 49,
+          "max": 63,
+          "group": "width"
+        },
+        "face_geometry.chin_width": {
+          "min": 36,
+          "mode": 49,
+          "max": 64,
+          "group": "width"
+        },
+        "face_geometry.jaw_angle": {
+          "min": 28,
+          "mode": 48,
+          "max": 70,
+          "group": "definition"
+        },
+        "soft_tissue.upper_medial_cheek_fullness": {
+          "min": 38,
+          "mode": 54,
+          "max": 70,
+          "group": "fullness"
+        },
+        "soft_tissue.lateral_cheek_fullness": {
+          "min": 27,
+          "mode": 42,
+          "max": 58,
+          "group": "fullness"
+        },
+        "eyes.eye_length": {
+          "min": 38,
+          "mode": 54,
+          "max": 70,
+          "group": "eye"
+        },
+        "eyes.eye_size": {
+          "min": 35,
+          "mode": 50,
+          "max": 67,
+          "group": "eye"
+        },
+        "mouth.upper_lip_fullness": {
+          "min": 32,
+          "mode": 49,
+          "max": 67,
+          "group": "lips"
+        },
+        "mouth.lower_lip_fullness": {
+          "min": 40,
+          "mode": 56,
+          "max": 74,
+          "group": "lips"
+        },
+        "expression.eye_openness": {
+          "min": 23,
+          "mode": 35,
+          "max": 47,
+          "group": "performance"
+        },
+        "expression.mouth_relaxation": {
+          "min": 28,
+          "mode": 39,
+          "max": 50,
+          "group": "performance"
+        }
+      },
+      "compiler_options": {
+        "preset": "profile",
+        "enhancers": true
+      },
+      "limitations": "Authored artistic ranges, not validated measurements. Seed reproduces parameters and prompt, not image identity. Villain direction is fictional acting, not moral character inferred from facial anatomy."
+    }
+  }
+}

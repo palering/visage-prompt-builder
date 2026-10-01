@@ -1,0 +1,15 @@
+{
+  "version": "appearance-v0.1",
+  "hair": {
+    "state": "off"
+  },
+  "makeup": {
+    "state": "off"
+  },
+  "apparentAge": {
+    "state": "off"
+  },
+  "expression": {
+    "state": "off"
+  }
+}

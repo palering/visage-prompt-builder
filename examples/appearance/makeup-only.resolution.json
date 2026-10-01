@@ -1,0 +1,102 @@
+{
+  "config": {
+    "version": "appearance-v0.1",
+    "hair": {
+      "state": "off"
+    },
+    "makeup": {
+      "state": "selected",
+      "preset": "makeup_satin_medium",
+      "overrides": {
+        "browRendering": "fine hairlike strokes following the natural brow boundary",
+        "eyelinerGeometry": "thin dark brown upper lash line with a short upward outer flick",
+        "lashes": "lightly defined natural lashes",
+        "shadowPlacement": "soft taupe on upper lids, softly blended outer corners",
+        "blushPlacement": "subtle muted rose along upper cheeks",
+        "contour": "none",
+        "highlight": "subtle satin reflection on upper cheek surface",
+        "lipBoundary": "follow the natural lip edge without overlining",
+        "lipFinish": "muted rose satin",
+        "palette": "warm-neutral taupe, brown and muted rose"
+      }
+    },
+    "apparentAge": {
+      "state": "off"
+    },
+    "expression": {
+      "state": "off"
+    }
+  },
+  "catalog_version": "appearance-catalog-v0.1",
+  "catalog_sha256": "a29bc40d848896d140dd51d6258405f97567547c7db2a85acf02d776d141235e",
+  "paragraphs": [
+    "Makeup application: coverage: medium; finish: satin; brow rendering: fine hairlike strokes following the natural brow boundary; eyeliner geometry: thin dark brown upper lash line with a short upward outer flick; lashes: lightly defined natural lashes; shadow placement: soft taupe on upper lids, softly blended outer corners; blush placement: subtle muted rose along upper cheeks; contour: none; highlight: subtle satin reflection on upper cheek surface; lip boundary: follow the natural lip edge without overlining; lip finish: muted rose satin; palette: warm-neutral taupe, brown and muted rose."
+  ],
+  "modules": {
+    "hair": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    },
+    "makeup": {
+      "state": "selected",
+      "preset": "makeup_satin_medium",
+      "label": "缎光中遮盖",
+      "resolved": {
+        "coverage": "medium",
+        "finish": "satin",
+        "browRendering": "fine hairlike strokes following the natural brow boundary",
+        "eyelinerGeometry": "thin dark brown upper lash line with a short upward outer flick",
+        "lashes": "lightly defined natural lashes",
+        "shadowPlacement": "soft taupe on upper lids, softly blended outer corners",
+        "blushPlacement": "subtle muted rose along upper cheeks",
+        "contour": "none",
+        "highlight": "subtle satin reflection on upper cheek surface",
+        "lipBoundary": "follow the natural lip edge without overlining",
+        "lipFinish": "muted rose satin",
+        "palette": "warm-neutral taupe, brown and muted rose"
+      },
+      "sourceIds": [
+        "kryolan_base"
+      ],
+      "evidenceStatus": "technique_grounded_design_recipe",
+      "context": {
+        "historical": null,
+        "trend": null,
+        "cultural": null,
+        "recipe": null
+      },
+      "occlusion": null,
+      "occlusionStatus": "requires_reassessment_after_overrides",
+      "requirements": {},
+      "materialModes": null,
+      "identityNote": null,
+      "geometryIs": null,
+      "authorship": null,
+      "conflicts": [],
+      "sources": [
+        {
+          "id": "kryolan_base",
+          "title": "Kryolan: Foundations",
+          "url": "https://qa.kryolan.com/blog/posts/foundations",
+          "type": "professional_brand_technique",
+          "supports": "Coverage, consistency and finish are separable product properties."
+        }
+      ],
+      "impact": "Cosmetic edges, highlights and shadows change perceived brows, eyes, nose, cheeks and lip boundaries.",
+      "warnings": []
+    },
+    "apparentAge": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    },
+    "expression": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    }
+  },
+  "warnings": [
+    "Cosmetic edges, highlights and shadows change perceived brows, eyes, nose, cheeks and lip boundaries.",
+    "makeup overrides are authored free-text geometry. Historical accuracy, physical compatibility and preset occlusion metadata are not guaranteed after overrides.",
+    "Profile capture is free text: check lighting, view and styling words manually for semantic conflicts."
+  ]
+}

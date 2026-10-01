@@ -1,0 +1,190 @@
+{
+  "sampler_version": "sampler-v0.1",
+  "catalog_version": "archetypes-v0.2",
+  "catalog_sha256": "2cdf321944648eb28dc55528947b9bdb27733e70ae4aca40e78ce7477709bd5e",
+  "compiler_version": "gpt-image-2.5-v0.3",
+  "compiler_sha256": "c9d974461ff1d0ad2fc8305e3d6e28b36d8d51e37c4c60669ee80d15af8d4dd6",
+  "seed": "v08-complete-head-20260930",
+  "archetypes": [
+    "beautiful",
+    "elegant"
+  ],
+  "morphology_bundle": "broad-contour",
+  "resolved_ranges": {
+    "face_geometry.face_length": {
+      "min": 38,
+      "mode": 52,
+      "max": 68,
+      "group": "length"
+    },
+    "face_geometry.face_width": {
+      "min": 48,
+      "mode": 61,
+      "max": 75,
+      "group": "width"
+    },
+    "face_geometry.cheekbone_width": {
+      "min": 38,
+      "mode": 52,
+      "max": 68,
+      "group": "width"
+    },
+    "face_geometry.jaw_width": {
+      "min": 47,
+      "mode": 60,
+      "max": 74,
+      "group": "width"
+    },
+    "face_geometry.chin_width": {
+      "min": 36,
+      "mode": 49,
+      "max": 64,
+      "group": "width"
+    },
+    "face_geometry.jaw_angle": {
+      "min": 28,
+      "mode": 48,
+      "max": 70,
+      "group": "definition"
+    },
+    "soft_tissue.upper_medial_cheek_fullness": {
+      "min": 38,
+      "mode": 54,
+      "max": 70,
+      "group": "fullness"
+    },
+    "soft_tissue.lateral_cheek_fullness": {
+      "min": 39,
+      "mode": 54,
+      "max": 69,
+      "group": "fullness"
+    },
+    "eyes.eye_length": {
+      "min": 38,
+      "mode": 54,
+      "max": 70,
+      "group": "eye"
+    },
+    "eyes.eye_size": {
+      "min": 35,
+      "mode": 50,
+      "max": 67,
+      "group": "eye"
+    },
+    "eyebrows.brow_thickness": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "brow_mass"
+    },
+    "eyebrows.brow_height": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "brow_height"
+    },
+    "eyebrows.brow_arch": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "brow_arch"
+    },
+    "eyebrows.brow_length": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "brow_length"
+    },
+    "eyebrows.brow_density": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "brow_mass"
+    },
+    "nose.bridge_height": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_bridge_height"
+    },
+    "nose.bridge_width": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_width"
+    },
+    "nose.nose_length": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_length"
+    },
+    "nose.nose_projection": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_projection"
+    },
+    "nose.tip_size": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_tip_size"
+    },
+    "nose.tip_roundness": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_tip_roundness"
+    },
+    "nose.tip_rotation": {
+      "min": 40,
+      "mode": 50,
+      "max": 60,
+      "group": "nose_tip_rotation"
+    },
+    "nose.alar_width": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_width"
+    },
+    "nose.nostril_visibility": {
+      "min": 35,
+      "mode": 50,
+      "max": 65,
+      "group": "nose_nostril_visibility"
+    },
+    "mouth.upper_lip_fullness": {
+      "min": 32,
+      "mode": 49,
+      "max": 67,
+      "group": "lips"
+    },
+    "mouth.lower_lip_fullness": {
+      "min": 40,
+      "mode": 56,
+      "max": 74,
+      "group": "lips"
+    },
+    "expression.eye_openness": {
+      "min": 44,
+      "mode": 52,
+      "max": 61,
+      "group": "performance"
+    },
+    "expression.mouth_relaxation": {
+      "min": 52,
+      "mode": 63,
+      "max": 74,
+      "group": "performance"
+    }
+  },
+  "compiler_options": {
+    "preset": "profile",
+    "enhancers": true
+  },
+  "limitations": "Authored artistic ranges, not validated measurements. Seed reproduces parameters and prompt, not image identity. Villain direction is fictional acting, not moral character inferred from facial anatomy.",
+  "profile_sha256": "7847ab4d78854d480cf98b047e117157c3b5c275927171b6dadf5ae50bf45f02",
+  "prompt_sha256": "2e19116b7f6eb86f6670547aae122c488ecff433b26b1adda3bea939f3124d01"
+}

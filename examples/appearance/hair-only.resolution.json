@@ -1,0 +1,88 @@
+{
+  "config": {
+    "version": "appearance-v0.1",
+    "hair": {
+      "state": "selected",
+      "preset": "blunt_bob"
+    },
+    "makeup": {
+      "state": "off"
+    },
+    "apparentAge": {
+      "state": "off"
+    },
+    "expression": {
+      "state": "off"
+    }
+  },
+  "catalog_version": "appearance-catalog-v0.1",
+  "catalog_sha256": "a29bc40d848896d140dd51d6258405f97567547c7db2a85acf02d776d141235e",
+  "paragraphs": [
+    "Hair styling: length: chin-length; cut: one-length blunt perimeter; fringe: none; part: center part; texture: straight; volume: moderate lateral volume; arrangement: loose; front: forehead exposed; sides: even panels beside cheeks; back: level nape perimeter."
+  ],
+  "modules": {
+    "hair": {
+      "state": "selected",
+      "preset": "blunt_bob",
+      "label": "齐下巴钝线波波",
+      "resolved": {
+        "length": "chin-length",
+        "cut": "one-length blunt perimeter",
+        "fringe": "none",
+        "part": "center part",
+        "texture": "straight",
+        "volume": "moderate lateral volume",
+        "arrangement": "loose",
+        "front": "forehead exposed",
+        "sides": "even panels beside cheeks",
+        "back": "level nape perimeter"
+      },
+      "sourceIds": [],
+      "evidenceStatus": "generic_geometry",
+      "context": {
+        "historical": null,
+        "trend": null,
+        "cultural": null,
+        "recipe": null
+      },
+      "occlusion": {
+        "forehead": "none",
+        "temples": "partial",
+        "ears": "covered",
+        "cheeks": "partial",
+        "jaw": "partial",
+        "eyes": "none"
+      },
+      "occlusionStatus": "authored_qualitative_estimate",
+      "requirements": {},
+      "materialModes": [
+        "natural",
+        "wig",
+        "hairpiece"
+      ],
+      "identityNote": "Hair silhouette and occlusion may change apparent face width/length; do not modify skull, jaw, facial landmarks, age, ancestry or identity to fit the hairstyle.",
+      "geometryIs": "Prompt-authoring specification; not claimed as a unique canonical salon definition.",
+      "authorship": null,
+      "conflicts": [],
+      "sources": [],
+      "impact": "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+      "warnings": []
+    },
+    "makeup": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    },
+    "apparentAge": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    },
+    "expression": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    }
+  },
+  "warnings": [
+    "Hair silhouette and occlusion change the apparent forehead, temples, cheeks and jaw.",
+    "Profile capture is free text: check lighting, view and styling words manually for semantic conflicts."
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "config": {
+    "version": "appearance-v0.1",
+    "hair": {
+      "state": "off"
+    },
+    "makeup": {
+      "state": "off"
+    },
+    "apparentAge": {
+      "state": "off"
+    },
+    "expression": {
+      "state": "off"
+    }
+  },
+  "catalog_version": "appearance-catalog-v0.1",
+  "catalog_sha256": "a29bc40d848896d140dd51d6258405f97567547c7db2a85acf02d776d141235e",
+  "paragraphs": [],
+  "modules": {
+    "hair": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    },
+    "makeup": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    },
+    "apparentAge": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    },
+    "expression": {
+      "state": "off",
+      "impact": "Suppresses the corresponding legacy appearance clause only; does not remove model priors."
+    }
+  },
+  "warnings": []
+}
